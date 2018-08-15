@@ -16,7 +16,6 @@ class PsInspectionPatrol extends PsBase
 	}
 
 	public function getShiftData($param,$which){
-
 		$where['record_date'] = isset($param['record_date'])?$param['record_date']:date('Y-m-d');
 		$where['shift']       = $param['shift'];
 		$where['record_type'] = $which =='sorting'?'5':'6';

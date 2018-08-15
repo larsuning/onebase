@@ -7,7 +7,7 @@ class InspectionStorage extends PsBase
 {
 	public function getForm($param){
 		//判断当天分拣巡查表是否存在
-		$where['record_date'] = date('Y-m-d');
+		$where['record_date'] = isset($param['record_date'])?$param['record_date']: date('Y-m-d');
 		$where['record_type'] = '6';
 		$where['status'] = 1;
 		$shift = $this->modelPsInspectionPatrol->getShift();
@@ -87,10 +87,20 @@ class InspectionStorage extends PsBase
 
 		//获取当前早班分拣巡查表数据
 		$data['shift'] = isset($param['shift'])?$param['shift']:$shift;
+		$data['record_date'] = $where['record_date'];
+
 
 		if(isset($param['review'])){
 			$data = \think\Db::name('ps_inspection_record')
 								->where('id',$param['review'])
+								->where('status','1')
+								->field('shift,record_date')
+								->find();
+		}
+
+		if(isset($param['edit'])){
+			$data = \think\Db::name('ps_inspection_record')
+								->where('id',$param['edit'])
 								->where('status','1')
 								->field('shift,record_date')
 								->find();

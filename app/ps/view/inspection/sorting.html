@@ -16,12 +16,14 @@
         {/gt}
 
         {empty name="review"}
-        <select name=""   class="form-control" style="float:right;width: 150px;font-weight: bold" id="sorting_shift">
-            {volist name="shift" id= 'vo' key='k'}
-                <option value="{$key}" {notempty name="$_GET['shift']"}{eq name="$_GET['shift']" value='$key'}selected{/eq}{/notempty}>{$vo}</option>
-            {/volist}
+            {empty name=":input('edit')"}
+            <select name=""   class="form-control" style="float:right;width: 150px;font-weight: bold" id="sorting_shift">
+                {volist name="shift" id= 'vo' key='k'}
+                    <option value="{$key}" {notempty name="$_GET['shift']"}{eq name="$_GET['shift']" value='$key'}selected{/eq}{/notempty}>{$vo}</option>
+                {/volist}
 
-        </select>
+            </select>
+            {/empty}
         {else}
             <select name=""   class="form-control" style="float:right;width: 150px;font-weight: bold" disabled='on'>
             <option value="1" {eq name="$review.shift" value='1'}selected{/eq}>早班</option>
@@ -149,6 +151,10 @@
         $('.table input,textarea').attr('disabled','on');
     }
 
+     if("{:input('edit')}"){
+        $('#sorting_shift').attr('disabled','on');
+    }
+
     //完成当前表单数据并提交
     $('.finish').click(function(){
           var confirm = '';
@@ -168,7 +174,7 @@
         })
         if(!confirm) return false;
         _id = $('#sorting tr').eq(1).attr('data-id');
-        $.post('?action=recordEdit',{sorting_id:_id},function(d){
+        $.post('sorting?action=recordEdit',{sorting_id:_id},function(d){
             obalert(d);
         })
     })
@@ -203,7 +209,7 @@
     $('table').on('click','input[name="inspectioned_at"]',function(){
         $(this).val(_time);
         _id   = $(this).parents('tr').attr('data-id');
-        $.post('',{inspectioned_at:_time,id:_id},function(d){
+        $.post('sorting',{inspectioned_at:_time,id:_id},function(d){
             console.log(d);
         })
     })
@@ -213,7 +219,7 @@
         _val  = $(this).val();
         _id   = $(this).parents('tr').attr('data-id');
         data  = _name+'='+_val+'&id='+_id;
-        $.post('',data,function(e){
+        $.post('sorting',data,function(e){
             console.log(e);
         })
     })

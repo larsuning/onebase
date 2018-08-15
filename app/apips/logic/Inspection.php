@@ -251,15 +251,32 @@ class Inspection extends ApiBase
 
     public function getRecordDetail($data=[])
     {
-        $rdata['data'] = \think\Db::name('ps_inspection')
-                            ->where('record_id',$data['id'])
-                            ->order('update_time desc')
-                            ->select();
-        $check_status = \think\Db::name('ps_inspection_record')->where('id',$data['id'])->value('check_status');
+        $d = \think\Db::name('ps_inspection_record')->where('id',$data['id'])->find();
         $uid          = $this->getMemberIdByToken($data['user_token']);
         $role         = \think\Db::name('member')->where('id',$uid)->value('nickname');
 
-        switch ($check_status) {
+        if(in_array($d['record_type'], [1,2,3,4])){
+            $rdata['data'] = \think\Db::name('ps_inspection')
+                                ->where('record_id',$data['id'])
+                                ->order('update_time desc')
+                                ->select();
+        }else if($d['record_type'] == 5){
+                $rdata['data'] = \think\Db::name('ps_inspection_sorting')
+                                ->where('record_id',$data['id'])
+                                ->order('update_time desc')
+                                ->select();
+        }else if($d['record_type'] == 6){
+                $rdata['data'] = \think\Db::name('ps_inspection_storage')
+                                ->where('record_id',$data['id'])
+                                ->order('update_time desc')
+                                ->select();
+        }else{
+            return [API_CODE_NAME=> -1,API_MSG_NAME=>'非法访问']; 
+        }
+        
+        
+
+        switch ($d['check_status']) {
             case '0':
                 $rdata['info'] = '';
                 break;
@@ -279,7 +296,7 @@ class Inspection extends ApiBase
             case '2':
                 $rdata['info'] = \think\Db::view('ps_inspection_record','update_time,review_note')
                                     ->view('member',['realname'=>'checker'],'ps_inspection_record.member_id = member.id','left')
-                                    ->view('member m',['username'=>'reviewer'],'r.review_member_id = m.id','LEFT')
+                                    ->view('member m',['username'=>'reviewer'],'ps_inspection_record.review_member_id = m.id','LEFT')
                                     ->where('ps_inspection_record.id',$data['id'])
                                     ->select();
                 break;

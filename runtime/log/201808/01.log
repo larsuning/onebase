@@ -1,0 +1,164 @@
+---------------------------------------------------------------
+[ 2018-08-01T16:05:10+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index/cid/7.html
+[ info ] larsun.com/index/index/index/cid/7.html [运行时间：0.080166s][吞吐率：12.47req/s] [内存消耗：2,010.09kb] [文件加载：54]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'larsun.qwj_config' doesn't exist[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-01T16:05:17+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index/cid/7.html
+[ info ] larsun.com/index/index/index/cid/7.html [运行时间：0.047359s][吞吐率：21.12req/s] [内存消耗：2,010.10kb] [文件加载：54]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'larsun.qwj_config' doesn't exist[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-01T16:21:49+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.092091s][吞吐率：10.86req/s] [内存消耗：2,336.58kb] [文件加载：67]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:28:19+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/index.html?_pjax=.content [运行时间：0.043475s][吞吐率：23.00req/s] [内存消耗：2,263.35kb] [文件加载：66]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:28:19+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.050171s][吞吐率：19.93req/s] [内存消耗：2,273.39kb] [文件加载：67]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:28:30+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/index.html?_pjax=.content [运行时间：0.040915s][吞吐率：24.44req/s] [内存消耗：2,263.35kb] [文件加载：66]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:28:30+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.048913s][吞吐率：20.44req/s] [内存消耗：2,273.39kb] [文件加载：67]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:28:46+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/index.html?_pjax=.content [运行时间：0.041213s][吞吐率：24.26req/s] [内存消耗：2,263.35kb] [文件加载：66]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:28:47+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.047036s][吞吐率：21.26req/s] [内存消耗：2,273.39kb] [文件加载：67]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:29:54+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.087801s][吞吐率：11.39req/s] [内存消耗：2,388.67kb] [文件加载：70]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:29:55+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.044527s][吞吐率：22.46req/s] [内存消耗：2,324.95kb] [文件加载：70]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:29:55+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.041014s][吞吐率：24.38req/s] [内存消耗：2,324.95kb] [文件加载：70]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:30:39+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.077830s][吞吐率：12.85req/s] [内存消耗：2,359.32kb] [文件加载：69]
+[ error ] [0]类不存在:app\common\logic\Menu[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:30:40+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.043024s][吞吐率：23.24req/s] [内存消耗：2,295.59kb] [文件加载：69]
+[ error ] [0]类不存在:app\common\logic\Menu[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:31:36+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.066530s][吞吐率：15.03req/s] [内存消耗：2,388.68kb] [文件加载：70]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:31:37+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.044556s][吞吐率：22.44req/s] [内存消耗：2,324.95kb] [文件加载：70]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:31:37+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.044681s][吞吐率：22.38req/s] [内存消耗：2,324.95kb] [文件加载：70]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:31:40+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/index.html?_pjax=.content [运行时间：0.069440s][吞吐率：14.40req/s] [内存消耗：2,378.44kb] [文件加载：69]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:31:40+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.052002s][吞吐率：19.23req/s] [内存消耗：2,324.75kb] [文件加载：70]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:31:41+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.039427s][吞吐率：25.36req/s] [内存消耗：2,324.95kb] [文件加载：70]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:33:13+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.082955s][吞吐率：12.05req/s] [内存消耗：2,388.68kb] [文件加载：70]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:33:14+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.044822s][吞吐率：22.31req/s] [内存消耗：2,324.95kb] [文件加载：70]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:33:20+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.073650s][吞吐率：13.58req/s] [内存消耗：2,388.68kb] [文件加载：70]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:33:21+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.045099s][吞吐率：22.17req/s] [内存消耗：2,324.95kb] [文件加载：70]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:33:22+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.040988s][吞吐率：24.40req/s] [内存消耗：2,324.95kb] [文件加载：70]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:34:11+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/index.html
+[ info ] larsun.com/ps/inspection/index.html [运行时间：0.088061s][吞吐率：11.36req/s] [内存消耗：2,388.68kb] [文件加载：70]
+[ error ] [0]类不存在:app\common\logic\AuthGroupAccess[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-01T16:39:48+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/menu/menulist.html
+[ info ] larsun.com/ps/menu/menulist.html [运行时间：0.053074s][吞吐率：18.84req/s] [内存消耗：2,035.58kb] [文件加载：61]
+[ error ] [1]Class 'app\ps\controller\psBase' not found[D:\PHPTutorial\WWW\geek\app\ps\controller\Menu.php:17]
+---------------------------------------------------------------
+[ 2018-08-01T16:39:52+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/menu/menulist.html
+[ info ] larsun.com/ps/menu/menulist.html [运行时间：0.074487s][吞吐率：13.43req/s] [内存消耗：2,099.60kb] [文件加载：61]
+[ error ] [1]Class 'app\ps\controller\psBase' not found[D:\PHPTutorial\WWW\geek\app\ps\controller\Menu.php:17]
+---------------------------------------------------------------
+[ 2018-08-01T16:40:33+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/menu/menulist.html
+[ info ] larsun.com/ps/menu/menulist.html [运行时间：0.069989s][吞吐率：14.29req/s] [内存消耗：2,099.38kb] [文件加载：61]
+[ error ] [1]Class 'app\ps\controller\psBase' not found[D:\PHPTutorial\WWW\geek\app\ps\controller\Menu.php:17]
+---------------------------------------------------------------
+[ 2018-08-01T16:40:34+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/menu/menulist.html
+[ info ] larsun.com/ps/menu/menulist.html [运行时间：0.038708s][吞吐率：25.83req/s] [内存消耗：2,035.66kb] [文件加载：61]
+[ error ] [1]Class 'app\ps\controller\psBase' not found[D:\PHPTutorial\WWW\geek\app\ps\controller\Menu.php:17]
+---------------------------------------------------------------
+[ 2018-08-01T16:40:42+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/menu/menulist.html
+[ info ] larsun.com/ps/menu/menulist.html [运行时间：0.102472s][吞吐率：9.76req/s] [内存消耗：2,346.78kb] [文件加载：69]
+[ error ] [0]致命错误: Call to undefined function app\ps\controller\is_psistrator()[D:\PHPTutorial\WWW\geek\app\ps\controller\psBase.php:132]
+---------------------------------------------------------------
+[ 2018-08-01T16:40:45+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/menu/menulist.html
+[ info ] larsun.com/ps/menu/menulist.html [运行时间：0.043626s][吞吐率：22.92req/s] [内存消耗：2,283.05kb] [文件加载：69]
+[ error ] [0]致命错误: Call to undefined function app\ps\controller\is_psistrator()[D:\PHPTutorial\WWW\geek\app\ps\controller\psBase.php:132]
+---------------------------------------------------------------
+[ 2018-08-01T16:40:46+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/menu/menulist.html
+[ info ] larsun.com/ps/menu/menulist.html [运行时间：0.071258s][吞吐率：14.03req/s] [内存消耗：2,346.78kb] [文件加载：69]
+[ error ] [0]致命错误: Call to undefined function app\ps\controller\is_psistrator()[D:\PHPTutorial\WWW\geek\app\ps\controller\psBase.php:132]
+---------------------------------------------------------------
+[ 2018-08-01T16:40:48+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/menu/menulist.html
+[ info ] larsun.com/ps/menu/menulist.html [运行时间：0.043822s][吞吐率：22.82req/s] [内存消耗：2,283.05kb] [文件加载：69]
+[ error ] [0]致命错误: Call to undefined function app\ps\controller\is_psistrator()[D:\PHPTutorial\WWW\geek\app\ps\controller\psBase.php:132]
+---------------------------------------------------------------
+[ 2018-08-01T16:41:08+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/menu/menulist.html
+[ info ] larsun.com/ps/menu/menulist.html [运行时间：0.074240s][吞吐率：13.47req/s] [内存消耗：2,369.95kb] [文件加载：71]
+[ error ] [1]Class 'app\ps\logic\psBase' not found[D:\PHPTutorial\WWW\geek\app\ps\logic\AuthGroupAccess.php:17]
+---------------------------------------------------------------
+[ 2018-08-01T16:41:50+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/menu/menulist.html
+[ info ] larsun.com/ps/menu/menulist.html [运行时间：0.090456s][吞吐率：11.06req/s] [内存消耗：2,451.69kb] [文件加载：75]
+[ error ] [1]Class 'app\ps\model\psBase' not found[D:\PHPTutorial\WWW\geek\app\ps\model\Menu.php:17]
+---------------------------------------------------------------
+[ 2018-08-01T16:48:00+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/menu/menuadd.html
+[ info ] larsun.com/ps/menu/menuadd.html [运行时间：0.092146s][吞吐率：10.85req/s] [内存消耗：2,590.42kb] [文件加载：76]
+[ error ] [1]Class 'app\ps\validate\psBase' not found[D:\PHPTutorial\WWW\geek\app\ps\validate\Menu.php:17]
+---------------------------------------------------------------
+[ 2018-08-01T18:16:17+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/member/memberlist.html?_pjax=.content
+[ info ] larsun.com/ps/member/memberlist.html?_pjax=.content [运行时间：0.093247s][吞吐率：10.72req/s] [内存消耗：2,542.45kb] [文件加载：76]
+[ error ] [0]致命错误: Call to undefined function app\ps\logic\is_psistrator()[D:\PHPTutorial\WWW\geek\app\ps\logic\Member.php:77]
+---------------------------------------------------------------
+[ 2018-08-01T18:16:18+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/member/memberlist.html
+[ info ] larsun.com/ps/member/memberlist.html [运行时间：0.069359s][吞吐率：14.42req/s] [内存消耗：2,546.85kb] [文件加载：77]
+[ error ] [0]致命错误: Call to undefined function app\ps\logic\is_psistrator()[D:\PHPTutorial\WWW\geek\app\ps\logic\Member.php:77]
+---------------------------------------------------------------
+[ 2018-08-01T18:16:30+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/member/memberlist.html
+[ info ] larsun.com/ps/member/memberlist.html [运行时间：0.093315s][吞吐率：10.72req/s] [内存消耗：2,552.50kb] [文件加载：77]
+[ error ] [0]致命错误: Call to undefined function app\ps\logic\is_psistrator()[D:\PHPTutorial\WWW\geek\app\ps\logic\Member.php:76]
+---------------------------------------------------------------
+[ 2018-08-01T18:16:31+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/member/memberlist.html
+[ info ] larsun.com/ps/member/memberlist.html [运行时间：0.077295s][吞吐率：12.94req/s] [内存消耗：2,546.98kb] [文件加载：77]
+[ error ] [0]致命错误: Call to undefined function app\ps\logic\is_psistrator()[D:\PHPTutorial\WWW\geek\app\ps\logic\Member.php:76]

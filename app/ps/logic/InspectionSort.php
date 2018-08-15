@@ -7,7 +7,7 @@ class InspectionSort extends PsBase
 {
 	public function getForm($param=[]){
 		//判断当天分拣巡查表是否存在
-		$where['record_date'] = date('Y-m-d');
+		$where['record_date'] =isset($param['record_date'])?$param['record_date']: date('Y-m-d');
 		$where['record_type'] = '5';
 		$where['status'] = 1;
 		
@@ -35,7 +35,7 @@ class InspectionSort extends PsBase
 
 				$list[]= array(
 						'id'          =>$i,
-						'record_date' => date('Y-m-d'),
+						'record_date' => $where['record_date'],
 						'record_type' => '5',
 						'check_status' => '0',
 						'status'      => 1,
@@ -88,6 +88,7 @@ class InspectionSort extends PsBase
 								->value('shift');
 								
 		$data['shift'] = isset($param['shift'])?$param['shift']:$shift;
+		$data['record_date'] = $where['record_date'];
 		if(isset($param['review'])){
 			$data = \think\Db::name('ps_inspection_record')
 								->where('id',$param['review'])
@@ -95,6 +96,16 @@ class InspectionSort extends PsBase
 								->field('shift,record_date')
 								->find();
 		}
+
+		if(isset($param['edit'])){
+			$data = \think\Db::name('ps_inspection_record')
+								->where('id',$param['edit'])
+								->where('status','1')
+								->field('shift,record_date')
+								->find();
+		}
+
+		
 
 		return $this->modelPsInspectionPatrol->getShiftData($data,'sorting');
 

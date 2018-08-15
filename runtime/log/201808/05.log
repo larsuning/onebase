@@ -1,0 +1,326 @@
+---------------------------------------------------------------
+[ 2018-08-05T09:20:56+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/storage.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/storage.html?_pjax=.content [运行时间：0.143049s][吞吐率：6.99req/s] [内存消耗：2,565.66kb] [文件加载：77]
+[ error ] [0]数据表字段不存在:[_pjax][D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Builder.php:107]
+---------------------------------------------------------------
+[ 2018-08-05T09:20:59+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/storage.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/storage.html?_pjax=.content [运行时间：0.111111s][吞吐率：9.00req/s] [内存消耗：2,565.67kb] [文件加载：77]
+[ error ] [0]数据表字段不存在:[_pjax][D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Builder.php:107]
+---------------------------------------------------------------
+[ 2018-08-05T09:32:12+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.078086s][吞吐率：12.81req/s] [内存消耗：2,531.38kb] [文件加载：76]
+[ error ] [8]未定义数组索引: name[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:189]
+---------------------------------------------------------------
+[ 2018-08-05T09:32:12+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.048439s][吞吐率：20.64req/s] [内存消耗：2,531.38kb] [文件加载：76]
+[ error ] [8]未定义数组索引: name[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:189]
+---------------------------------------------------------------
+[ 2018-08-05T09:32:15+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.058090s][吞吐率：17.21req/s] [内存消耗：2,531.38kb] [文件加载：76]
+[ error ] [8]未定义数组索引: name[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:189]
+---------------------------------------------------------------
+[ 2018-08-05T09:32:15+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.058336s][吞吐率：17.14req/s] [内存消耗：2,531.38kb] [文件加载：76]
+[ error ] [8]未定义数组索引: name[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:189]
+---------------------------------------------------------------
+[ 2018-08-05T09:32:18+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.068852s][吞吐率：14.52req/s] [内存消耗：2,531.38kb] [文件加载：76]
+[ error ] [8]未定义数组索引: name[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:189]
+---------------------------------------------------------------
+[ 2018-08-05T09:32:18+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.063273s][吞吐率：15.80req/s] [内存消耗：2,531.38kb] [文件加载：76]
+[ error ] [8]未定义数组索引: name[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:189]
+---------------------------------------------------------------
+[ 2018-08-05T09:32:22+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.082118s][吞吐率：12.18req/s] [内存消耗：2,531.38kb] [文件加载：76]
+[ error ] [8]未定义数组索引: name[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:189]
+---------------------------------------------------------------
+[ 2018-08-05T09:32:22+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.073312s][吞吐率：13.64req/s] [内存消耗：2,531.38kb] [文件加载：76]
+[ error ] [8]未定义数组索引: name[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:189]
+---------------------------------------------------------------
+[ 2018-08-05T09:32:31+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.065978s][吞吐率：15.16req/s] [内存消耗：2,531.38kb] [文件加载：76]
+[ error ] [8]未定义数组索引: name[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:189]
+---------------------------------------------------------------
+[ 2018-08-05T09:32:31+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.072945s][吞吐率：13.71req/s] [内存消耗：2,531.38kb] [文件加载：76]
+[ error ] [8]未定义数组索引: name[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:189]
+---------------------------------------------------------------
+[ 2018-08-05T09:32:34+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.075792s][吞吐率：13.19req/s] [内存消耗：2,531.38kb] [文件加载：76]
+[ error ] [8]未定义数组索引: name[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:189]
+---------------------------------------------------------------
+[ 2018-08-05T09:32:34+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.058788s][吞吐率：17.01req/s] [内存消耗：2,531.38kb] [文件加载：76]
+[ error ] [8]未定义数组索引: name[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:189]
+---------------------------------------------------------------
+[ 2018-08-05T09:32:51+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.069399s][吞吐率：14.41req/s] [内存消耗：2,531.38kb] [文件加载：76]
+[ error ] [8]未定义数组索引: name[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:189]
+---------------------------------------------------------------
+[ 2018-08-05T09:32:51+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.062475s][吞吐率：16.01req/s] [内存消耗：2,531.38kb] [文件加载：76]
+[ error ] [8]未定义数组索引: name[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:189]
+---------------------------------------------------------------
+[ 2018-08-05T09:32:54+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.086594s][吞吐率：11.55req/s] [内存消耗：2,531.38kb] [文件加载：76]
+[ error ] [8]未定义数组索引: name[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:189]
+---------------------------------------------------------------
+[ 2018-08-05T09:32:54+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.060772s][吞吐率：16.45req/s] [内存消耗：2,531.38kb] [文件加载：76]
+[ error ] [8]未定义数组索引: name[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:189]
+---------------------------------------------------------------
+[ 2018-08-05T10:09:44+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getPurchase
+[ info ] larsun.com/ps/inspection/getPurchase [运行时间：0.113537s][吞吐率：8.81req/s] [内存消耗：2,463.78kb] [文件加载：77]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sn' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-05T10:09:50+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getPurchase
+[ info ] larsun.com/ps/inspection/getPurchase [运行时间：0.088856s][吞吐率：11.25req/s] [内存消耗：2,463.78kb] [文件加载：77]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sn' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-05T10:19:31+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.087698s][吞吐率：11.40req/s] [内存消耗：2,701.55kb] [文件加载：80]
+[ error ] [8]未定义变量: list[D:\PHPTutorial\WWW\geek\runtime\temp\52802dc566a6c34c9e7284e13aefad6e.php:275]
+---------------------------------------------------------------
+[ 2018-08-05T10:42:39+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.070209s][吞吐率：14.24req/s] [内存消耗：2,534.17kb] [文件加载：76]
+[ error ] [8]未定义数组索引: name[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:189]
+---------------------------------------------------------------
+[ 2018-08-05T11:34:08+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getPurchase?mark=1
+[ info ] larsun.com/ps/inspection/getPurchase?mark=1 [运行时间：0.094160s][吞吐率：10.62req/s] [内存消耗：2,490.23kb] [文件加载：74]
+[ error ] [0]语法解析错误: syntax error, unexpected '}'[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:186]
+---------------------------------------------------------------
+[ 2018-08-05T11:34:09+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getPurchase?mark=1
+[ info ] larsun.com/ps/inspection/getPurchase?mark=1 [运行时间：0.074261s][吞吐率：13.47req/s] [内存消耗：2,490.23kb] [文件加载：74]
+[ error ] [0]语法解析错误: syntax error, unexpected '}'[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:186]
+---------------------------------------------------------------
+[ 2018-08-05T11:48:45+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getPurchase?mark=1
+[ info ] larsun.com/ps/inspection/getPurchase?mark=1 [运行时间：0.068535s][吞吐率：14.59req/s] [内存消耗：2,490.27kb] [文件加载：74]
+[ error ] [0]语法解析错误: syntax error, unexpected '=', expecting ')'[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:185]
+---------------------------------------------------------------
+[ 2018-08-05T11:49:36+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getPurchase?mark=1
+[ info ] larsun.com/ps/inspection/getPurchase?mark=1 [运行时间：0.076318s][吞吐率：13.10req/s] [内存消耗：2,490.27kb] [文件加载：74]
+[ error ] [0]语法解析错误: syntax error, unexpected '$add_record' (T_VARIABLE)[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:193]
+---------------------------------------------------------------
+[ 2018-08-05T11:49:56+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.090571s][吞吐率：11.04req/s] [内存消耗：2,487.02kb] [文件加载：77]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '12' for key 'PRIMARY'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:451]
+---------------------------------------------------------------
+[ 2018-08-05T11:50:10+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.088502s][吞吐率：11.30req/s] [内存消耗：2,487.02kb] [文件加载：77]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '12' for key 'PRIMARY'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:451]
+---------------------------------------------------------------
+[ 2018-08-05T11:50:31+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.094374s][吞吐率：10.60req/s] [内存消耗：2,487.02kb] [文件加载：77]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '12' for key 'PRIMARY'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:451]
+---------------------------------------------------------------
+[ 2018-08-05T11:54:05+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.091448s][吞吐率：10.94req/s] [内存消耗：2,514.41kb] [文件加载：76]
+[ error ] [8]未定义变量: add_record[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:195]
+---------------------------------------------------------------
+[ 2018-08-05T11:54:20+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.099989s][吞吐率：10.00req/s] [内存消耗：2,511.16kb] [文件加载：75]
+[ error ] [0]数据表字段不存在:[0][D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Builder.php:107]
+---------------------------------------------------------------
+[ 2018-08-05T11:58:33+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.093557s][吞吐率：10.69req/s] [内存消耗：2,508.81kb] [文件加载：75]
+[ error ] [0]系统跳转失败:[D:\PHPTutorial\WWW\geek\thinkphp\helper.php:59]
+---------------------------------------------------------------
+[ 2018-08-05T14:18:17+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.102486s][吞吐率：9.76req/s] [内存消耗：2,508.13kb] [文件加载：75]
+[ error ] [0]语法解析错误: syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';'[D:\PHPTutorial\WWW\geek\app\ps\model\PsInspection.php:18]
+---------------------------------------------------------------
+[ 2018-08-05T14:18:48+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.079377s][吞吐率：12.60req/s] [内存消耗：2,522.48kb] [文件加载：77]
+[ error ] [2]Declaration of app\ps\model\PsInspection::getData($where) should be compatible with think\Model::getData($name = NULL)[D:\PHPTutorial\WWW\geek\app\ps\model\PsInspection.php:66]
+---------------------------------------------------------------
+[ 2018-08-05T14:20:08+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.076151s][吞吐率：13.13req/s] [内存消耗：2,520.06kb] [文件加载：76]
+[ error ] [0]method not exist:think\db\Query->creatData[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-05T14:20:22+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.099185s][吞吐率：10.08req/s] [内存消耗：2,525.57kb] [文件加载：77]
+[ error ] [8]未定义变量: goods[D:\PHPTutorial\WWW\geek\app\ps\model\PsInspection.php:34]
+---------------------------------------------------------------
+[ 2018-08-05T14:31:45+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.080848s][吞吐率：12.37req/s] [内存消耗：2,477.96kb] [文件加载：78]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'geek.qwj_ps_provider' doesn't exist[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-05T14:32:07+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.093701s][吞吐率：10.67req/s] [内存消耗：2,477.92kb] [文件加载：78]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in field list is ambiguous[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-05T14:32:29+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.091303s][吞吐率：10.95req/s] [内存消耗：2,477.93kb] [文件加载：78]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'name' in field list is ambiguous[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-05T14:33:06+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.074856s][吞吐率：13.36req/s] [内存消耗：2,478.01kb] [文件加载：78]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ps_inspection.production_data' in 'field list'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-05T14:33:36+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.075859s][吞吐率：13.18req/s] [内存消耗：2,477.90kb] [文件加载：78]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ps_provider.id' in 'on clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-05T15:25:22+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/updateInspection.html
+[ info ] larsun.com/ps/inspection/updateInspection.html [运行时间：0.086348s][吞吐率：11.58req/s] [内存消耗：2,457.80kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getMessage[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-05T15:25:42+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/updateInspection.html
+[ info ] larsun.com/ps/inspection/updateInspection.html [运行时间：0.094617s][吞吐率：10.57req/s] [内存消耗：2,457.80kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getError[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-05T15:45:24+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.062223s][吞吐率：16.07req/s] [内存消耗：2,017.98kb] [文件加载：59]
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php:107]
+---------------------------------------------------------------
+[ 2018-08-05T15:47:04+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.108304s][吞吐率：9.23req/s] [内存消耗：2,775.15kb] [文件加载：82]
+[ error ] [2]Illegal string offset 'name'[D:\PHPTutorial\WWW\geek\runtime\temp\52802dc566a6c34c9e7284e13aefad6e.php:278]
+---------------------------------------------------------------
+[ 2018-08-05T15:47:31+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.114932s][吞吐率：8.70req/s] [内存消耗：2,775.15kb] [文件加载：82]
+[ error ] [2]Illegal string offset 'name'[D:\PHPTutorial\WWW\geek\runtime\temp\52802dc566a6c34c9e7284e13aefad6e.php:278]
+---------------------------------------------------------------
+[ 2018-08-05T15:48:49+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.102491s][吞吐率：9.76req/s] [内存消耗：2,774.88kb] [文件加载：82]
+[ error ] [8]未定义数组索引: product_date[D:\PHPTutorial\WWW\geek\runtime\temp\52802dc566a6c34c9e7284e13aefad6e.php:283]
+---------------------------------------------------------------
+[ 2018-08-05T15:49:05+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.123512s][吞吐率：8.10req/s] [内存消耗：2,774.84kb] [文件加载：82]
+[ error ] [8]未定义数组索引: expire[D:\PHPTutorial\WWW\geek\runtime\temp\52802dc566a6c34c9e7284e13aefad6e.php:284]
+---------------------------------------------------------------
+[ 2018-08-05T15:49:47+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getPurchase?mark=1
+[ info ] larsun.com/ps/inspection/getPurchase?mark=1 [运行时间：0.062704s][吞吐率：15.95req/s] [内存消耗：2,530.39kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:210]
+---------------------------------------------------------------
+[ 2018-08-05T15:49:49+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getPurchase?mark=1
+[ info ] larsun.com/ps/inspection/getPurchase?mark=1 [运行时间：0.073410s][吞吐率：13.62req/s] [内存消耗：2,530.39kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:210]
+---------------------------------------------------------------
+[ 2018-08-05T15:57:01+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.113672s][吞吐率：8.80req/s] [内存消耗：2,769.99kb] [文件加载：82]
+[ error ] [2]Illegal string offset 'id'[D:\PHPTutorial\WWW\geek\runtime\temp\52802dc566a6c34c9e7284e13aefad6e.php:277]
+---------------------------------------------------------------
+[ 2018-08-05T15:57:02+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.105075s][吞吐率：9.52req/s] [内存消耗：2,769.99kb] [文件加载：82]
+[ error ] [2]Illegal string offset 'id'[D:\PHPTutorial\WWW\geek\runtime\temp\52802dc566a6c34c9e7284e13aefad6e.php:277]
+---------------------------------------------------------------
+[ 2018-08-05T16:06:42+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agriculture.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/agriculture.html?_pjax=.content [运行时间：0.079495s][吞吐率：12.58req/s] [内存消耗：2,655.66kb] [文件加载：79]
+[ error ] [8]未定义变量: list[D:\PHPTutorial\WWW\geek\runtime\temp\be3123361fbdc35f6eb277ba6fe5d794.php:28]
+---------------------------------------------------------------
+[ 2018-08-05T16:06:42+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.081725s][吞吐率：12.24req/s] [内存消耗：2,702.45kb] [文件加载：80]
+[ error ] [8]未定义变量: list[D:\PHPTutorial\WWW\geek\runtime\temp\be3123361fbdc35f6eb277ba6fe5d794.php:276]
+---------------------------------------------------------------
+[ 2018-08-05T16:09:34+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agriculture.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/agriculture.html?_pjax=.content [运行时间：0.088479s][吞吐率：11.30req/s] [内存消耗：2,524.46kb] [文件加载：76]
+[ error ] [8]Use of undefined constant MEMBER_NAME - assumed 'MEMBER_NAME'[D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php:94]
+---------------------------------------------------------------
+[ 2018-08-05T16:09:34+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.087664s][吞吐率：11.41req/s] [内存消耗：2,534.54kb] [文件加载：77]
+[ error ] [8]Use of undefined constant MEMBER_NAME - assumed 'MEMBER_NAME'[D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php:94]
+---------------------------------------------------------------
+[ 2018-08-05T16:10:49+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agriculture.html
+[ info ] larsun.com/ps/inspection/agriculture.html [运行时间：0.054194s][吞吐率：18.45req/s] [内存消耗：2,018.25kb] [文件加载：59]
+[ error ] [0]语法解析错误: syntax error, unexpected '*'[D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php:94]
+---------------------------------------------------------------
+[ 2018-08-05T16:45:50+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoods?mark=2
+[ info ] larsun.com/ps/inspection/getGoods?mark=2 [运行时间：0.065877s][吞吐率：15.18req/s] [内存消耗：2,526.56kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoods[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-05T16:45:58+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoods?mark=2
+[ info ] larsun.com/ps/inspection/getGoods?mark=2 [运行时间：0.067008s][吞吐率：14.92req/s] [内存消耗：2,526.56kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoods[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-05T16:45:59+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoods?mark=2
+[ info ] larsun.com/ps/inspection/getGoods?mark=2 [运行时间：0.071365s][吞吐率：14.01req/s] [内存消耗：2,526.56kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoods[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-05T16:46:01+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoods?mark=2
+[ info ] larsun.com/ps/inspection/getGoods?mark=2 [运行时间：0.077792s][吞吐率：12.85req/s] [内存消耗：2,526.56kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoods[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-05T16:46:04+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoods?mark=2
+[ info ] larsun.com/ps/inspection/getGoods?mark=2 [运行时间：0.065027s][吞吐率：15.38req/s] [内存消耗：2,526.56kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoods[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-05T16:46:07+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoods?mark=2
+[ info ] larsun.com/ps/inspection/getGoods?mark=2 [运行时间：0.073068s][吞吐率：13.69req/s] [内存消耗：2,526.56kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoods[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-05T16:47:41+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoods?mark=2
+[ info ] larsun.com/ps/inspection/getGoods?mark=2 [运行时间：0.077553s][吞吐率：12.89req/s] [内存消耗：2,684.05kb] [文件加载：76]
+[ error ] [1]Uncaught think\exception\ErrorException: Array to string conversion in D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:232
+Stack trace:
+#0 D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php(232): think\Error::appError(8, 'Array to string...', 'D:\\PHPTutorial\\...', 232, Array)
+#1 D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php(196): app\ps\logic\Inspection->getGoods(Array)
+#2 [internal function]: app\ps\controller\Inspection->getGoods()
+#3 D:\PHPTutorial\WWW\geek\thinkphp\library\think\App.php(196): ReflectionMethod->invokeArgs(Object(app\ps\controller\Inspection), Array)
+#4 D:\PHPTutorial\WWW\geek\thinkphp\library\think\App.php(408): think\App::invokeMethod(Array, Array)
+#5 D:\PHPTutorial\WWW\geek\thinkphp\library\think\App.php(295): think\App::module(Array, Array, true)
+#6 D:\PHPTutorial\WWW\geek\thinkphp\library\think\App.php(123): think\App::exec(Array, Array)
+#7 D:\PHPTutorial\WWW\geek\thinkphp\start.php(18): think\App::run()
+#8 D:\PHPTutorial\WWW\geek\public\index.php(29): require('D:\\PH[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:232]
+---------------------------------------------------------------
+[ 2018-08-05T17:31:29+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoods?purchase_id=2
+[ info ] larsun.com/ps/inspection/getGoods?purchase_id=2 [运行时间：0.075293s][吞吐率：13.28req/s] [内存消耗：2,532.85kb] [文件加载：76]
+[ error ] [8]未定义变量: param[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:233]
+---------------------------------------------------------------
+[ 2018-08-05T17:31:49+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoods?purchase_id=2
+[ info ] larsun.com/ps/inspection/getGoods?purchase_id=2 [运行时间：0.097952s][吞吐率：10.21req/s] [内存消耗：2,462.36kb] [文件加载：77]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'purchase_id' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-05T17:41:22+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoods?purchase_id=2
+[ info ] larsun.com/ps/inspection/getGoods?purchase_id=2 [运行时间：0.073927s][吞吐率：13.53req/s] [内存消耗：2,457.65kb] [文件加载：77]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-05T17:41:47+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoods?purchase_id=2
+[ info ] larsun.com/ps/inspection/getGoods?purchase_id=2 [运行时间：0.075873s][吞吐率：13.18req/s] [内存消耗：2,457.47kb] [文件加载：77]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ps_purchase.provider_id' in 'on clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-05T17:41:51+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoods?purchase_id=2
+[ info ] larsun.com/ps/inspection/getGoods?purchase_id=2 [运行时间：0.078306s][吞吐率：12.77req/s] [内存消耗：2,457.47kb] [文件加载：77]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ps_purchase.provider_id' in 'on clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-05T17:42:00+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoods?purchase_id=2
+[ info ] larsun.com/ps/inspection/getGoods?purchase_id=2 [运行时间：0.066784s][吞吐率：14.97req/s] [内存消耗：2,457.48kb] [文件加载：77]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ps_purchase.provider_id' in 'on clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-05T17:42:32+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoods?purchase_id=2
+[ info ] larsun.com/ps/inspection/getGoods?purchase_id=2 [运行时间：0.077204s][吞吐率：12.95req/s] [内存消耗：2,457.47kb] [文件加载：77]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'sort' in order clause is ambiguous[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-05T17:42:34+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoods?purchase_id=2
+[ info ] larsun.com/ps/inspection/getGoods?purchase_id=2 [运行时间：0.071271s][吞吐率：14.03req/s] [内存消耗：2,457.47kb] [文件加载：77]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'sort' in order clause is ambiguous[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-05T17:42:52+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoods?purchase_id=2
+[ info ] larsun.com/ps/inspection/getGoods?purchase_id=2 [运行时间：0.089466s][吞吐率：11.18req/s] [内存消耗：2,459.26kb] [文件加载：77]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ps_purchase_goods.status' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-05T17:43:21+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoods?purchase_id=2
+[ info ] larsun.com/ps/inspection/getGoods?purchase_id=2 [运行时间：0.094389s][吞吐率：10.59req/s] [内存消耗：2,459.47kb] [文件加载：77]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ps_purchase_goods.status' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-05T18:34:38+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoods?purchase_id=1
+[ info ] larsun.com/ps/inspection/getGoods?purchase_id=1 [运行时间：0.078913s][吞吐率：12.67req/s] [内存消耗：2,457.63kb] [文件加载：77]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'sort' in order clause is ambiguous[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-05T18:47:53+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.106718s][吞吐率：9.37req/s] [内存消耗：2,490.84kb] [文件加载：76]
+[ error ] [0]数据表字段不存在:[product_unit][D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Builder.php:740]
+---------------------------------------------------------------
+[ 2018-08-05T18:48:00+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.101036s][吞吐率：9.90req/s] [内存消耗：2,490.84kb] [文件加载：76]
+[ error ] [0]数据表字段不存在:[product_unit][D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Builder.php:740]
+---------------------------------------------------------------
+[ 2018-08-05T18:48:57+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.104016s][吞吐率：9.61req/s] [内存消耗：2,785.30kb] [文件加载：82]
+[ error ] [8]未定义数组索引: product_unit[D:\PHPTutorial\WWW\geek\runtime\temp\52802dc566a6c34c9e7284e13aefad6e.php:283]
+---------------------------------------------------------------
+[ 2018-08-05T18:49:31+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/mark.html
+[ info ] larsun.com/ps/inspection/mark.html [运行时间：0.102165s][吞吐率：9.79req/s] [内存消耗：2,785.30kb] [文件加载：82]
+[ error ] [8]未定义数组索引: product_unit[D:\PHPTutorial\WWW\geek\runtime\temp\52802dc566a6c34c9e7284e13aefad6e.php:283]

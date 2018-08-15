@@ -1,0 +1,1743 @@
+---------------------------------------------------------------
+[ 2018-08-15T09:31:53+08:00 ] 192.168.3.70 192.168.3.129 GET /ps/inspection/mark.html?_pjax=.content
+[ info ] 192.168.3.70/ps/inspection/mark.html?_pjax=.content [运行时间：0.101118s][吞吐率：9.89req/s] [内存消耗：2,597.26kb] [文件加载：79]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '_pjax' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-15T09:31:58+08:00 ] 192.168.3.70 192.168.3.129 GET /ps/inspection/packing.html?_pjax=.content
+[ info ] 192.168.3.70/ps/inspection/packing.html?_pjax=.content [运行时间：0.115516s][吞吐率：8.66req/s] [内存消耗：2,597.44kb] [文件加载：79]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '_pjax' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-15T09:31:59+08:00 ] 192.168.3.70 192.168.3.129 GET /ps/inspection/packing.html
+[ info ] 192.168.3.70/ps/inspection/packing.html [运行时间：0.070090s][吞吐率：14.27req/s] [内存消耗：2,753.63kb] [文件加载：72]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.009476s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHook @app_init [ RunTime:0.000863s ]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\geek\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ps',
+    1 => 'inspection',
+    2 => 'packing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1534127867,1534156754,1534210138,1534296477; PHPSESSID=tu5qh7nm4jao4h82hcddbknsc8; Hm_lpvt_afc2b8bbe5afca7b1c77c05445eadd98=1534296715',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.3.70/ps/inspection/mark.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '192.168.3.70',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000209s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\ps\controller\Inspection->packing[ D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010073s ] mysql:dbname=geek;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_menu` [ RunTime:0.006433s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `status` <> -1 ORDER BY `sort` [ RunTime:0.000771s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 131,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `url` = 'inspection/packing'  AND `module` = 'ps' LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 131,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `id` = 253 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `id` = 249 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `id` = 239 LIMIT 1 [ RunTime:0.000199s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SELECT `name` FROM `qwj_menu` WHERE  `module` = 'ps'  AND `url` = 'inspection/packing' LIMIT 1 [ RunTime:0.000306s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 131,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_ps_inspection_record` [ RunTime:0.007105s ]
+[ sql ] [ SQL ] SELECT `purchase_id` FROM `qwj_ps_inspection_record` WHERE  `record_type` = 4 ORDER BY purchase_id desc LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_ps_inspection_record',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 10,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ sql ] [ SQL ] SELECT `ps_inspection_record`.`goods_batch`,`ps_inspection_record`.`record_type`,`ps_inspection_record`.`record_date`,`ps_inspection`.`goods_id`,`ps_inspection`.`id`,`ps_inspection`.`name`,`ps_inspection`.`inspect_time`,`ps_inspection`.`product_total`,`ps_inspection`.`product_select`,`ps_inspection`.`production_date`,`ps_inspection`.`expire_date`,`ps_inspection`.`unqualified_rate`,`ps_inspection`.`is_qualified`,`ps_inspection`.`is_certificate`,`ps_inspection`.`remark`,`ps_inspection`.`product_unit`,`ps_inspection`.`unqualified_num`,`provider`.`name` AS `provider` FROM `qwj_ps_inspection_record` `ps_inspection_record` INNER JOIN `qwj_ps_inspection` `ps_inspection` ON `ps_inspection_record`.`id`=`ps_inspection`.`record_id` LEFT JOIN `qwj_provider` `provider` ON `ps_inspection`.`provider_id`=`provider`.`id` WHERE  `purchase_id` = null  AND `ps_inspection`.`status` = '1'  AND `ps_inspection_record`.`record_type` = 4 [ RunTime:0.000401s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'ps_inspection',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 16,
+  'extra' => 'Using where',
+) ]
+[ warn ] SQL:SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `status` <> :where_status ORDER BY `sort` [Using where; Using filesort]
+[ warn ] SQL:SELECT `purchase_id` FROM `qwj_ps_inspection_record` WHERE  `record_type` = :where_record_type ORDER BY purchase_id desc LIMIT 1  [Using where; Using filesort]
+[ error ] 订单id为的商品数据获取错误
+---------------------------------------------------------------
+[ 2018-08-15T09:32:03+08:00 ] 192.168.3.70 192.168.3.129 GET /ps/inspection/mark.html?_pjax=.content
+[ info ] 192.168.3.70/ps/inspection/mark.html?_pjax=.content [运行时间：0.105915s][吞吐率：9.44req/s] [内存消耗：2,597.38kb] [文件加载：79]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '_pjax' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-15T10:00:25+08:00 ] 127.0.0.1 127.0.0.1 POST /apips/inspection/getrecord.html
+[ info ] larsun.com/apips/inspection/getrecord.html [运行时间：0.095436s][吞吐率：10.48req/s] [内存消耗：2,414.17kb] [文件加载：71]
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:223]
+---------------------------------------------------------------
+[ 2018-08-15T10:00:28+08:00 ] 127.0.0.1 127.0.0.1 POST /apips/inspection/getrecord.html
+[ info ] larsun.com/apips/inspection/getrecord.html [运行时间：0.071602s][吞吐率：13.97req/s] [内存消耗：2,408.47kb] [文件加载：71]
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:223]
+---------------------------------------------------------------
+[ 2018-08-15T10:01:27+08:00 ] 127.0.0.1 127.0.0.1 POST /apips/inspection/getrecord.html
+[ info ] larsun.com/apips/inspection/getrecord.html [运行时间：0.102914s][吞吐率：9.72req/s] [内存消耗：2,487.43kb] [文件加载：74]
+[ error ] [0]致命错误: Cannot use object of type stdClass as array[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:223]
+---------------------------------------------------------------
+[ 2018-08-15T10:01:59+08:00 ] 127.0.0.1 127.0.0.1 POST /apips/inspection/getrecord.html
+[ info ] larsun.com/apips/inspection/getrecord.html [运行时间：0.104444s][吞吐率：9.57req/s] [内存消耗：2,487.44kb] [文件加载：74]
+[ error ] [0]致命错误: Cannot use object of type stdClass as array[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:224]
+---------------------------------------------------------------
+[ 2018-08-15T10:16:01+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.089787s][吞吐率：11.14req/s] [内存消耗：2,424.98kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected 'if' (T_IF)[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:202]
+---------------------------------------------------------------
+[ 2018-08-15T10:16:09+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.087078s][吞吐率：11.48req/s] [内存消耗：2,424.98kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected 'if' (T_IF)[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:202]
+---------------------------------------------------------------
+[ 2018-08-15T10:16:12+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.087055s][吞吐率：11.49req/s] [内存消耗：2,419.02kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected 'if' (T_IF)[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:202]
+---------------------------------------------------------------
+[ 2018-08-15T10:16:16+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.112977s][吞吐率：8.85req/s] [内存消耗：2,424.98kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected 'if' (T_IF)[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:202]
+---------------------------------------------------------------
+[ 2018-08-15T10:24:06+08:00 ] 127.0.0.1 127.0.0.1 POST /apips/inspection/getrecord.html
+[ info ] larsun.com/apips/inspection/getrecord.html [运行时间：0.113836s][吞吐率：8.78req/s] [内存消耗：2,488.14kb] [文件加载：75]
+[ error ] [8]未定义变量: uid[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:202]
+---------------------------------------------------------------
+[ 2018-08-15T10:34:44+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/addone.html
+[ info ] 192.168.3.70/apips/inspection/addone.html [运行时间：0.082999s][吞吐率：12.05req/s] [内存消耗：2,413.16kb] [文件加载：71]
+[ error ] [0]语法解析错误: syntax error, unexpected '}', expecting ';'[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:274]
+---------------------------------------------------------------
+[ 2018-08-15T10:34:47+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/addone.html
+[ info ] 192.168.3.70/apips/inspection/addone.html [运行时间：0.057519s][吞吐率：17.39req/s] [内存消耗：2,407.20kb] [文件加载：71]
+[ error ] [0]语法解析错误: syntax error, unexpected '}', expecting ';'[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:274]
+---------------------------------------------------------------
+[ 2018-08-15T10:35:13+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/addone.html
+[ info ] 192.168.3.70/apips/inspection/addone.html [运行时间：0.092323s][吞吐率：10.83req/s] [内存消耗：2,413.16kb] [文件加载：71]
+[ error ] [0]语法解析错误: syntax error, unexpected '}', expecting ';'[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:273]
+---------------------------------------------------------------
+[ 2018-08-15T10:35:39+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/inspectionAdd
+[ info ] 192.168.3.70/apips/inspection/inspectionAdd [运行时间：0.097112s][吞吐率：10.30req/s] [内存消耗：2,426.59kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected '$role' (T_VARIABLE)[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:200]
+---------------------------------------------------------------
+[ 2018-08-15T10:36:40+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/addone.html
+[ info ] 192.168.3.70/apips/inspection/addone.html [运行时间：0.086755s][吞吐率：11.53req/s] [内存消耗：2,413.16kb] [文件加载：71]
+[ error ] [0]语法解析错误: syntax error, unexpected '$role' (T_VARIABLE)[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:200]
+---------------------------------------------------------------
+[ 2018-08-15T10:36:55+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.094118s][吞吐率：10.62req/s] [内存消耗：2,424.98kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected '$role' (T_VARIABLE)[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:200]
+---------------------------------------------------------------
+[ 2018-08-15T10:37:35+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.085081s][吞吐率：11.75req/s] [内存消耗：2,424.98kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected '$role' (T_VARIABLE)[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:200]
+---------------------------------------------------------------
+[ 2018-08-15T10:37:45+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.100153s][吞吐率：9.98req/s] [内存消耗：2,424.98kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected '$role' (T_VARIABLE)[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:200]
+---------------------------------------------------------------
+[ 2018-08-15T10:37:51+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.091862s][吞吐率：10.89req/s] [内存消耗：2,424.98kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected '$role' (T_VARIABLE)[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:200]
+---------------------------------------------------------------
+[ 2018-08-15T10:37:56+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.081849s][吞吐率：12.22req/s] [内存消耗：2,424.98kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected '$role' (T_VARIABLE)[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:200]
+---------------------------------------------------------------
+[ 2018-08-15T10:38:03+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.084002s][吞吐率：11.90req/s] [内存消耗：2,424.98kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected '$role' (T_VARIABLE)[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:200]
+---------------------------------------------------------------
+[ 2018-08-15T10:39:32+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.094121s][吞吐率：10.62req/s] [内存消耗：2,424.98kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected '$role' (T_VARIABLE)[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:200]
+---------------------------------------------------------------
+[ 2018-08-15T10:40:15+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.090815s][吞吐率：11.01req/s] [内存消耗：2,424.98kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected '$role' (T_VARIABLE)[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:200]
+---------------------------------------------------------------
+[ 2018-08-15T10:41:16+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.090676s][吞吐率：11.03req/s] [内存消耗：2,424.98kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected '$role' (T_VARIABLE)[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:200]
+---------------------------------------------------------------
+[ 2018-08-15T10:45:01+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.096756s][吞吐率：10.34req/s] [内存消耗：2,424.98kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected '$role' (T_VARIABLE)[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:200]
+---------------------------------------------------------------
+[ 2018-08-15T10:54:54+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.113683s][吞吐率：8.80req/s] [内存消耗：2,424.98kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected '$role' (T_VARIABLE)[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:201]
+---------------------------------------------------------------
+[ 2018-08-15T10:55:41+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.091397s][吞吐率：10.94req/s] [内存消耗：2,424.98kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected '}', expecting ';'[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:300]
+---------------------------------------------------------------
+[ 2018-08-15T10:56:02+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.088473s][吞吐率：11.30req/s] [内存消耗：2,424.98kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected '}', expecting ';'[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:300]
+---------------------------------------------------------------
+[ 2018-08-15T11:04:58+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/Inspection/addOne
+[ info ] 192.168.3.70/apips/Inspection/addOne [运行时间：0.100556s][吞吐率：9.94req/s] [内存消耗：2,425.51kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected ';'[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:304]
+---------------------------------------------------------------
+[ 2018-08-15T11:05:10+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.094858s][吞吐率：10.54req/s] [内存消耗：2,425.47kb] [文件加载：72]
+[ error ] [0]语法解析错误: syntax error, unexpected ';'[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:304]
+---------------------------------------------------------------
+[ 2018-08-15T11:13:16+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/api/apiedit.html
+[ info ] larsun.com/ps/api/apiedit.html [运行时间：0.079099s][吞吐率：12.64req/s] [内存消耗：2,052.16kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-15T11:14:12+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agriculture.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/agriculture.html?_pjax=.content [运行时间：0.110428s][吞吐率：9.06req/s] [内存消耗：2,636.07kb] [文件加载：78]
+[ error ] [8]未定义数组索引: purchase_id[D:\PHPTutorial\WWW\geek\app\ps\model\PsInspection.php:19]
+---------------------------------------------------------------
+[ 2018-08-15T11:14:15+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agriculture?action=getUnmarkData&type=1
+[ info ] larsun.com/ps/inspection/agriculture?action=getUnmarkData&type=1 [运行时间：0.071796s][吞吐率：13.93req/s] [内存消耗：2,655.93kb] [文件加载：71]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.009885s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHook @app_init [ RunTime:0.000727s ]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\geek\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ps',
+    1 => 'inspection',
+    2 => 'agriculture',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1533863063,1534122186,1534209093,1534226327; PHPSESSID=2m1q8sq4412nv2ghfr7u4mn13q; Hm_lpvt_afc2b8bbe5afca7b1c77c05445eadd98=1534302853',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://larsun.com/ps/inspection/agriculture.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://larsun.com',
+  'accept' => '*/*',
+  'content-length' => '13',
+  'connection' => 'keep-alive',
+  'host' => 'larsun.com',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'getUnmarkData',
+  'type' => '1',
+  'purchase_id' => '3',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000210s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\ps\controller\Inspection->Agriculture[ D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010734s ] mysql:dbname=geek;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_menu` [ RunTime:0.014343s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `status` <> -1 ORDER BY `sort` [ RunTime:0.001019s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 131,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_ps_inspection_record` [ RunTime:0.007181s ]
+[ sql ] [ SQL ] SELECT `ps_inspection_record`.`goods_batch`,`ps_inspection_record`.`record_type`,`ps_inspection_record`.`record_date`,`ps_inspection`.`goods_id`,`ps_inspection`.`id`,`ps_inspection`.`name`,`ps_inspection`.`inspect_time`,`ps_inspection`.`product_total`,`ps_inspection`.`product_select`,`ps_inspection`.`production_date`,`ps_inspection`.`expire_date`,`ps_inspection`.`unqualified_rate`,`ps_inspection`.`is_qualified`,`ps_inspection`.`is_certificate`,`ps_inspection`.`remark`,`ps_inspection`.`product_unit`,`ps_inspection`.`unqualified_num`,`provider`.`name` AS `provider` FROM `qwj_ps_inspection_record` `ps_inspection_record` INNER JOIN `qwj_ps_inspection` `ps_inspection` ON `ps_inspection_record`.`id`=`ps_inspection`.`record_id` LEFT JOIN `qwj_provider` `provider` ON `ps_inspection`.`provider_id`=`provider`.`id` WHERE  `purchase_id` = 3  AND `ps_inspection`.`status` = '1'  AND `ps_inspection_record`.`record_type` = '1' [ RunTime:0.000448s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'ps_inspection',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 16,
+  'extra' => 'Using where',
+) ]
+[ warn ] SQL:SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `status` <> :where_status ORDER BY `sort` [Using where; Using filesort]
+[ error ] 订单id为3的商品数据获取错误
+---------------------------------------------------------------
+[ 2018-08-15T11:14:27+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agriculture.html?review=11
+[ info ] larsun.com/ps/inspection/agriculture.html?review=11 [运行时间：0.075300s][吞吐率：13.28req/s] [内存消耗：2,060.97kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-15T11:16:21+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/Inspection/addOne
+[ info ] 192.168.3.70/apips/Inspection/addOne [运行时间：0.097168s][吞吐率：10.29req/s] [内存消耗：2,503.09kb] [文件加载：76]
+[ error ] [2]ucfirst() expects parameter 1 to be string, array given[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:521]
+---------------------------------------------------------------
+[ 2018-08-15T11:16:41+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/Inspection/addOne
+[ info ] 192.168.3.70/apips/Inspection/addOne [运行时间：0.072422s][吞吐率：13.81req/s] [内存消耗：2,503.09kb] [文件加载：76]
+[ error ] [2]ucfirst() expects parameter 1 to be string, array given[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:521]
+---------------------------------------------------------------
+[ 2018-08-15T11:19:11+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/Inspection/addOne
+[ info ] 192.168.3.70/apips/Inspection/addOne [运行时间：0.099200s][吞吐率：10.08req/s] [内存消耗：2,509.04kb] [文件加载：76]
+[ error ] [2]ucfirst() expects parameter 1 to be string, array given[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:521]
+---------------------------------------------------------------
+[ 2018-08-15T11:40:26+08:00 ] 127.0.0.1 127.0.0.1 POST /apips/inspection/recorddel.html
+[ info ] larsun.com/apips/inspection/recorddel.html [运行时间：0.088954s][吞吐率：11.24req/s] [内存消耗：2,473.52kb] [文件加载：73]
+[ error ] [8]未定义变量: update[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:316]
+---------------------------------------------------------------
+[ 2018-08-15T11:40:30+08:00 ] 127.0.0.1 127.0.0.1 POST /apips/inspection/recorddel.html
+[ info ] larsun.com/apips/inspection/recorddel.html [运行时间：0.098346s][吞吐率：10.17req/s] [内存消耗：2,473.52kb] [文件加载：73]
+[ error ] [8]未定义变量: update[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:316]
+---------------------------------------------------------------
+[ 2018-08-15T11:40:58+08:00 ] 127.0.0.1 127.0.0.1 POST /apips/inspection/recorddel.html
+[ info ] larsun.com/apips/inspection/recorddel.html [运行时间：0.095402s][吞吐率：10.48req/s] [内存消耗：2,514.39kb] [文件加载：76]
+[ error ] [2]Illegal string offset 'id'[D:\PHPTutorial\WWW\geek\app\apips\model\PsInspectionRecord.php:15]
+---------------------------------------------------------------
+[ 2018-08-15T11:43:23+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/storage.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/storage.html?_pjax=.content [运行时间：0.122938s][吞吐率：8.13req/s] [内存消耗：2,573.10kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T11:50:31+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/sorting.html?_pjax=.content [运行时间：0.085136s][吞吐率：11.75req/s] [内存消耗：2,567.32kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T11:50:34+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agriculture.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/agriculture.html?_pjax=.content [运行时间：0.099851s][吞吐率：10.01req/s] [内存消耗：2,636.07kb] [文件加载：78]
+[ error ] [8]未定义数组索引: purchase_id[D:\PHPTutorial\WWW\geek\app\ps\model\PsInspection.php:19]
+---------------------------------------------------------------
+[ 2018-08-15T11:50:35+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/mark.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/mark.html?_pjax=.content [运行时间：0.097803s][吞吐率：10.22req/s] [内存消耗：2,591.57kb] [文件加载：79]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '_pjax' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-15T11:50:37+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/fresh.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/fresh.html?_pjax=.content [运行时间：0.068328s][吞吐率：14.64req/s] [内存消耗：2,630.06kb] [文件加载：78]
+[ error ] [8]未定义数组索引: purchase_id[D:\PHPTutorial\WWW\geek\app\ps\model\PsInspection.php:19]
+---------------------------------------------------------------
+[ 2018-08-15T11:50:39+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/mark.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/mark.html?_pjax=.content [运行时间：0.105832s][吞吐率：9.45req/s] [内存消耗：2,597.48kb] [文件加载：79]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '_pjax' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-15T11:50:47+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/packing.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/packing.html?_pjax=.content [运行时间：0.122269s][吞吐率：8.18req/s] [内存消耗：2,597.53kb] [文件加载：79]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '_pjax' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-15T11:50:47+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/packing.html
+[ info ] larsun.com/ps/inspection/packing.html [运行时间：0.089397s][吞吐率：11.19req/s] [内存消耗：2,753.73kb] [文件加载：72]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.013699s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHook @app_init [ RunTime:0.000904s ]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\geek\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ps',
+    1 => 'inspection',
+    2 => 'packing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1533863063,1534122186,1534209093,1534226327; PHPSESSID=2m1q8sq4412nv2ghfr7u4mn13q; Hm_lpvt_afc2b8bbe5afca7b1c77c05445eadd98=1534305039',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://larsun.com/ps/inspection/mark.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'larsun.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000212s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\ps\controller\Inspection->packing[ D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011042s ] mysql:dbname=geek;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_menu` [ RunTime:0.008790s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `status` <> -1 ORDER BY `sort` [ RunTime:0.000790s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 131,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `url` = 'inspection/packing'  AND `module` = 'ps' LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 131,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `id` = 253 LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `id` = 249 LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `id` = 239 LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SELECT `name` FROM `qwj_menu` WHERE  `module` = 'ps'  AND `url` = 'inspection/packing' LIMIT 1 [ RunTime:0.000478s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 131,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_ps_inspection_record` [ RunTime:0.006686s ]
+[ sql ] [ SQL ] SELECT `purchase_id` FROM `qwj_ps_inspection_record` WHERE  `record_type` = 4 ORDER BY purchase_id desc LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_ps_inspection_record',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 17,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ sql ] [ SQL ] SELECT `ps_inspection_record`.`goods_batch`,`ps_inspection_record`.`record_type`,`ps_inspection_record`.`record_date`,`ps_inspection`.`goods_id`,`ps_inspection`.`id`,`ps_inspection`.`name`,`ps_inspection`.`inspect_time`,`ps_inspection`.`product_total`,`ps_inspection`.`product_select`,`ps_inspection`.`production_date`,`ps_inspection`.`expire_date`,`ps_inspection`.`unqualified_rate`,`ps_inspection`.`is_qualified`,`ps_inspection`.`is_certificate`,`ps_inspection`.`remark`,`ps_inspection`.`product_unit`,`ps_inspection`.`unqualified_num`,`provider`.`name` AS `provider` FROM `qwj_ps_inspection_record` `ps_inspection_record` INNER JOIN `qwj_ps_inspection` `ps_inspection` ON `ps_inspection_record`.`id`=`ps_inspection`.`record_id` LEFT JOIN `qwj_provider` `provider` ON `ps_inspection`.`provider_id`=`provider`.`id` WHERE  `purchase_id` = null  AND `ps_inspection`.`status` = '1'  AND `ps_inspection_record`.`record_type` = 4 [ RunTime:0.000457s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'ps_inspection',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 17,
+  'extra' => 'Using where',
+) ]
+[ warn ] SQL:SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `status` <> :where_status ORDER BY `sort` [Using where; Using filesort]
+[ warn ] SQL:SELECT `purchase_id` FROM `qwj_ps_inspection_record` WHERE  `record_type` = :where_record_type ORDER BY purchase_id desc LIMIT 1  [Using where; Using filesort]
+[ error ] 订单id为的商品数据获取错误
+---------------------------------------------------------------
+[ 2018-08-15T11:50:49+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/fresh.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/fresh.html?_pjax=.content [运行时间：0.074956s][吞吐率：13.34req/s] [内存消耗：2,630.06kb] [文件加载：78]
+[ error ] [8]未定义数组索引: purchase_id[D:\PHPTutorial\WWW\geek\app\ps\model\PsInspection.php:19]
+---------------------------------------------------------------
+[ 2018-08-15T11:50:51+08:00 ] 127.0.0.1 127.0.0.1 GET /apips/index/index.html
+[ info ] larsun.com/apips/index/index.html [运行时间：0.072769s][吞吐率：13.74req/s] [内存消耗：2,060.80kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-15T11:57:32+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/api/apilist.html?_pjax=.content&page=1&_pjax=.content
+[ info ] larsun.com/ps/api/apilist.html?_pjax=.content&page=1&_pjax=.content [运行时间：0.076581s][吞吐率：13.06req/s] [内存消耗：2,050.66kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-15T11:57:32+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/api/apilist.html?page=1
+[ info ] larsun.com/ps/api/apilist.html?page=1 [运行时间：0.064481s][吞吐率：15.51req/s] [内存消耗：2,057.25kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-15T14:33:21+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/sorting.html?_pjax=.content [运行时间：0.122598s][吞吐率：8.16req/s] [内存消耗：2,573.25kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T14:38:56+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/Inspection/addOne
+[ info ] 192.168.3.70/apips/Inspection/addOne [运行时间：0.076512s][吞吐率：13.07req/s] [内存消耗：2,510.91kb] [文件加载：76]
+[ error ] [2]ucfirst() expects parameter 1 to be string, array given[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:521]
+---------------------------------------------------------------
+[ 2018-08-15T15:04:16+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/Inspection/addOne
+[ info ] 192.168.3.70/apips/Inspection/addOne [运行时间：0.109475s][吞吐率：9.13req/s] [内存消耗：2,516.87kb] [文件加载：76]
+[ error ] [2]ucfirst() expects parameter 1 to be string, array given[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:521]
+---------------------------------------------------------------
+[ 2018-08-15T15:42:09+08:00 ] 192.168.3.70 192.168.3.129 GET /ps/inspection/mark.html?_pjax=.content
+[ info ] 192.168.3.70/ps/inspection/mark.html?_pjax=.content [运行时间：0.103516s][吞吐率：9.66req/s] [内存消耗：2,597.43kb] [文件加载：79]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '_pjax' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-15T15:53:44+08:00 ] 192.168.3.70 192.168.3.129 GET /ps/inspection/mark.html?_pjax=.content
+[ info ] 192.168.3.70/ps/inspection/mark.html?_pjax=.content [运行时间：0.103584s][吞吐率：9.65req/s] [内存消耗：2,597.43kb] [文件加载：79]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '_pjax' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-15T15:54:22+08:00 ] 192.168.3.70 192.168.3.129 GET /ps/inspection/agriculture.html?_pjax=.content
+[ info ] 192.168.3.70/ps/inspection/agriculture.html?_pjax=.content [运行时间：0.078509s][吞吐率：12.74req/s] [内存消耗：2,630.09kb] [文件加载：78]
+[ error ] [8]未定义数组索引: purchase_id[D:\PHPTutorial\WWW\geek\app\ps\model\PsInspection.php:19]
+---------------------------------------------------------------
+[ 2018-08-15T15:54:23+08:00 ] 192.168.3.70 192.168.3.129 GET /ps/inspection/mark.html?_pjax=.content
+[ info ] 192.168.3.70/ps/inspection/mark.html?_pjax=.content [运行时间：0.104037s][吞吐率：9.61req/s] [内存消耗：2,597.43kb] [文件加载：79]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '_pjax' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-15T15:54:23+08:00 ] 192.168.3.70 192.168.3.129 GET /ps/inspection/mark.html
+[ info ] 192.168.3.70/ps/inspection/mark.html [运行时间：0.079480s][吞吐率：12.58req/s] [内存消耗：2,754.77kb] [文件加载：72]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.010096s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHook @app_init [ RunTime:0.000900s ]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\geek\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ps',
+    1 => 'inspection',
+    2 => 'mark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1534127867,1534156754,1534210138,1534296477; PHPSESSID=tu5qh7nm4jao4h82hcddbknsc8; Hm_lpvt_afc2b8bbe5afca7b1c77c05445eadd98=1534319662',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.3.70/ps/inspection/agriculture.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '192.168.3.70',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000205s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\ps\controller\Inspection->mark[ D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000729s ] mysql:dbname=geek;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_menu` [ RunTime:0.006377s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `status` <> -1 ORDER BY `sort` [ RunTime:0.000650s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 131,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `url` = 'inspection/mark'  AND `module` = 'ps' LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 131,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `id` = 251 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `id` = 249 LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `id` = 239 LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SELECT `name` FROM `qwj_menu` WHERE  `module` = 'ps'  AND `url` = 'inspection/mark' LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 131,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_ps_inspection_record` [ RunTime:0.006506s ]
+[ sql ] [ SQL ] SELECT `purchase_id` FROM `qwj_ps_inspection_record` WHERE  `record_type` = 2 ORDER BY purchase_id desc LIMIT 1 [ RunTime:0.000171s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_ps_inspection_record',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 18,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ sql ] [ SQL ] SELECT `ps_inspection_record`.`goods_batch`,`ps_inspection_record`.`record_type`,`ps_inspection_record`.`record_date`,`ps_inspection`.`goods_id`,`ps_inspection`.`id`,`ps_inspection`.`name`,`ps_inspection`.`inspect_time`,`ps_inspection`.`product_total`,`ps_inspection`.`product_select`,`ps_inspection`.`production_date`,`ps_inspection`.`expire_date`,`ps_inspection`.`unqualified_rate`,`ps_inspection`.`is_qualified`,`ps_inspection`.`is_certificate`,`ps_inspection`.`remark`,`ps_inspection`.`product_unit`,`ps_inspection`.`unqualified_num`,`provider`.`name` AS `provider` FROM `qwj_ps_inspection_record` `ps_inspection_record` INNER JOIN `qwj_ps_inspection` `ps_inspection` ON `ps_inspection_record`.`id`=`ps_inspection`.`record_id` LEFT JOIN `qwj_provider` `provider` ON `ps_inspection`.`provider_id`=`provider`.`id` WHERE  `purchase_id` = 4  AND `ps_inspection`.`status` = '1'  AND `ps_inspection_record`.`record_type` = 2 [ RunTime:0.000342s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'ps_inspection',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 23,
+  'extra' => 'Using where',
+) ]
+[ warn ] SQL:SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `status` <> :where_status ORDER BY `sort` [Using where; Using filesort]
+[ warn ] SQL:SELECT `purchase_id` FROM `qwj_ps_inspection_record` WHERE  `record_type` = :where_record_type ORDER BY purchase_id desc LIMIT 1  [Using where; Using filesort]
+[ error ] 订单id为4的商品数据获取错误
+---------------------------------------------------------------
+[ 2018-08-15T15:54:25+08:00 ] 192.168.3.70 192.168.3.129 GET /ps/inspection/mark.html?_pjax=.content
+[ info ] 192.168.3.70/ps/inspection/mark.html?_pjax=.content [运行时间：0.084629s][吞吐率：11.82req/s] [内存消耗：2,591.43kb] [文件加载：79]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '_pjax' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-15T15:54:25+08:00 ] 192.168.3.70 192.168.3.129 GET /ps/inspection/mark.html
+[ info ] 192.168.3.70/ps/inspection/mark.html [运行时间：0.071043s][吞吐率：14.08req/s] [内存消耗：2,754.72kb] [文件加载：72]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.013183s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHook @app_init [ RunTime:0.000734s ]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\geek\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ps',
+    1 => 'inspection',
+    2 => 'mark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1534127867,1534156754,1534210138,1534296477; PHPSESSID=tu5qh7nm4jao4h82hcddbknsc8; Hm_lpvt_afc2b8bbe5afca7b1c77c05445eadd98=1534319663',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.3.70/ps/inspection/mark.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '192.168.3.70',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000208s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\ps\controller\Inspection->mark[ D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000877s ] mysql:dbname=geek;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_menu` [ RunTime:0.008407s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `status` <> -1 ORDER BY `sort` [ RunTime:0.000733s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 131,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `url` = 'inspection/mark'  AND `module` = 'ps' LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 131,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `id` = 251 LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `id` = 249 LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `id` = 239 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SELECT `name` FROM `qwj_menu` WHERE  `module` = 'ps'  AND `url` = 'inspection/mark' LIMIT 1 [ RunTime:0.000527s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 131,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_ps_inspection_record` [ RunTime:0.008605s ]
+[ sql ] [ SQL ] SELECT `purchase_id` FROM `qwj_ps_inspection_record` WHERE  `record_type` = 2 ORDER BY purchase_id desc LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_ps_inspection_record',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 18,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ sql ] [ SQL ] SELECT `ps_inspection_record`.`goods_batch`,`ps_inspection_record`.`record_type`,`ps_inspection_record`.`record_date`,`ps_inspection`.`goods_id`,`ps_inspection`.`id`,`ps_inspection`.`name`,`ps_inspection`.`inspect_time`,`ps_inspection`.`product_total`,`ps_inspection`.`product_select`,`ps_inspection`.`production_date`,`ps_inspection`.`expire_date`,`ps_inspection`.`unqualified_rate`,`ps_inspection`.`is_qualified`,`ps_inspection`.`is_certificate`,`ps_inspection`.`remark`,`ps_inspection`.`product_unit`,`ps_inspection`.`unqualified_num`,`provider`.`name` AS `provider` FROM `qwj_ps_inspection_record` `ps_inspection_record` INNER JOIN `qwj_ps_inspection` `ps_inspection` ON `ps_inspection_record`.`id`=`ps_inspection`.`record_id` LEFT JOIN `qwj_provider` `provider` ON `ps_inspection`.`provider_id`=`provider`.`id` WHERE  `purchase_id` = 4  AND `ps_inspection`.`status` = '1'  AND `ps_inspection_record`.`record_type` = 2 [ RunTime:0.000467s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'ps_inspection',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 23,
+  'extra' => 'Using where',
+) ]
+[ warn ] SQL:SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `status` <> :where_status ORDER BY `sort` [Using where; Using filesort]
+[ warn ] SQL:SELECT `purchase_id` FROM `qwj_ps_inspection_record` WHERE  `record_type` = :where_record_type ORDER BY purchase_id desc LIMIT 1  [Using where; Using filesort]
+[ error ] 订单id为4的商品数据获取错误
+---------------------------------------------------------------
+[ 2018-08-15T15:54:35+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/inspectionAdd
+[ info ] 192.168.3.70/apips/inspection/inspectionAdd [运行时间：0.101691s][吞吐率：9.83req/s] [内存消耗：2,421.45kb] [文件加载：68]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.036598s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHook @app_init [ RunTime:0.009878s ]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\geek\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'apips',
+    1 => 'inspection',
+    2 => 'inspectionAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://servicewechat.com/wx13e7e10d2d6c29f3/devtools/page-frame.html',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808100 MicroMessenger/6.5.7 Language/zh_CN webview/ token/e638003566471bf1e424359a9baa9d52',
+  'origin' => 'http://127.0.0.1:53156',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '367',
+  'connection' => 'keep-alive',
+  'host' => '192.168.3.70',
+)
+[ info ] [ PARAM ] array (
+  'user_token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJRaW5nV2FKaWEgSldUIiwiaWF0IjoxNTM0MjM5MTI4LCJleHAiOjMwNjg0NzgyNTYsImF1ZCI6IlFpbmdXYUppYSIsInN1YiI6IlFpbmdXYUppYSIsImRhdGEiOnsibWVtYmVyX2lkIjoyNywidXNlcm5hbWUiOiIxMzQ3NzAwODE3OCIsIm5pY2tuYW1lIjoiXHU3ZWZmXHU4NDFkIiwiY29tcGFueV9pZCI6M319.RBIKcP5UPi4Rlr6GoYB7mLrNNA8XaeYjX-gmLPjhMxo',
+  'type' => '2',
+  'purchase_id' => '2',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000419s ]
+[ info ] [ RUN ] app\apips\controller\Inspection->inspectionAdd[ D:\PHPTutorial\WWW\geek\app\apips\controller\Inspection.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010553s ] mysql:dbname=geek;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_config` [ RunTime:0.014303s ]
+[ sql ] [ SQL ] SELECT * FROM `qwj_config` [ RunTime:0.000433s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_config',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 27,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_hook` [ RunTime:0.006760s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`addon_list` FROM `qwj_hook` [ RunTime:0.000251s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_hook',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 3,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_api` [ RunTime:0.006987s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`group_id`,`request_type`,`api_url`,`describe`,`describe_text`,`is_request_data`,`request_data`,`response_data`,`is_response_data`,`is_user_token`,`is_response_sign`,`is_request_sign`,`response_examples`,`developer`,`api_status`,`is_page`,`sort`,`status`,`create_time`,`update_time` FROM `qwj_api` WHERE  `api_url` = 'inspection/inspectionadd' LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_api',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 20,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_ps_inspection_record` [ RunTime:0.006816s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `qwj_ps_inspection_record` WHERE  `purchase_id` = 2  AND `record_type` = 2 LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_ps_inspection_record',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 18,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SELECT `ps_inspection_record`.`goods_batch`,`ps_inspection_record`.`record_type`,`ps_inspection_record`.`record_date`,`ps_inspection`.`record_id`,`ps_inspection`.`goods_id`,`ps_inspection`.`id`,`ps_inspection`.`name`,`ps_inspection`.`inspect_time`,`ps_inspection`.`product_total`,`ps_inspection`.`product_select`,`ps_inspection`.`production_date`,`ps_inspection`.`expire_date`,`ps_inspection`.`unqualified_rate`,`ps_inspection`.`is_qualified`,`ps_inspection`.`is_certificate`,`ps_inspection`.`remark`,`ps_inspection`.`product_unit`,`ps_inspection`.`unqualified_num`,`provider`.`name` AS `provider` FROM `qwj_ps_inspection_record` `ps_inspection_record` INNER JOIN `qwj_ps_inspection` `ps_inspection` ON `ps_inspection_record`.`id`=`ps_inspection`.`record_id` INNER JOIN `qwj_provider` `provider` ON `ps_inspection`.`provider_id`=`provider`.`id` WHERE  `purchase_id` = 2  AND `ps_inspection`.`status` = '1'  AND `ps_inspection_record`.`record_type` = '2' [ RunTime:0.000440s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'ps_inspection',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 23,
+  'extra' => 'Using where',
+) ]
+[ error ] 订单id为2的商品数据获取错误
+---------------------------------------------------------------
+[ 2018-08-15T15:54:42+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/inspectionAdd
+[ info ] 192.168.3.70/apips/inspection/inspectionAdd [运行时间：0.090630s][吞吐率：11.03req/s] [内存消耗：2,421.45kb] [文件加载：68]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.035913s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHook @app_init [ RunTime:0.009921s ]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\geek\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'apips',
+    1 => 'inspection',
+    2 => 'inspectionAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://servicewechat.com/wx13e7e10d2d6c29f3/devtools/page-frame.html',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808100 MicroMessenger/6.5.7 Language/zh_CN webview/ token/e638003566471bf1e424359a9baa9d52',
+  'origin' => 'http://127.0.0.1:53156',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '367',
+  'connection' => 'keep-alive',
+  'host' => '192.168.3.70',
+)
+[ info ] [ PARAM ] array (
+  'user_token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJRaW5nV2FKaWEgSldUIiwiaWF0IjoxNTM0MjM5MTI4LCJleHAiOjMwNjg0NzgyNTYsImF1ZCI6IlFpbmdXYUppYSIsInN1YiI6IlFpbmdXYUppYSIsImRhdGEiOnsibWVtYmVyX2lkIjoyNywidXNlcm5hbWUiOiIxMzQ3NzAwODE3OCIsIm5pY2tuYW1lIjoiXHU3ZWZmXHU4NDFkIiwiY29tcGFueV9pZCI6M319.RBIKcP5UPi4Rlr6GoYB7mLrNNA8XaeYjX-gmLPjhMxo',
+  'type' => '2',
+  'purchase_id' => '4',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000422s ]
+[ info ] [ RUN ] app\apips\controller\Inspection->inspectionAdd[ D:\PHPTutorial\WWW\geek\app\apips\controller\Inspection.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010133s ] mysql:dbname=geek;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_config` [ RunTime:0.014319s ]
+[ sql ] [ SQL ] SELECT * FROM `qwj_config` [ RunTime:0.000363s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_config',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 27,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_hook` [ RunTime:0.006868s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`addon_list` FROM `qwj_hook` [ RunTime:0.000291s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_hook',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 3,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_api` [ RunTime:0.006729s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`group_id`,`request_type`,`api_url`,`describe`,`describe_text`,`is_request_data`,`request_data`,`response_data`,`is_response_data`,`is_user_token`,`is_response_sign`,`is_request_sign`,`response_examples`,`developer`,`api_status`,`is_page`,`sort`,`status`,`create_time`,`update_time` FROM `qwj_api` WHERE  `api_url` = 'inspection/inspectionadd' LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_api',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 20,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_ps_inspection_record` [ RunTime:0.006784s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `qwj_ps_inspection_record` WHERE  `purchase_id` = 4  AND `record_type` = 2 LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_ps_inspection_record',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 18,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SELECT `ps_inspection_record`.`goods_batch`,`ps_inspection_record`.`record_type`,`ps_inspection_record`.`record_date`,`ps_inspection`.`record_id`,`ps_inspection`.`goods_id`,`ps_inspection`.`id`,`ps_inspection`.`name`,`ps_inspection`.`inspect_time`,`ps_inspection`.`product_total`,`ps_inspection`.`product_select`,`ps_inspection`.`production_date`,`ps_inspection`.`expire_date`,`ps_inspection`.`unqualified_rate`,`ps_inspection`.`is_qualified`,`ps_inspection`.`is_certificate`,`ps_inspection`.`remark`,`ps_inspection`.`product_unit`,`ps_inspection`.`unqualified_num`,`provider`.`name` AS `provider` FROM `qwj_ps_inspection_record` `ps_inspection_record` INNER JOIN `qwj_ps_inspection` `ps_inspection` ON `ps_inspection_record`.`id`=`ps_inspection`.`record_id` INNER JOIN `qwj_provider` `provider` ON `ps_inspection`.`provider_id`=`provider`.`id` WHERE  `purchase_id` = 4  AND `ps_inspection`.`status` = '1'  AND `ps_inspection_record`.`record_type` = '2' [ RunTime:0.000559s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'ps_inspection',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 23,
+  'extra' => 'Using where',
+) ]
+[ error ] 订单id为4的商品数据获取错误
+---------------------------------------------------------------
+[ 2018-08-15T15:57:15+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/sorting.html?_pjax=.content [运行时间：0.082886s][吞吐率：12.06req/s] [内存消耗：2,567.37kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T16:05:40+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/sorting.html?_pjax=.content [运行时间：0.111822s][吞吐率：8.94req/s] [内存消耗：2,573.32kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T16:08:27+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/sorting.html?record_date=2018-08-14
+[ info ] larsun.com/ps/inspection/sorting.html?record_date=2018-08-14 [运行时间：0.070508s][吞吐率：14.18req/s] [内存消耗：2,496.38kb] [文件加载：75]
+[ error ] [0]数据表字段不存在:[record_date][D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Builder.php:107]
+---------------------------------------------------------------
+[ 2018-08-15T16:08:30+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html
+[ info ] larsun.com/ps/inspection/sorting.html [运行时间：0.090535s][吞吐率：11.05req/s] [内存消耗：2,595.29kb] [文件加载：79]
+[ error ] [8]未定义数组索引: record_date[D:\PHPTutorial\WWW\geek\app\ps\logic\InspectionSort.php:91]
+---------------------------------------------------------------
+[ 2018-08-15T16:08:32+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html
+[ info ] larsun.com/ps/inspection/sorting.html [运行时间：0.093665s][吞吐率：10.68req/s] [内存消耗：2,595.62kb] [文件加载：79]
+[ error ] [8]未定义数组索引: record_date[D:\PHPTutorial\WWW\geek\app\ps\logic\InspectionSort.php:91]
+---------------------------------------------------------------
+[ 2018-08-15T16:09:28+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/sorting.html?record_date=2018-08-14
+[ info ] larsun.com/ps/inspection/sorting.html?record_date=2018-08-14 [运行时间：0.071780s][吞吐率：13.93req/s] [内存消耗：2,496.38kb] [文件加载：75]
+[ error ] [0]数据表字段不存在:[record_date][D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Builder.php:107]
+---------------------------------------------------------------
+[ 2018-08-15T16:09:34+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/sorting.html?record_date=2018-08-14
+[ info ] larsun.com/ps/inspection/sorting.html?record_date=2018-08-14 [运行时间：0.102760s][吞吐率：9.73req/s] [内存消耗：2,502.12kb] [文件加载：75]
+[ error ] [0]数据表字段不存在:[record_date][D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Builder.php:107]
+---------------------------------------------------------------
+[ 2018-08-15T16:10:31+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/sorting.html?record_date=2018-08-14
+[ info ] larsun.com/ps/inspection/sorting.html?record_date=2018-08-14 [运行时间：0.079525s][吞吐率：12.57req/s] [内存消耗：2,496.38kb] [文件加载：75]
+[ error ] [0]数据表字段不存在:[record_date][D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Builder.php:107]
+---------------------------------------------------------------
+[ 2018-08-15T16:10:33+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?record_date=2018-08-14
+[ info ] larsun.com/ps/inspection/sorting.html?record_date=2018-08-14 [运行时间：0.085220s][吞吐率：11.73req/s] [内存消耗：2,060.96kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-15T16:10:35+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/sorting.html?record_date=2018-08-14
+[ info ] larsun.com/ps/inspection/sorting.html?record_date=2018-08-14 [运行时间：0.080366s][吞吐率：12.44req/s] [内存消耗：2,496.38kb] [文件加载：75]
+[ error ] [0]数据表字段不存在:[record_date][D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Builder.php:107]
+---------------------------------------------------------------
+[ 2018-08-15T16:19:23+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/sorting.html
+[ info ] larsun.com/ps/inspection/sorting.html [运行时间：0.056778s][吞吐率：17.61req/s] [内存消耗：2,050.16kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-15T16:20:24+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?record_date=2018-08-14
+[ info ] larsun.com/ps/inspection/sorting.html?record_date=2018-08-14 [运行时间：0.141976s][吞吐率：7.04req/s] [内存消耗：2,760.66kb] [文件加载：80]
+[ error ] [0]模板标签错误:empty[D:\PHPTutorial\WWW\geek\thinkphp\library\think\template\TagLib.php:275]
+---------------------------------------------------------------
+[ 2018-08-15T16:20:31+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?record_date=2018-08-14
+[ info ] larsun.com/ps/inspection/sorting.html?record_date=2018-08-14 [运行时间：0.117853s][吞吐率：8.49req/s] [内存消耗：2,762.60kb] [文件加载：80]
+[ error ] [0]语法解析错误: syntax error, unexpected 'instanceof' (T_INSTANCEOF)[D:\PHPTutorial\WWW\geek\runtime\temp\599723bef7c5b1103b20b7d253915108.php:259]
+---------------------------------------------------------------
+[ 2018-08-15T16:20:55+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?record_date=2018-08-14
+[ info ] larsun.com/ps/inspection/sorting.html?record_date=2018-08-14 [运行时间：0.114801s][吞吐率：8.71req/s] [内存消耗：2,768.12kb] [文件加载：80]
+[ error ] [0]语法解析错误: syntax error, unexpected 'instanceof' (T_INSTANCEOF)[D:\PHPTutorial\WWW\geek\runtime\temp\599723bef7c5b1103b20b7d253915108.php:259]
+---------------------------------------------------------------
+[ 2018-08-15T16:20:56+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?record_date=2018-08-14
+[ info ] larsun.com/ps/inspection/sorting.html?record_date=2018-08-14 [运行时间：0.117349s][吞吐率：8.52req/s] [内存消耗：2,762.60kb] [文件加载：80]
+[ error ] [0]语法解析错误: syntax error, unexpected 'instanceof' (T_INSTANCEOF)[D:\PHPTutorial\WWW\geek\runtime\temp\599723bef7c5b1103b20b7d253915108.php:259]
+---------------------------------------------------------------
+[ 2018-08-15T16:21:18+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?record_date=2018-08-14
+[ info ] larsun.com/ps/inspection/sorting.html?record_date=2018-08-14 [运行时间：0.140204s][吞吐率：7.13req/s] [内存消耗：2,768.12kb] [文件加载：80]
+[ error ] [0]语法解析错误: syntax error, unexpected 'instanceof' (T_INSTANCEOF)[D:\PHPTutorial\WWW\geek\runtime\temp\599723bef7c5b1103b20b7d253915108.php:259]
+---------------------------------------------------------------
+[ 2018-08-15T16:21:44+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/Inspection/addOne
+[ info ] 192.168.3.70/apips/Inspection/addOne [运行时间：0.114549s][吞吐率：8.73req/s] [内存消耗：2,516.87kb] [文件加载：76]
+[ error ] [2]ucfirst() expects parameter 1 to be string, array given[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:521]
+---------------------------------------------------------------
+[ 2018-08-15T16:21:46+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?record_date=2018-08-14
+[ info ] larsun.com/ps/inspection/sorting.html?record_date=2018-08-14 [运行时间：0.129774s][吞吐率：7.71req/s] [内存消耗：2,762.60kb] [文件加载：80]
+[ error ] [0]语法解析错误: syntax error, unexpected ')', expecting identifier (T_STRING)[D:\PHPTutorial\WWW\geek\runtime\temp\599723bef7c5b1103b20b7d253915108.php:259]
+---------------------------------------------------------------
+[ 2018-08-15T16:22:41+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/storage.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/storage.html?_pjax=.content [运行时间：0.099804s][吞吐率：10.02req/s] [内存消耗：2,567.20kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T16:22:44+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/sorting.html?_pjax=.content [运行时间：0.103391s][吞吐率：9.67req/s] [内存消耗：2,573.27kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T16:22:49+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/storage.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/storage.html?_pjax=.content [运行时间：0.117018s][吞吐率：8.55req/s] [内存消耗：2,573.15kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T16:23:13+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/storage.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/storage.html?_pjax=.content [运行时间：0.112585s][吞吐率：8.88req/s] [内存消耗：2,573.10kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T16:23:16+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/sorting.html?_pjax=.content [运行时间：0.088656s][吞吐率：11.28req/s] [内存消耗：2,567.32kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T16:24:09+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/Inspection/addOne
+[ info ] 192.168.3.70/apips/Inspection/addOne [运行时间：0.125040s][吞吐率：8.00req/s] [内存消耗：2,516.87kb] [文件加载：76]
+[ error ] [2]ucfirst() expects parameter 1 to be string, array given[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:521]
+---------------------------------------------------------------
+[ 2018-08-15T16:25:07+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/Inspection/addOne
+[ info ] 192.168.3.70/apips/Inspection/addOne [运行时间：0.120420s][吞吐率：8.30req/s] [内存消耗：2,516.87kb] [文件加载：76]
+[ error ] [2]ucfirst() expects parameter 1 to be string, array given[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:521]
+---------------------------------------------------------------
+[ 2018-08-15T16:25:16+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/storage.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/storage.html?_pjax=.content [运行时间：0.118965s][吞吐率：8.41req/s] [内存消耗：2,573.10kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T16:25:19+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/sorting.html?_pjax=.content [运行时间：0.100532s][吞吐率：9.95req/s] [内存消耗：2,567.32kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T16:25:20+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/storage.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/storage.html?_pjax=.content [运行时间：0.103978s][吞吐率：9.62req/s] [内存消耗：2,573.10kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T16:25:24+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/storage.html?shift=2
+[ info ] larsun.com/ps/inspection/storage.html?shift=2 [运行时间：0.087917s][吞吐率：11.37req/s] [内存消耗：2,061.02kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-15T16:25:31+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/storage.html?record_date=2018-08-14
+[ info ] larsun.com/ps/inspection/storage.html?record_date=2018-08-14 [运行时间：0.070648s][吞吐率：14.15req/s] [内存消耗：2,057.45kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-15T16:28:05+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/storage.html?record_date=2018-08-14
+[ info ] larsun.com/ps/inspection/storage.html?record_date=2018-08-14 [运行时间：0.105817s][吞吐率：9.45req/s] [内存消耗：2,501.95kb] [文件加载：75]
+[ error ] [0]数据表字段不存在:[record_date][D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Builder.php:107]
+---------------------------------------------------------------
+[ 2018-08-15T16:28:49+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/recordlist.html?action=recordDel
+[ info ] larsun.com/ps/inspection/recordlist.html?action=recordDel [运行时间：0.064939s][吞吐率：15.40req/s] [内存消耗：2,050.16kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-15T16:29:26+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/Inspection/addOne
+[ info ] 192.168.3.70/apips/Inspection/addOne [运行时间：0.090988s][吞吐率：10.99req/s] [内存消耗：2,516.87kb] [文件加载：76]
+[ error ] [2]ucfirst() expects parameter 1 to be string, array given[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:521]
+---------------------------------------------------------------
+[ 2018-08-15T16:29:57+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/storage.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/storage.html?_pjax=.content [运行时间：0.114438s][吞吐率：8.74req/s] [内存消耗：2,573.10kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T16:30:06+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/storage.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/storage.html?_pjax=.content [运行时间：0.124437s][吞吐率：8.04req/s] [内存消耗：2,573.10kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T16:49:21+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/mark.html?edit=4
+[ info ] larsun.com/ps/inspection/mark.html?edit=4 [运行时间：0.102543s][吞吐率：9.75req/s] [内存消耗：2,601.72kb] [文件加载：80]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'edit' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-15T16:49:26+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/mark.html?edit=4
+[ info ] larsun.com/ps/inspection/mark.html?edit=4 [运行时间：0.133425s][吞吐率：7.49req/s] [内存消耗：2,607.88kb] [文件加载：80]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'edit' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-15T16:51:34+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/recordlist.html
+[ info ] larsun.com/ps/inspection/recordlist.html [运行时间：0.075234s][吞吐率：13.29req/s] [内存消耗：2,060.89kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-15T16:51:36+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/mark.html?edit=4
+[ info ] larsun.com/ps/inspection/mark.html?edit=4 [运行时间：0.099225s][吞吐率：10.08req/s] [内存消耗：2,601.72kb] [文件加载：80]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'edit' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-15T16:54:03+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/sorting.html?_pjax=.content [运行时间：0.080832s][吞吐率：12.37req/s] [内存消耗：2,567.37kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T16:54:05+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/sorting.html
+[ info ] larsun.com/ps/inspection/sorting.html [运行时间：0.066426s][吞吐率：15.05req/s] [内存消耗：2,050.06kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-15T16:55:57+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/sorting.html?edit=6
+[ info ] larsun.com/ps/inspection/sorting.html?edit=6 [运行时间：0.060918s][吞吐率：16.42req/s] [内存消耗：2,496.20kb] [文件加载：75]
+[ error ] [0]数据表字段不存在:[edit][D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Builder.php:107]
+---------------------------------------------------------------
+[ 2018-08-15T16:56:02+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/sorting.html?edit=6
+[ info ] larsun.com/ps/inspection/sorting.html?edit=6 [运行时间：0.089698s][吞吐率：11.15req/s] [内存消耗：2,501.93kb] [文件加载：75]
+[ error ] [0]数据表字段不存在:[edit][D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Builder.php:107]
+---------------------------------------------------------------
+[ 2018-08-15T16:56:04+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/sorting.html?edit=6
+[ info ] larsun.com/ps/inspection/sorting.html?edit=6 [运行时间：0.068631s][吞吐率：14.57req/s] [内存消耗：2,496.20kb] [文件加载：75]
+[ error ] [0]数据表字段不存在:[edit][D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Builder.php:107]
+---------------------------------------------------------------
+[ 2018-08-15T16:57:47+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?edit=6
+[ info ] larsun.com/ps/inspection/sorting.html?edit=6 [运行时间：0.077309s][吞吐率：12.94req/s] [内存消耗：2,061.13kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-15T16:57:57+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/storage.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/storage.html?_pjax=.content [运行时间：0.093608s][吞吐率：10.68req/s] [内存消耗：2,567.20kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T16:57:59+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/sorting.html?_pjax=.content [运行时间：0.082252s][吞吐率：12.16req/s] [内存消耗：2,050.59kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-15T16:58:12+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/storage.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/storage.html?_pjax=.content [运行时间：0.120420s][吞吐率：8.30req/s] [内存消耗：2,573.15kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T16:58:38+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/storage.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/storage.html?_pjax=.content [运行时间：0.107775s][吞吐率：9.28req/s] [内存消耗：2,573.15kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T16:58:40+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/sorting.html?_pjax=.content [运行时间：0.098216s][吞吐率：10.18req/s] [内存消耗：2,567.32kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T16:58:49+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/storage.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/storage.html?_pjax=.content [运行时间：0.085168s][吞吐率：11.74req/s] [内存消耗：2,567.20kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T16:59:47+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/sorting.html?_pjax=.content [运行时间：0.123753s][吞吐率：8.08req/s] [内存消耗：2,573.27kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T17:01:27+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/getPurchase
+[ info ] 192.168.3.70/apips/inspection/getPurchase [运行时间：0.069943s][吞吐率：14.30req/s] [内存消耗：2,062.43kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-15T17:25:51+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/storage.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/storage.html?_pjax=.content [运行时间：0.107959s][吞吐率：9.26req/s] [内存消耗：2,573.15kb] [文件加载：76]
+[ error ] [0]缺少更新条件[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:2208]
+---------------------------------------------------------------
+[ 2018-08-15T17:25:55+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/sorting.html?review=5
+[ info ] larsun.com/ps/inspection/sorting.html?review=5 [运行时间：0.064657s][吞吐率：15.47req/s] [内存消耗：2,060.92kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-15T17:46:15+08:00 ] 127.0.0.1 127.0.0.1 POST /apips/inspection/getrecorddetail.html
+[ info ] larsun.com/apips/inspection/getrecorddetail.html [运行时间：0.115697s][吞吐率：8.64req/s] [内存消耗：2,478.82kb] [文件加载：73]
+[ error ] [8]未定义数组索引: record_type[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:258]
+---------------------------------------------------------------
+[ 2018-08-15T17:46:16+08:00 ] 127.0.0.1 127.0.0.1 POST /apips/inspection/getrecorddetail.html
+[ info ] larsun.com/apips/inspection/getrecorddetail.html [运行时间：0.089138s][吞吐率：11.22req/s] [内存消耗：2,473.09kb] [文件加载：73]
+[ error ] [8]未定义数组索引: record_type[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:258]
+---------------------------------------------------------------
+[ 2018-08-15T17:46:19+08:00 ] 127.0.0.1 127.0.0.1 POST /apips/inspection/getrecorddetail.html
+[ info ] larsun.com/apips/inspection/getrecorddetail.html [运行时间：0.093287s][吞吐率：10.72req/s] [内存消耗：2,478.82kb] [文件加载：73]
+[ error ] [8]未定义数组索引: record_type[D:\PHPTutorial\WWW\geek\app\apips\logic\Inspection.php:258]
+---------------------------------------------------------------
+[ 2018-08-15T17:50:09+08:00 ] 127.0.0.1 127.0.0.1 POST /apips/inspection/getrecorddetail.html
+[ info ] larsun.com/apips/inspection/getrecorddetail.html [运行时间：0.120078s][吞吐率：8.33req/s] [内存消耗：2,443.38kb] [文件加载：74]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'r.review_member_id' in 'on clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-15T17:50:32+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/inspectionAdd
+[ info ] 192.168.3.70/apips/inspection/inspectionAdd [运行时间：0.093315s][吞吐率：10.72req/s] [内存消耗：2,427.02kb] [文件加载：68]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.036151s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHook @app_init [ RunTime:0.012488s ]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\geek\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'apips',
+    1 => 'inspection',
+    2 => 'inspectionAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://servicewechat.com/wx13e7e10d2d6c29f3/devtools/page-frame.html',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808100 MicroMessenger/6.5.7 Language/zh_CN webview/ token/e638003566471bf1e424359a9baa9d52',
+  'origin' => 'http://127.0.0.1:53156',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '367',
+  'connection' => 'keep-alive',
+  'host' => '192.168.3.70',
+)
+[ info ] [ PARAM ] array (
+  'user_token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJRaW5nV2FKaWEgSldUIiwiaWF0IjoxNTM0MjM5MTI4LCJleHAiOjMwNjg0NzgyNTYsImF1ZCI6IlFpbmdXYUppYSIsInN1YiI6IlFpbmdXYUppYSIsImRhdGEiOnsibWVtYmVyX2lkIjoyNywidXNlcm5hbWUiOiIxMzQ3NzAwODE3OCIsIm5pY2tuYW1lIjoiXHU3ZWZmXHU4NDFkIiwiY29tcGFueV9pZCI6M319.RBIKcP5UPi4Rlr6GoYB7mLrNNA8XaeYjX-gmLPjhMxo',
+  'type' => '2',
+  'purchase_id' => '2',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000404s ]
+[ info ] [ RUN ] app\apips\controller\Inspection->inspectionAdd[ D:\PHPTutorial\WWW\geek\app\apips\controller\Inspection.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010690s ] mysql:dbname=geek;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_config` [ RunTime:0.013884s ]
+[ sql ] [ SQL ] SELECT * FROM `qwj_config` [ RunTime:0.000373s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_config',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 27,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_hook` [ RunTime:0.006608s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`addon_list` FROM `qwj_hook` [ RunTime:0.000253s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_hook',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 3,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_api` [ RunTime:0.006981s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`group_id`,`request_type`,`api_url`,`describe`,`describe_text`,`is_request_data`,`request_data`,`response_data`,`is_response_data`,`is_user_token`,`is_response_sign`,`is_request_sign`,`response_examples`,`developer`,`api_status`,`is_page`,`sort`,`status`,`create_time`,`update_time` FROM `qwj_api` WHERE  `api_url` = 'inspection/inspectionadd' LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_api',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 20,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_ps_inspection_record` [ RunTime:0.006987s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `qwj_ps_inspection_record` WHERE  `purchase_id` = 2  AND `record_type` = 2 LIMIT 1 [ RunTime:0.000287s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_ps_inspection_record',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 8,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SELECT `ps_inspection_record`.`goods_batch`,`ps_inspection_record`.`record_type`,`ps_inspection_record`.`record_date`,`ps_inspection`.`record_id`,`ps_inspection`.`goods_id`,`ps_inspection`.`id`,`ps_inspection`.`name`,`ps_inspection`.`inspect_time`,`ps_inspection`.`product_total`,`ps_inspection`.`product_select`,`ps_inspection`.`production_date`,`ps_inspection`.`expire_date`,`ps_inspection`.`unqualified_rate`,`ps_inspection`.`is_qualified`,`ps_inspection`.`is_certificate`,`ps_inspection`.`remark`,`ps_inspection`.`product_unit`,`ps_inspection`.`unqualified_num`,`provider`.`name` AS `provider` FROM `qwj_ps_inspection_record` `ps_inspection_record` INNER JOIN `qwj_ps_inspection` `ps_inspection` ON `ps_inspection_record`.`id`=`ps_inspection`.`record_id` INNER JOIN `qwj_provider` `provider` ON `ps_inspection`.`provider_id`=`provider`.`id` WHERE  `purchase_id` = 2  AND `ps_inspection`.`status` = '1'  AND `ps_inspection_record`.`record_type` = '2' [ RunTime:0.000357s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'ps_inspection',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 12,
+  'extra' => 'Using where',
+) ]
+[ error ] 订单id为2的商品数据获取错误
+---------------------------------------------------------------
+[ 2018-08-15T17:50:39+08:00 ] 192.168.3.70 192.168.3.129 POST /apips/inspection/inspectionAdd
+[ info ] 192.168.3.70/apips/inspection/inspectionAdd [运行时间：0.087378s][吞吐率：11.44req/s] [内存消耗：2,427.02kb] [文件加载：68]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.035655s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHook @app_init [ RunTime:0.009500s ]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\geek\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'apips',
+    1 => 'inspection',
+    2 => 'inspectionAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://servicewechat.com/wx13e7e10d2d6c29f3/devtools/page-frame.html',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808100 MicroMessenger/6.5.7 Language/zh_CN webview/ token/e638003566471bf1e424359a9baa9d52',
+  'origin' => 'http://127.0.0.1:53156',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '367',
+  'connection' => 'keep-alive',
+  'host' => '192.168.3.70',
+)
+[ info ] [ PARAM ] array (
+  'user_token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJRaW5nV2FKaWEgSldUIiwiaWF0IjoxNTM0MjM5MTI4LCJleHAiOjMwNjg0NzgyNTYsImF1ZCI6IlFpbmdXYUppYSIsInN1YiI6IlFpbmdXYUppYSIsImRhdGEiOnsibWVtYmVyX2lkIjoyNywidXNlcm5hbWUiOiIxMzQ3NzAwODE3OCIsIm5pY2tuYW1lIjoiXHU3ZWZmXHU4NDFkIiwiY29tcGFueV9pZCI6M319.RBIKcP5UPi4Rlr6GoYB7mLrNNA8XaeYjX-gmLPjhMxo',
+  'type' => '2',
+  'purchase_id' => '4',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000385s ]
+[ info ] [ RUN ] app\apips\controller\Inspection->inspectionAdd[ D:\PHPTutorial\WWW\geek\app\apips\controller\Inspection.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010269s ] mysql:dbname=geek;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_config` [ RunTime:0.013809s ]
+[ sql ] [ SQL ] SELECT * FROM `qwj_config` [ RunTime:0.000468s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_config',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 27,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_hook` [ RunTime:0.006504s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`addon_list` FROM `qwj_hook` [ RunTime:0.000283s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_hook',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 3,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_api` [ RunTime:0.006879s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`group_id`,`request_type`,`api_url`,`describe`,`describe_text`,`is_request_data`,`request_data`,`response_data`,`is_response_data`,`is_user_token`,`is_response_sign`,`is_request_sign`,`response_examples`,`developer`,`api_status`,`is_page`,`sort`,`status`,`create_time`,`update_time` FROM `qwj_api` WHERE  `api_url` = 'inspection/inspectionadd' LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_api',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 20,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_ps_inspection_record` [ RunTime:0.006521s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `qwj_ps_inspection_record` WHERE  `purchase_id` = 4  AND `record_type` = 2 LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_ps_inspection_record',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 8,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SELECT `ps_inspection_record`.`goods_batch`,`ps_inspection_record`.`record_type`,`ps_inspection_record`.`record_date`,`ps_inspection`.`record_id`,`ps_inspection`.`goods_id`,`ps_inspection`.`id`,`ps_inspection`.`name`,`ps_inspection`.`inspect_time`,`ps_inspection`.`product_total`,`ps_inspection`.`product_select`,`ps_inspection`.`production_date`,`ps_inspection`.`expire_date`,`ps_inspection`.`unqualified_rate`,`ps_inspection`.`is_qualified`,`ps_inspection`.`is_certificate`,`ps_inspection`.`remark`,`ps_inspection`.`product_unit`,`ps_inspection`.`unqualified_num`,`provider`.`name` AS `provider` FROM `qwj_ps_inspection_record` `ps_inspection_record` INNER JOIN `qwj_ps_inspection` `ps_inspection` ON `ps_inspection_record`.`id`=`ps_inspection`.`record_id` INNER JOIN `qwj_provider` `provider` ON `ps_inspection`.`provider_id`=`provider`.`id` WHERE  `purchase_id` = 4  AND `ps_inspection`.`status` = '1'  AND `ps_inspection_record`.`record_type` = '2' [ RunTime:0.000379s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'ps_inspection',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 12,
+  'extra' => 'Using where',
+) ]
+[ error ] 订单id为4的商品数据获取错误
+---------------------------------------------------------------
+[ 2018-08-15T17:50:48+08:00 ] 192.168.3.70 192.168.3.129 GET /ps/inspection/mark.html?_pjax=.content
+[ info ] 192.168.3.70/ps/inspection/mark.html?_pjax=.content [运行时间：0.092780s][吞吐率：10.78req/s] [内存消耗：2,597.43kb] [文件加载：79]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '_pjax' in 'where clause'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-15T17:50:48+08:00 ] 192.168.3.70 192.168.3.129 GET /ps/inspection/mark.html
+[ info ] 192.168.3.70/ps/inspection/mark.html [运行时间：0.086146s][吞吐率：11.61req/s] [内存消耗：2,754.77kb] [文件加载：72]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.010908s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHook @app_init [ RunTime:0.000973s ]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\geek\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ps',
+    1 => 'inspection',
+    2 => 'mark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1534127867,1534156754,1534210138,1534296477; PHPSESSID=tu5qh7nm4jao4h82hcddbknsc8; Hm_lpvt_afc2b8bbe5afca7b1c77c05445eadd98=1534326595',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.3.70/ps/inspection/recordlist.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '192.168.3.70',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000206s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\ps\controller\Inspection->mark[ D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011067s ] mysql:dbname=geek;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_menu` [ RunTime:0.008195s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `status` <> -1 ORDER BY `sort` [ RunTime:0.000827s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 70,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `url` = 'inspection/mark'  AND `module` = 'ps' LIMIT 1 [ RunTime:0.000495s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 70,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `id` = 251 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `id` = 249 LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `id` = 239 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '4',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SELECT `name` FROM `qwj_menu` WHERE  `module` = 'ps'  AND `url` = 'inspection/mark' LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 70,
+  'extra' => 'Using where',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `qwj_ps_inspection_record` [ RunTime:0.007143s ]
+[ sql ] [ SQL ] SELECT `purchase_id` FROM `qwj_ps_inspection_record` WHERE  `record_type` = 2 ORDER BY purchase_id desc LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'qwj_ps_inspection_record',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 8,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ sql ] [ SQL ] SELECT `ps_inspection_record`.`goods_batch`,`ps_inspection_record`.`record_type`,`ps_inspection_record`.`record_date`,`ps_inspection`.`goods_id`,`ps_inspection`.`id`,`ps_inspection`.`name`,`ps_inspection`.`inspect_time`,`ps_inspection`.`product_total`,`ps_inspection`.`product_select`,`ps_inspection`.`production_date`,`ps_inspection`.`expire_date`,`ps_inspection`.`unqualified_rate`,`ps_inspection`.`is_qualified`,`ps_inspection`.`is_certificate`,`ps_inspection`.`remark`,`ps_inspection`.`product_unit`,`ps_inspection`.`unqualified_num`,`provider`.`name` AS `provider` FROM `qwj_ps_inspection_record` `ps_inspection_record` INNER JOIN `qwj_ps_inspection` `ps_inspection` ON `ps_inspection_record`.`id`=`ps_inspection`.`record_id` LEFT JOIN `qwj_provider` `provider` ON `ps_inspection`.`provider_id`=`provider`.`id` WHERE  `purchase_id` = 4  AND `ps_inspection`.`status` = '1'  AND `ps_inspection_record`.`record_type` = 2 [ RunTime:0.000380s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'ps_inspection',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 12,
+  'extra' => 'Using where',
+) ]
+[ warn ] SQL:SELECT `id`,`name`,`pid`,`sort`,`module`,`url`,`is_hide`,`icon`,`status`,`update_time`,`create_time` FROM `qwj_menu` WHERE  `status` <> :where_status ORDER BY `sort` [Using where; Using filesort]
+[ warn ] SQL:SELECT `purchase_id` FROM `qwj_ps_inspection_record` WHERE  `record_type` = :where_record_type ORDER BY purchase_id desc LIMIT 1  [Using where; Using filesort]
+[ error ] 订单id为4的商品数据获取错误

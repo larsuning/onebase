@@ -1,0 +1,956 @@
+---------------------------------------------------------------
+[ 2018-08-02T09:25:41+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/curdcreate/curdcreatelist.html?_pjax=.content
+[ info ] larsun.com/admin/curdcreate/curdcreatelist.html?_pjax=.content [运行时间：0.121380s][吞吐率：8.24req/s] [内存消耗：2,560.09kb] [文件加载：79]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'geek.qwj_curdcreate' doesn't exist[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-02T09:25:41+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/curdcreate/curdcreatelist.html
+[ info ] larsun.com/admin/curdcreate/curdcreatelist.html [运行时间：0.087759s][吞吐率：11.39req/s] [内存消耗：2,564.16kb] [文件加载：80]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'geek.qwj_curdcreate' doesn't exist[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-02T09:25:47+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/curdcreate/curdcreatelist.html?_pjax=.content
+[ info ] larsun.com/admin/curdcreate/curdcreatelist.html?_pjax=.content [运行时间：0.094694s][吞吐率：10.56req/s] [内存消耗：2,560.10kb] [文件加载：79]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'geek.qwj_curdcreate' doesn't exist[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-02T09:25:47+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/curdcreate/curdcreatelist.html
+[ info ] larsun.com/admin/curdcreate/curdcreatelist.html [运行时间：0.078341s][吞吐率：12.76req/s] [内存消耗：2,564.16kb] [文件加载：80]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'geek.qwj_curdcreate' doesn't exist[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-02T09:27:43+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/attribute/attributelist.html?_pjax=.content
+[ info ] larsun.com/admin/attribute/attributelist.html?_pjax=.content [运行时间：0.107583s][吞吐率：9.30req/s] [内存消耗：2,688.77kb] [文件加载：77]
+[ error ] [1]Class 'app\gy\logic\AdminBase' not found[D:\PHPTutorial\WWW\geek\app\admin\logic\Attribute.php:4]
+---------------------------------------------------------------
+[ 2018-08-02T09:27:43+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/attribute/attributelist.html
+[ info ] larsun.com/admin/attribute/attributelist.html [运行时间：0.089040s][吞吐率：11.23req/s] [内存消耗：2,692.56kb] [文件加载：78]
+[ error ] [1]Class 'app\gy\logic\AdminBase' not found[D:\PHPTutorial\WWW\geek\app\admin\logic\Attribute.php:4]
+---------------------------------------------------------------
+[ 2018-08-02T09:28:18+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/attribute/attributelist.html?_pjax=.content
+[ info ] larsun.com/admin/attribute/attributelist.html?_pjax=.content [运行时间：0.095138s][吞吐率：10.51req/s] [内存消耗：2,688.87kb] [文件加载：77]
+[ error ] [1]Class 'app\gy\logic\AdminBase' not found[D:\PHPTutorial\WWW\geek\app\admin\logic\Attribute.php:4]
+---------------------------------------------------------------
+[ 2018-08-02T09:28:18+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/attribute/attributelist.html
+[ info ] larsun.com/admin/attribute/attributelist.html [运行时间：0.078588s][吞吐率：12.72req/s] [内存消耗：2,692.66kb] [文件加载：78]
+[ error ] [1]Class 'app\gy\logic\AdminBase' not found[D:\PHPTutorial\WWW\geek\app\admin\logic\Attribute.php:4]
+---------------------------------------------------------------
+[ 2018-08-02T09:28:34+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/attribute/attributelist.html
+[ info ] larsun.com/admin/attribute/attributelist.html [运行时间：0.083913s][吞吐率：11.92req/s] [内存消耗：2,555.22kb] [文件加载：78]
+[ error ] [8]未定义数组索引: model_id[D:\PHPTutorial\WWW\geek\app\admin\controller\Attribute.php:12]
+---------------------------------------------------------------
+[ 2018-08-02T09:29:12+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/attribute/attributelist.html
+[ info ] larsun.com/admin/attribute/attributelist.html [运行时间：0.095759s][吞吐率：10.44req/s] [内存消耗：2,555.22kb] [文件加载：78]
+[ error ] [8]未定义数组索引: model_id[D:\PHPTutorial\WWW\geek\app\admin\controller\Attribute.php:12]
+---------------------------------------------------------------
+[ 2018-08-02T09:30:55+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/attribute/attributelist.html
+[ info ] larsun.com/admin/attribute/attributelist.html [运行时间：0.118517s][吞吐率：8.44req/s] [内存消耗：2,665.33kb] [文件加载：82]
+[ error ] [8]未定义变量: model_id[D:\PHPTutorial\WWW\geek\app\admin\controller\Attribute.php:19]
+---------------------------------------------------------------
+[ 2018-08-02T09:32:29+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/attribute/attributelist.html?_pjax=.content
+[ info ] larsun.com/admin/attribute/attributelist.html?_pjax=.content [运行时间：0.108905s][吞吐率：9.18req/s] [内存消耗：2,655.52kb] [文件加载：81]
+[ error ] [8]未定义变量: model_id[D:\PHPTutorial\WWW\geek\app\admin\controller\Attribute.php:19]
+---------------------------------------------------------------
+[ 2018-08-02T09:32:29+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/attribute/attributelist.html
+[ info ] larsun.com/admin/attribute/attributelist.html [运行时间：0.081563s][吞吐率：12.26req/s] [内存消耗：2,659.70kb] [文件加载：82]
+[ error ] [8]未定义变量: model_id[D:\PHPTutorial\WWW\geek\app\admin\controller\Attribute.php:19]
+---------------------------------------------------------------
+[ 2018-08-02T09:32:30+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/attribute/attributelist.html
+[ info ] larsun.com/admin/attribute/attributelist.html [运行时间：0.090625s][吞吐率：11.03req/s] [内存消耗：2,659.90kb] [文件加载：82]
+[ error ] [8]未定义变量: model_id[D:\PHPTutorial\WWW\geek\app\admin\controller\Attribute.php:19]
+---------------------------------------------------------------
+[ 2018-08-02T09:32:51+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/attribute/attributelist.html?_pjax=.content
+[ info ] larsun.com/admin/attribute/attributelist.html?_pjax=.content [运行时间：0.113329s][吞吐率：8.82req/s] [内存消耗：2,655.59kb] [文件加载：81]
+[ error ] [8]未定义变量: model_id[D:\PHPTutorial\WWW\geek\app\admin\controller\Attribute.php:19]
+---------------------------------------------------------------
+[ 2018-08-02T09:32:51+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/attribute/attributelist.html
+[ info ] larsun.com/admin/attribute/attributelist.html [运行时间：0.090998s][吞吐率：10.99req/s] [内存消耗：2,659.76kb] [文件加载：82]
+[ error ] [8]未定义变量: model_id[D:\PHPTutorial\WWW\geek\app\admin\controller\Attribute.php:19]
+---------------------------------------------------------------
+[ 2018-08-02T09:32:52+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/attribute/attributelist.html
+[ info ] larsun.com/admin/attribute/attributelist.html [运行时间：0.071199s][吞吐率：14.05req/s] [内存消耗：2,659.96kb] [文件加载：82]
+[ error ] [8]未定义变量: model_id[D:\PHPTutorial\WWW\geek\app\admin\controller\Attribute.php:19]
+---------------------------------------------------------------
+[ 2018-08-02T09:33:14+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/attribute/attributelist.html
+[ info ] larsun.com/admin/attribute/attributelist.html [运行时间：0.131506s][吞吐率：7.60req/s] [内存消耗：2,822.74kb] [文件加载：85]
+[ error ] [8]未定义变量: model_id[D:\PHPTutorial\WWW\geek\runtime\temp\437ae0b435225ef771addcd3737a7674.php:250]
+---------------------------------------------------------------
+[ 2018-08-02T09:34:09+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/curdcreate/curdcreateadd.html?_pjax=.content
+[ info ] larsun.com/admin/curdcreate/curdcreateadd.html?_pjax=.content [运行时间：0.072097s][吞吐率：13.87req/s] [内存消耗：2,850.81kb] [文件加载：81]
+[ error ] [8]未定义数组下标: 1[D:\PHPTutorial\WWW\geek\app\common.php:389]
+---------------------------------------------------------------
+[ 2018-08-02T09:34:09+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/curdcreate/curdcreateadd.html
+[ info ] larsun.com/admin/curdcreate/curdcreateadd.html [运行时间：0.078656s][吞吐率：12.71req/s] [内存消耗：2,902.82kb] [文件加载：82]
+[ error ] [8]未定义数组下标: 1[D:\PHPTutorial\WWW\geek\app\common.php:389]
+---------------------------------------------------------------
+[ 2018-08-02T09:34:14+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/curdcreate/curdcreateadd.html?_pjax=.content
+[ info ] larsun.com/admin/curdcreate/curdcreateadd.html?_pjax=.content [运行时间：0.074167s][吞吐率：13.48req/s] [内存消耗：2,850.81kb] [文件加载：81]
+[ error ] [8]未定义数组下标: 1[D:\PHPTutorial\WWW\geek\app\common.php:389]
+---------------------------------------------------------------
+[ 2018-08-02T09:34:14+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/curdcreate/curdcreateadd.html
+[ info ] larsun.com/admin/curdcreate/curdcreateadd.html [运行时间：0.088270s][吞吐率：11.33req/s] [内存消耗：2,902.82kb] [文件加载：82]
+[ error ] [8]未定义数组下标: 1[D:\PHPTutorial\WWW\geek\app\common.php:389]
+---------------------------------------------------------------
+[ 2018-08-02T09:42:51+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/inspectionadd.html?_pjax=.content [运行时间：0.111350s][吞吐率：8.98req/s] [内存消耗：2,633.41kb] [文件加载：76]
+[ error ] [0]类不存在:app\common\logic\Curdcreate[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-02T09:42:51+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.104442s][吞吐率：9.57req/s] [内存消耗：2,637.48kb] [文件加载：77]
+[ error ] [0]类不存在:app\common\logic\Curdcreate[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-02T09:43:16+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/inspectionadd.html?_pjax=.content [运行时间：0.101181s][吞吐率：9.88req/s] [内存消耗：2,633.41kb] [文件加载：76]
+[ error ] [0]类不存在:app\common\logic\Curdcreate[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-02T09:43:16+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.090159s][吞吐率：11.09req/s] [内存消耗：2,637.48kb] [文件加载：77]
+[ error ] [0]类不存在:app\common\logic\Curdcreate[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-02T09:44:14+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.080135s][吞吐率：12.48req/s] [内存消耗：2,637.68kb] [文件加载：77]
+[ error ] [0]类不存在:app\common\logic\Curdcreate[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-02T09:44:59+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/inspectionadd.html?_pjax=.content [运行时间：0.084900s][吞吐率：11.78req/s] [内存消耗：2,627.46kb] [文件加载：76]
+[ error ] [0]类不存在:app\common\logic\Curdcreate[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-02T09:44:59+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.076753s][吞吐率：13.03req/s] [内存消耗：2,637.48kb] [文件加载：77]
+[ error ] [0]类不存在:app\common\logic\Curdcreate[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-02T09:45:58+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/inspectionadd.html?_pjax=.content [运行时间：0.099990s][吞吐率：10.00req/s] [内存消耗：2,633.41kb] [文件加载：76]
+[ error ] [0]类不存在:app\common\logic\Curdcreate[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-02T09:45:58+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.080936s][吞吐率：12.36req/s] [内存消耗：2,637.48kb] [文件加载：77]
+[ error ] [0]类不存在:app\common\logic\Curdcreate[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-02T09:48:28+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.114434s][吞吐率：8.74req/s] [内存消耗：2,643.63kb] [文件加载：77]
+[ error ] [0]类不存在:app\common\logic\Curdcreate[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-02T09:48:46+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.107469s][吞吐率：9.31req/s] [内存消耗：2,643.63kb] [文件加载：77]
+[ error ] [0]类不存在:app\common\logic\Curdcreate[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-02T09:50:19+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/inspectionadd.html?_pjax=.content [运行时间：0.087914s][吞吐率：11.37req/s] [内存消耗：2,627.46kb] [文件加载：76]
+[ error ] [0]类不存在:app\common\logic\Curdcreate[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-02T09:50:19+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.084043s][吞吐率：11.90req/s] [内存消耗：2,637.48kb] [文件加载：77]
+[ error ] [0]类不存在:app\common\logic\Curdcreate[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-02T09:51:31+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.105760s][吞吐率：9.46req/s] [内存消耗：2,704.91kb] [文件加载：78]
+[ error ] [0]类不存在:app\common\model\Curdcreate[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-02T09:52:39+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.094098s][吞吐率：10.63req/s] [内存消耗：2,658.34kb] [文件加载：78]
+[ error ] [0]类不存在:app\common\logic\Attribute[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-02T09:53:48+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.115904s][吞吐率：8.63req/s] [内存消耗：2,732.64kb] [文件加载：79]
+[ error ] [0]类不存在:app\common\logic\Curdcreate[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-02T09:53:50+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.089966s][吞吐率：11.12req/s] [内存消耗：2,726.69kb] [文件加载：79]
+[ error ] [0]类不存在:app\common\logic\Curdcreate[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-02T09:53:50+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.086971s][吞吐率：11.50req/s] [内存消耗：2,726.69kb] [文件加载：79]
+[ error ] [0]类不存在:app\common\logic\Curdcreate[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Loader.php:390]
+---------------------------------------------------------------
+[ 2018-08-02T09:55:11+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.113736s][吞吐率：8.79req/s] [内存消耗：2,818.91kb] [文件加载：80]
+[ error ] [1]Class 'app\gy\logic\PsBase' not found[D:\PHPTutorial\WWW\geek\app\ps\logic\Attribute.php:4]
+---------------------------------------------------------------
+[ 2018-08-02T09:55:52+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.112754s][吞吐率：8.87req/s] [内存消耗：2,776.27kb] [文件加载：83]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T09:55:58+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.110246s][吞吐率：9.07req/s] [内存消耗：2,776.48kb] [文件加载：83]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T09:56:02+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/inspectionlist.html?_pjax=.content [运行时间：0.118280s][吞吐率：8.45req/s] [内存消耗：2,729.89kb] [文件加载：82]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T09:56:02+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.089239s][吞吐率：11.21req/s] [内存消耗：2,770.76kb] [文件加载：83]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T10:01:41+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.127828s][吞吐率：7.82req/s] [内存消耗：2,776.48kb] [文件加载：83]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T10:01:52+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/inspectionlist.html?_pjax=.content [运行时间：0.099654s][吞吐率：10.03req/s] [内存消耗：2,724.30kb] [文件加载：82]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T10:01:52+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.086930s][吞吐率：11.50req/s] [内存消耗：2,770.69kb] [文件加载：83]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T10:01:53+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.111537s][吞吐率：8.97req/s] [内存消耗：2,776.41kb] [文件加载：83]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T10:04:12+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.124289s][吞吐率：8.05req/s] [内存消耗：2,776.41kb] [文件加载：83]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T10:04:52+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.125044s][吞吐率：8.00req/s] [内存消耗：2,776.41kb] [文件加载：83]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T10:05:42+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.095084s][吞吐率：10.52req/s] [内存消耗：2,770.89kb] [文件加载：83]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T10:06:29+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.124268s][吞吐率：8.05req/s] [内存消耗：2,776.41kb] [文件加载：83]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T10:06:30+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.102670s][吞吐率：9.74req/s] [内存消耗：2,770.89kb] [文件加载：83]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T10:06:34+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.119539s][吞吐率：8.37req/s] [内存消耗：2,776.41kb] [文件加载：83]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T10:06:46+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.121042s][吞吐率：8.26req/s] [内存消耗：2,776.41kb] [文件加载：83]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T10:06:54+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.121452s][吞吐率：8.23req/s] [内存消耗：2,776.41kb] [文件加载：83]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T10:07:28+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.123105s][吞吐率：8.12req/s] [内存消耗：2,776.41kb] [文件加载：83]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T10:07:32+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.113267s][吞吐率：8.83req/s] [内存消耗：2,776.41kb] [文件加载：83]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T10:07:37+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.124181s][吞吐率：8.05req/s] [内存消耗：2,776.41kb] [文件加载：83]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T10:07:44+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/inspectionlist.html?_pjax=.content [运行时间：0.081966s][吞吐率：12.20req/s] [内存消耗：2,724.38kb] [文件加载：82]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T10:07:44+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.087813s][吞吐率：11.39req/s] [内存消耗：2,770.76kb] [文件加载：83]
+[ error ] [0]类的属性不存在:app\ps\model\PsInspection->name[D:\PHPTutorial\WWW\geek\thinkphp\library\think\Model.php:559]
+---------------------------------------------------------------
+[ 2018-08-02T10:14:18+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/attribute/attributeadd.html
+[ info ] larsun.com/ps/attribute/attributeadd.html [运行时间：0.104289s][吞吐率：9.59req/s] [内存消耗：2,483.43kb] [文件加载：82]
+[ error ] [10501]SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'goods_id'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:451]
+---------------------------------------------------------------
+[ 2018-08-02T10:16:31+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/attribute/attributeadd.html
+[ info ] larsun.com/ps/attribute/attributeadd.html [运行时间：0.112446s][吞吐率：8.89req/s] [内存消耗：2,483.43kb] [文件加载：82]
+[ error ] [10501]SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'goods_id'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:451]
+---------------------------------------------------------------
+[ 2018-08-02T10:34:34+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/menu/menuedit.html
+[ info ] larsun.com/ps/menu/menuedit.html [运行时间：0.094218s][吞吐率：10.61req/s] [内存消耗：2,459.82kb] [文件加载：78]
+[ error ] [8]未定义数组索引: pid[D:\PHPTutorial\WWW\geek\app\ps\logic\Menu.php:248]
+---------------------------------------------------------------
+[ 2018-08-02T10:34:46+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/attribute/attributelist.html?_pjax=.content
+[ info ] larsun.com/ps/attribute/attributelist.html?_pjax=.content [运行时间：0.075163s][吞吐率：13.30req/s] [内存消耗：2,534.35kb] [文件加载：77]
+[ error ] [8]未定义数组索引: model_id[D:\PHPTutorial\WWW\geek\app\ps\controller\Attribute.php:12]
+---------------------------------------------------------------
+[ 2018-08-02T10:34:46+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/attribute/attributelist.html
+[ info ] larsun.com/ps/attribute/attributelist.html [运行时间：0.070675s][吞吐率：14.15req/s] [内存消耗：2,544.27kb] [文件加载：78]
+[ error ] [8]未定义数组索引: model_id[D:\PHPTutorial\WWW\geek\app\ps\controller\Attribute.php:12]
+---------------------------------------------------------------
+[ 2018-08-02T10:36:02+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/inspectionadd.html?_pjax=.content [运行时间：0.112409s][吞吐率：8.90req/s] [内存消耗：2,750.79kb] [文件加载：80]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:36:02+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.091977s][吞吐率：10.87req/s] [内存消耗：2,755.29kb] [文件加载：81]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:36:39+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/inspectionadd.html?_pjax=.content [运行时间：0.098854s][吞吐率：10.12req/s] [内存消耗：2,745.27kb] [文件加载：80]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:36:39+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.093353s][吞吐率：10.71req/s] [内存消耗：2,755.29kb] [文件加载：81]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:36:49+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.116439s][吞吐率：8.59req/s] [内存消耗：2,761.01kb] [文件加载：81]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:36:56+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.112881s][吞吐率：8.86req/s] [内存消耗：2,761.01kb] [文件加载：81]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:37:11+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/inspectionadd.html?_pjax=.content [运行时间：0.123224s][吞吐率：8.12req/s] [内存消耗：2,750.79kb] [文件加载：80]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:37:11+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.104081s][吞吐率：9.61req/s] [内存消耗：2,755.29kb] [文件加载：81]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:37:51+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.110968s][吞吐率：9.01req/s] [内存消耗：2,761.01kb] [文件加载：81]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:37:53+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.108406s][吞吐率：9.22req/s] [内存消耗：2,755.49kb] [文件加载：81]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:38:01+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.122677s][吞吐率：8.15req/s] [内存消耗：2,761.01kb] [文件加载：81]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:38:08+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.106453s][吞吐率：9.39req/s] [内存消耗：2,755.29kb] [文件加载：81]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:38:09+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.100864s][吞吐率：9.91req/s] [内存消耗：2,755.49kb] [文件加载：81]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:38:22+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.124296s][吞吐率：8.05req/s] [内存消耗：2,761.01kb] [文件加载：81]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:39:25+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.125757s][吞吐率：7.95req/s] [内存消耗：2,761.01kb] [文件加载：81]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:39:27+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.102830s][吞吐率：9.72req/s] [内存消耗：2,755.49kb] [文件加载：81]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:39:28+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.102124s][吞吐率：9.79req/s] [内存消耗：2,755.49kb] [文件加载：81]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:39:44+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.123809s][吞吐率：8.08req/s] [内存消耗：2,761.01kb] [文件加载：81]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:40:36+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/inspectionadd.html?_pjax=.content [运行时间：0.114523s][吞吐率：8.73req/s] [内存消耗：2,750.79kb] [文件加载：80]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:40:36+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.100073s][吞吐率：9.99req/s] [内存消耗：2,755.29kb] [文件加载：81]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:687]
+---------------------------------------------------------------
+[ 2018-08-02T10:42:04+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.124530s][吞吐率：8.03req/s] [内存消耗：2,761.05kb] [文件加载：81]
+[ error ] [2]Invalid argument supplied for foreach()[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:660]
+---------------------------------------------------------------
+[ 2018-08-02T10:43:43+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.127583s][吞吐率：7.84req/s] [内存消耗：2,761.01kb] [文件加载：81]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:688]
+---------------------------------------------------------------
+[ 2018-08-02T10:45:31+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/inspectionadd.html?_pjax=.content [运行时间：0.101575s][吞吐率：9.84req/s] [内存消耗：2,745.27kb] [文件加载：80]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:688]
+---------------------------------------------------------------
+[ 2018-08-02T10:45:32+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.100042s][吞吐率：10.00req/s] [内存消耗：2,755.29kb] [文件加载：81]
+[ error ] [8]未定义变量: datas[D:\PHPTutorial\WWW\geek\app\common\logic\Common.php:688]
+---------------------------------------------------------------
+[ 2018-08-02T10:47:06+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/curdcreate/curdcreateedit/id/44.html
+[ info ] larsun.com/ps/curdcreate/curdcreateedit/id/44.html [运行时间：0.111994s][吞吐率：8.93req/s] [内存消耗：2,731.55kb] [文件加载：80]
+[ error ] [8]Trying to get property of non-object[D:\PHPTutorial\WWW\geek\app\ps\controller\Curdcreate.php:44]
+---------------------------------------------------------------
+[ 2018-08-02T10:47:07+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/curdcreate/curdcreateedit/id/44.html
+[ info ] larsun.com/ps/curdcreate/curdcreateedit/id/44.html [运行时间：0.104099s][吞吐率：9.61req/s] [内存消耗：2,725.59kb] [文件加载：80]
+[ error ] [8]Trying to get property of non-object[D:\PHPTutorial\WWW\geek\app\ps\controller\Curdcreate.php:44]
+---------------------------------------------------------------
+[ 2018-08-02T11:59:53+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.053350s][吞吐率：18.74req/s] [内存消耗：2,489.47kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoodsInfo[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T12:01:40+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.090121s][吞吐率：11.10req/s] [内存消耗：2,495.51kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoodsInfo[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T12:01:42+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.071937s][吞吐率：13.90req/s] [内存消耗：2,489.77kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoodsInfo[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T12:02:11+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.085747s][吞吐率：11.66req/s] [内存消耗：2,495.51kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoodsInfo[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T13:30:41+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.096944s][吞吐率：10.32req/s] [内存消耗：2,489.86kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoodsInfo[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T13:30:43+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.059836s][吞吐率：16.71req/s] [内存消耗：2,489.86kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoodsInfo[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T13:30:45+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.074823s][吞吐率：13.36req/s] [内存消耗：2,050.30kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T13:31:47+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.105409s][吞吐率：9.49req/s] [内存消耗：2,495.59kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoodsInfo[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T13:35:39+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.112444s][吞吐率：8.89req/s] [内存消耗：2,694.02kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoodsInfo[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T13:35:39+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.070087s][吞吐率：14.27req/s] [内存消耗：2,489.55kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoodsInfo[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T13:37:05+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.089470s][吞吐率：11.18req/s] [内存消耗：2,495.29kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoodsInfo[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T13:37:08+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.069663s][吞吐率：14.35req/s] [内存消耗：2,489.55kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoodsInfo[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T13:46:47+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.097233s][吞吐率：10.28req/s] [内存消耗：2,495.34kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoodsInfo[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T13:46:47+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.064303s][吞吐率：15.55req/s] [内存消耗：2,489.60kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoodsInfo[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T13:46:50+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.075326s][吞吐率：13.28req/s] [内存消耗：2,489.60kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoodsInfo[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T13:47:56+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.084405s][吞吐率：11.85req/s] [内存消耗：2,489.41kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGoodsInfo[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T13:50:59+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.108253s][吞吐率：9.24req/s] [内存消耗：2,697.93kb] [文件加载：76]
+[ error ] [8]未定义数组下标: 0[D:\PHPTutorial\WWW\geek\app\common\controller\ControllerBase.php:111]
+---------------------------------------------------------------
+[ 2018-08-02T13:50:59+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.068230s][吞吐率：14.66req/s] [内存消耗：2,492.84kb] [文件加载：76]
+[ error ] [8]未定义数组下标: 0[D:\PHPTutorial\WWW\geek\app\common\controller\ControllerBase.php:111]
+---------------------------------------------------------------
+[ 2018-08-02T13:51:49+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.078911s][吞吐率：12.67req/s] [内存消耗：2,493.12kb] [文件加载：76]
+[ error ] [8]未定义数组下标: 0[D:\PHPTutorial\WWW\geek\app\common\controller\ControllerBase.php:111]
+---------------------------------------------------------------
+[ 2018-08-02T13:54:25+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.100126s][吞吐率：9.99req/s] [内存消耗：2,081.78kb] [文件加载：59]
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php:73]
+---------------------------------------------------------------
+[ 2018-08-02T13:54:26+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.055249s][吞吐率：18.10req/s] [内存消耗：2,018.05kb] [文件加载：59]
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php:73]
+---------------------------------------------------------------
+[ 2018-08-02T13:54:53+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.102075s][吞吐率：9.80req/s] [内存消耗：2,497.46kb] [文件加载：75]
+[ error ] [0]类型错误: Too few arguments to function app\ps\logic\Inspection::getGood(), 0 passed in D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php on line 73 and exactly 1 expected[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:99]
+---------------------------------------------------------------
+[ 2018-08-02T13:54:54+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.067071s][吞吐率：14.91req/s] [内存消耗：2,491.73kb] [文件加载：75]
+[ error ] [0]类型错误: Too few arguments to function app\ps\logic\Inspection::getGood(), 0 passed in D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php on line 73 and exactly 1 expected[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:99]
+---------------------------------------------------------------
+[ 2018-08-02T13:55:33+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.076055s][吞吐率：13.15req/s] [内存消耗：2,489.39kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGood[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T13:55:41+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.084698s][吞吐率：11.81req/s] [内存消耗：2,489.39kb] [文件加载：75]
+[ error ] [0]method not exist:think\db\Query->getGood[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T13:57:45+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.081117s][吞吐率：12.33req/s] [内存消耗：2,500.69kb] [文件加载：77]
+[ error ] [8]未定义变量: where[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T13:58:05+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.126435s][吞吐率：7.91req/s] [内存消耗：2,540.70kb] [文件加载：79]
+[ error ] [0]系统跳转失败:[D:\PHPTutorial\WWW\geek\thinkphp\helper.php:59]
+---------------------------------------------------------------
+[ 2018-08-02T13:58:06+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.081867s][吞吐率：12.21req/s] [内存消耗：2,535.18kb] [文件加载：79]
+[ error ] [0]系统跳转失败:[D:\PHPTutorial\WWW\geek\thinkphp\helper.php:59]
+---------------------------------------------------------------
+[ 2018-08-02T13:59:59+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.118456s][吞吐率：8.44req/s] [内存消耗：2,760.26kb] [文件加载：79]
+[ error ] [0]系统跳转失败:[D:\PHPTutorial\WWW\geek\thinkphp\helper.php:59]
+---------------------------------------------------------------
+[ 2018-08-02T13:59:59+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.072685s][吞吐率：13.76req/s] [内存消耗：2,535.18kb] [文件加载：79]
+[ error ] [0]系统跳转失败:[D:\PHPTutorial\WWW\geek\thinkphp\helper.php:59]
+---------------------------------------------------------------
+[ 2018-08-02T14:07:32+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.112179s][吞吐率：8.91req/s] [内存消耗：2,498.29kb] [文件加载：75]
+[ error ] [0]致命错误: Class 'app\ps\logic\Db' not found[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:103]
+---------------------------------------------------------------
+[ 2018-08-02T14:07:36+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.086640s][吞吐率：11.54req/s] [内存消耗：2,498.26kb] [文件加载：75]
+[ error ] [0]致命错误: Class 'app\ps\logic\Db' not found[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:103]
+---------------------------------------------------------------
+[ 2018-08-02T14:16:42+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.104722s][吞吐率：9.55req/s] [内存消耗：2,478.93kb] [文件加载：74]
+[ error ] [0]语法解析错误: syntax error, unexpected '->' (T_OBJECT_OPERATOR)[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:125]
+---------------------------------------------------------------
+[ 2018-08-02T14:16:43+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.067570s][吞吐率：14.80req/s] [内存消耗：2,473.20kb] [文件加载：74]
+[ error ] [0]语法解析错误: syntax error, unexpected '->' (T_OBJECT_OPERATOR)[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:125]
+---------------------------------------------------------------
+[ 2018-08-02T14:17:19+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.069193s][吞吐率：14.45req/s] [内存消耗：2,473.20kb] [文件加载：74]
+[ error ] [0]语法解析错误: syntax error, unexpected '->' (T_OBJECT_OPERATOR)[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:125]
+---------------------------------------------------------------
+[ 2018-08-02T14:17:30+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.076878s][吞吐率：13.01req/s] [内存消耗：2,473.20kb] [文件加载：74]
+[ error ] [0]语法解析错误: syntax error, unexpected '->' (T_OBJECT_OPERATOR)[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:125]
+---------------------------------------------------------------
+[ 2018-08-02T14:17:47+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.078027s][吞吐率：12.82req/s] [内存消耗：2,473.20kb] [文件加载：74]
+[ error ] [0]语法解析错误: syntax error, unexpected '->' (T_OBJECT_OPERATOR)[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:125]
+---------------------------------------------------------------
+[ 2018-08-02T14:18:00+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.071882s][吞吐率：13.91req/s] [内存消耗：2,473.20kb] [文件加载：74]
+[ error ] [0]语法解析错误: syntax error, unexpected '->' (T_OBJECT_OPERATOR)[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:125]
+---------------------------------------------------------------
+[ 2018-08-02T14:18:05+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.091724s][吞吐率：10.90req/s] [内存消耗：2,478.93kb] [文件加载：74]
+[ error ] [0]语法解析错误: syntax error, unexpected '->' (T_OBJECT_OPERATOR)[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:125]
+---------------------------------------------------------------
+[ 2018-08-02T14:18:08+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.079941s][吞吐率：12.51req/s] [内存消耗：2,473.20kb] [文件加载：74]
+[ error ] [0]语法解析错误: syntax error, unexpected '->' (T_OBJECT_OPERATOR)[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:125]
+---------------------------------------------------------------
+[ 2018-08-02T14:18:10+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.079526s][吞吐率：12.57req/s] [内存消耗：2,473.20kb] [文件加载：74]
+[ error ] [0]语法解析错误: syntax error, unexpected '->' (T_OBJECT_OPERATOR)[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:125]
+---------------------------------------------------------------
+[ 2018-08-02T14:18:20+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.096562s][吞吐率：10.36req/s] [内存消耗：2,478.93kb] [文件加载：74]
+[ error ] [0]语法解析错误: syntax error, unexpected '->' (T_OBJECT_OPERATOR)[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:110]
+---------------------------------------------------------------
+[ 2018-08-02T14:18:22+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.069836s][吞吐率：14.32req/s] [内存消耗：2,473.20kb] [文件加载：74]
+[ error ] [0]语法解析错误: syntax error, unexpected '->' (T_OBJECT_OPERATOR)[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:110]
+---------------------------------------------------------------
+[ 2018-08-02T14:18:41+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.097821s][吞吐率：10.22req/s] [内存消耗：2,478.93kb] [文件加载：74]
+[ error ] [0]语法解析错误: syntax error, unexpected '->' (T_OBJECT_OPERATOR)[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:110]
+---------------------------------------------------------------
+[ 2018-08-02T14:18:43+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.082280s][吞吐率：12.15req/s] [内存消耗：2,473.20kb] [文件加载：74]
+[ error ] [0]语法解析错误: syntax error, unexpected '->' (T_OBJECT_OPERATOR)[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:110]
+---------------------------------------------------------------
+[ 2018-08-02T14:18:50+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.089760s][吞吐率：11.14req/s] [内存消耗：2,501.26kb] [文件加载：76]
+[ error ] [2]A non-numeric value encountered[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T14:18:51+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.073624s][吞吐率：13.58req/s] [内存消耗：2,495.52kb] [文件加载：76]
+[ error ] [2]A non-numeric value encountered[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T14:19:07+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.076481s][吞吐率：13.08req/s] [内存消耗：2,501.26kb] [文件加载：76]
+[ error ] [2]A non-numeric value encountered[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:117]
+---------------------------------------------------------------
+[ 2018-08-02T14:19:19+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/inspectionadd.html
+[ info ] larsun.com/ps/inspection/inspectionadd.html [运行时间：0.116118s][吞吐率：8.61req/s] [内存消耗：2,643.66kb] [文件加载：77]
+[ error ] [0]语法解析错误: syntax error, unexpected 'dd' (T_STRING)[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:119]
+---------------------------------------------------------------
+[ 2018-08-02T14:19:46+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.083025s][吞吐率：12.04req/s] [内存消耗：2,478.93kb] [文件加载：74]
+[ error ] [0]语法解析错误: syntax error, unexpected '$param' (T_VARIABLE)[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:117]
+---------------------------------------------------------------
+[ 2018-08-02T14:19:55+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.095864s][吞吐率：10.43req/s] [内存消耗：2,501.26kb] [文件加载：76]
+[ error ] [2]A non-numeric value encountered[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:117]
+---------------------------------------------------------------
+[ 2018-08-02T14:20:48+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.096906s][吞吐率：10.32req/s] [内存消耗：2,500.62kb] [文件加载：76]
+[ error ] [2]A non-numeric value encountered[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:119]
+---------------------------------------------------------------
+[ 2018-08-02T14:21:26+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.092096s][吞吐率：10.86req/s] [内存消耗：2,500.62kb] [文件加载：76]
+[ error ] [2]A non-numeric value encountered[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:119]
+---------------------------------------------------------------
+[ 2018-08-02T14:21:44+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.103180s][吞吐率：9.69req/s] [内存消耗：2,503.14kb] [文件加载：76]
+[ error ] [8]未定义变量: pageSize[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:122]
+---------------------------------------------------------------
+[ 2018-08-02T14:42:56+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.090556s][吞吐率：11.04req/s] [内存消耗：2,465.91kb] [文件加载：75]
+[ error ] [0]系统跳转失败:[D:\PHPTutorial\WWW\geek\thinkphp\helper.php:59]
+---------------------------------------------------------------
+[ 2018-08-02T15:21:19+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.080533s][吞吐率：12.42req/s] [内存消耗：2,494.84kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:119]
+---------------------------------------------------------------
+[ 2018-08-02T15:21:21+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.069999s][吞吐率：14.29req/s] [内存消耗：2,494.84kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:119]
+---------------------------------------------------------------
+[ 2018-08-02T15:21:23+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.061500s][吞吐率：16.26req/s] [内存消耗：2,050.30kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T15:21:32+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.078985s][吞吐率：12.66req/s] [内存消耗：2,494.84kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:119]
+---------------------------------------------------------------
+[ 2018-08-02T15:21:36+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.071720s][吞吐率：13.94req/s] [内存消耗：2,494.84kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:119]
+---------------------------------------------------------------
+[ 2018-08-02T15:21:56+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.072533s][吞吐率：13.79req/s] [内存消耗：2,061.19kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T15:22:03+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/inspectionlist.html?_pjax=.content [运行时间：0.060209s][吞吐率：16.61req/s] [内存消耗：2,047.08kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T15:22:03+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.068188s][吞吐率：14.67req/s] [内存消耗：2,057.35kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T15:22:05+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.090415s][吞吐率：11.06req/s] [内存消耗：2,063.09kb] [文件加载：53]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\7a\97a35160987a8f39536d2c5ee90e09.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T15:22:20+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.110679s][吞吐率：9.04req/s] [内存消耗：2,494.91kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:119]
+---------------------------------------------------------------
+[ 2018-08-02T15:29:41+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/curdcreate/create_add_view.html
+[ info ] larsun.com/ps/curdcreate/create_add_view.html [运行时间：0.153065s][吞吐率：6.53req/s] [内存消耗：2,616.03kb] [文件加载：79]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'geek.qwj_attribute_type' doesn't exist[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-02T15:29:45+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/curdcreate/create_add_view.html
+[ info ] larsun.com/ps/curdcreate/create_add_view.html [运行时间：0.121726s][吞吐率：8.22req/s] [内存消耗：2,616.03kb] [文件加载：79]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'geek.qwj_attribute_type' doesn't exist[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-02T15:29:53+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.051639s][吞吐率：19.37req/s] [内存消耗：2,050.30kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T15:30:23+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/curdcreate/curdcreatelist.html?_pjax=.content
+[ info ] larsun.com/ps/curdcreate/curdcreatelist.html?_pjax=.content [运行时间：0.071136s][吞吐率：14.06req/s] [内存消耗：2,050.62kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T15:30:27+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/curdcreate/curdcreateedit/id/45.html
+[ info ] larsun.com/ps/curdcreate/curdcreateedit/id/45.html [运行时间：0.094602s][吞吐率：10.57req/s] [内存消耗：2,061.42kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T15:30:37+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/curdcreate/create_add_view.html
+[ info ] larsun.com/ps/curdcreate/create_add_view.html [运行时间：0.080645s][吞吐率：12.40req/s] [内存消耗：2,610.39kb] [文件加载：79]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'geek.qwj_attribute_type' doesn't exist[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-02T15:30:45+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/curdcreate/curdcreateedit/id/45.html?_pjax=.content
+[ info ] larsun.com/ps/curdcreate/curdcreateedit/id/45.html?_pjax=.content [运行时间：0.055082s][吞吐率：18.15req/s] [内存消耗：2,050.91kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T15:30:45+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/curdcreate/curdcreateedit/id/45.html
+[ info ] larsun.com/ps/curdcreate/curdcreateedit/id/45.html [运行时间：0.061541s][吞吐率：16.25req/s] [内存消耗：2,057.59kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T15:34:27+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/attribute/attributeadd/model_id/45.html?_pjax=.content
+[ info ] larsun.com/ps/attribute/attributeadd/model_id/45.html?_pjax=.content [运行时间：0.085624s][吞吐率：11.68req/s] [内存消耗：2,050.63kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T15:34:27+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/attribute/attributeadd/model_id/45.html
+[ info ] larsun.com/ps/attribute/attributeadd/model_id/45.html [运行时间：0.068680s][吞吐率：14.56req/s] [内存消耗：2,057.30kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T15:35:27+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/attribute/attributeadd/model_id/45.html?_pjax=.content
+[ info ] larsun.com/ps/attribute/attributeadd/model_id/45.html?_pjax=.content [运行时间：0.067033s][吞吐率：14.92req/s] [内存消耗：2,050.73kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T15:35:27+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/attribute/attributeadd/model_id/45.html
+[ info ] larsun.com/ps/attribute/attributeadd/model_id/45.html [运行时间：0.057958s][吞吐率：17.25req/s] [内存消耗：2,057.40kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T15:36:34+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/attribute/attributeadd/model_id/45.html
+[ info ] larsun.com/ps/attribute/attributeadd/model_id/45.html [运行时间：0.073749s][吞吐率：13.56req/s] [内存消耗：2,061.23kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T16:00:37+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.068472s][吞吐率：14.60req/s] [内存消耗：2,494.88kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:00:39+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionedit/id/4.html
+[ info ] larsun.com/ps/inspection/inspectionedit/id/4.html [运行时间：0.076059s][吞吐率：13.15req/s] [内存消耗：2,061.41kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T16:00:41+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.053078s][吞吐率：18.84req/s] [内存消耗：2,494.88kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:03:40+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.069413s][吞吐率：14.41req/s] [内存消耗：2,494.88kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:04:03+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.076401s][吞吐率：13.09req/s] [内存消耗：2,494.88kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:04:25+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.067716s][吞吐率：14.77req/s] [内存消耗：2,494.88kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:05:12+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.072619s][吞吐率：13.77req/s] [内存消耗：2,494.88kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:05:13+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.076946s][吞吐率：13.00req/s] [内存消耗：2,494.88kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:05:15+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.088364s][吞吐率：11.32req/s] [内存消耗：2,501.13kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:05:16+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.054790s][吞吐率：18.25req/s] [内存消耗：2,495.39kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:27:44+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.074602s][吞吐率：13.40req/s] [内存消耗：2,494.85kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:27:44+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.057793s][吞吐率：17.30req/s] [内存消耗：2,494.74kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:28:22+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.077356s][吞吐率：12.93req/s] [内存消耗：2,494.85kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:28:22+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.060439s][吞吐率：16.55req/s] [内存消耗：2,494.74kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:28:58+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.077075s][吞吐率：12.97req/s] [内存消耗：2,494.85kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:28:58+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.062049s][吞吐率：16.12req/s] [内存消耗：2,494.74kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:29:18+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.071043s][吞吐率：14.08req/s] [内存消耗：2,494.85kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:29:18+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.064558s][吞吐率：15.49req/s] [内存消耗：2,494.74kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:31:13+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionedit/id/6.html
+[ info ] larsun.com/ps/inspection/inspectionedit/id/6.html [运行时间：0.130878s][吞吐率：7.64req/s] [内存消耗：2,975.96kb] [文件加载：81]
+[ error ] [64]Cannot redeclare app\ps\logic\Inspection::getGoodsInfo()[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:122]
+---------------------------------------------------------------
+[ 2018-08-02T16:31:15+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionedit/id/6.html
+[ info ] larsun.com/ps/inspection/inspectionedit/id/6.html [运行时间：0.101554s][吞吐率：9.85req/s] [内存消耗：2,970.45kb] [文件加载：81]
+[ error ] [64]Cannot redeclare app\ps\logic\Inspection::getGoodsInfo()[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:122]
+---------------------------------------------------------------
+[ 2018-08-02T16:31:26+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.067941s][吞吐率：14.72req/s] [内存消耗：2,502.25kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:31:26+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getProvidersInfo
+[ info ] larsun.com/ps/inspection/getProvidersInfo [运行时间：0.069644s][吞吐率：14.36req/s] [内存消耗：2,502.24kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:125]
+---------------------------------------------------------------
+[ 2018-08-02T16:31:28+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getProvidersInfo
+[ info ] larsun.com/ps/inspection/getProvidersInfo [运行时间：0.082966s][吞吐率：12.05req/s] [内存消耗：2,432.33kb] [文件加载：77]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nickname' in 'field list'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-02T16:31:31+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getProvidersInfo
+[ info ] larsun.com/ps/inspection/getProvidersInfo [运行时间：0.086419s][吞吐率：11.57req/s] [内存消耗：2,438.06kb] [文件加载：77]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nickname' in 'field list'[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-08-02T16:32:41+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.063026s][吞吐率：15.87req/s] [内存消耗：2,502.27kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T16:32:41+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getProvidersInfo
+[ info ] larsun.com/ps/inspection/getProvidersInfo [运行时间：0.054219s][吞吐率：18.44req/s] [内存消耗：2,502.27kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:125]
+---------------------------------------------------------------
+[ 2018-08-02T17:00:51+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.075834s][吞吐率：13.19req/s] [内存消耗：2,502.34kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:102]
+---------------------------------------------------------------
+[ 2018-08-02T17:00:51+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getProvidersInfo
+[ info ] larsun.com/ps/inspection/getProvidersInfo [运行时间：0.057821s][吞吐率：17.29req/s] [内存消耗：2,502.27kb] [文件加载：76]
+[ error ] [8]未定义数组索引: q_word[D:\PHPTutorial\WWW\geek\app\ps\logic\Inspection.php:125]
+---------------------------------------------------------------
+[ 2018-08-02T17:19:14+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/curdcreate/curdcreatelist.html?_pjax=.content
+[ info ] larsun.com/ps/curdcreate/curdcreatelist.html?_pjax=.content [运行时间：0.061442s][吞吐率：16.28req/s] [内存消耗：2,050.64kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T17:19:14+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/curdcreate/curdcreatelist.html
+[ info ] larsun.com/ps/curdcreate/curdcreatelist.html [运行时间：0.056060s][吞吐率：17.84req/s] [内存消耗：2,057.28kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T17:19:20+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/curdcreate/curdcreatelist.html?_pjax=.content
+[ info ] larsun.com/ps/curdcreate/curdcreatelist.html?_pjax=.content [运行时间：0.073299s][吞吐率：13.64req/s] [内存消耗：2,050.71kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T17:19:20+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/curdcreate/curdcreatelist.html
+[ info ] larsun.com/ps/curdcreate/curdcreatelist.html [运行时间：0.065953s][吞吐率：15.16req/s] [内存消耗：2,057.35kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T17:22:28+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/menu/menulist.html?_pjax=.content
+[ info ] larsun.com/ps/menu/menulist.html?_pjax=.content [运行时间：0.073625s][吞吐率：13.58req/s] [内存消耗：2,050.53kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T17:22:36+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/inspectionlist.html?_pjax=.content [运行时间：0.061951s][吞吐率：16.14req/s] [内存消耗：2,050.66kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T17:22:36+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.056906s][吞吐率：17.57req/s] [内存消耗：2,057.30kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T17:35:50+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/agricultrue.html?_pjax=.content [运行时间：0.040896s][吞吐率：24.45req/s] [内存消耗：2,059.50kb] [文件加载：59]
+[ error ] [64]Cannot redeclare app\ps\controller\Inspection::inspectionAdd()[D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php:35]
+---------------------------------------------------------------
+[ 2018-08-02T17:35:50+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.046141s][吞吐率：21.67req/s] [内存消耗：2,069.58kb] [文件加载：60]
+[ error ] [64]Cannot redeclare app\ps\controller\Inspection::inspectionAdd()[D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php:35]
+---------------------------------------------------------------
+[ 2018-08-02T17:36:34+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.074589s][吞吐率：13.41req/s] [内存消耗：2,133.51kb] [文件加载：60]
+[ error ] [64]Cannot redeclare app\ps\controller\Inspection::inspectionAdd()[D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php:35]
+---------------------------------------------------------------
+[ 2018-08-02T17:36:51+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.129660s][吞吐率：7.71req/s] [内存消耗：2,714.75kb] [文件加载：79]
+[ error ] [0]模板文件不存在:D:\PHPTutorial\WWW\geek\public/../app/ps\view\inspection\inspection_agriclutrue.html[D:\PHPTutorial\WWW\geek\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-08-02T17:45:14+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.084827s][吞吐率：11.79req/s] [内存消耗：2,135.49kb] [文件加载：60]
+[ error ] [64]Cannot redeclare app\ps\controller\Inspection::getGoodsInfo()[D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php:72]
+---------------------------------------------------------------
+[ 2018-08-02T17:45:15+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.059074s][吞吐率：16.93req/s] [内存消耗：2,071.77kb] [文件加载：60]
+[ error ] [64]Cannot redeclare app\ps\controller\Inspection::getGoodsInfo()[D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php:72]
+---------------------------------------------------------------
+[ 2018-08-02T17:45:16+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.037743s][吞吐率：26.50req/s] [内存消耗：2,071.77kb] [文件加载：60]
+[ error ] [64]Cannot redeclare app\ps\controller\Inspection::getGoodsInfo()[D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php:72]
+---------------------------------------------------------------
+[ 2018-08-02T17:45:16+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.036257s][吞吐率：27.58req/s] [内存消耗：2,071.77kb] [文件加载：60]
+[ error ] [64]Cannot redeclare app\ps\controller\Inspection::getGoodsInfo()[D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php:72]
+---------------------------------------------------------------
+[ 2018-08-02T17:45:17+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.049543s][吞吐率：20.18req/s] [内存消耗：2,071.77kb] [文件加载：60]
+[ error ] [64]Cannot redeclare app\ps\controller\Inspection::getGoodsInfo()[D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php:72]
+---------------------------------------------------------------
+[ 2018-08-02T17:45:17+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.047396s][吞吐率：21.10req/s] [内存消耗：2,071.77kb] [文件加载：60]
+[ error ] [64]Cannot redeclare app\ps\controller\Inspection::getGoodsInfo()[D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php:72]
+---------------------------------------------------------------
+[ 2018-08-02T17:45:17+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.042202s][吞吐率：23.70req/s] [内存消耗：2,071.77kb] [文件加载：60]
+[ error ] [64]Cannot redeclare app\ps\controller\Inspection::getGoodsInfo()[D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php:72]
+---------------------------------------------------------------
+[ 2018-08-02T17:45:18+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.091495s][吞吐率：10.93req/s] [内存消耗：2,135.49kb] [文件加载：60]
+[ error ] [64]Cannot redeclare app\ps\controller\Inspection::getGoodsInfo()[D:\PHPTutorial\WWW\geek\app\ps\controller\Inspection.php:72]
+---------------------------------------------------------------
+[ 2018-08-02T17:46:27+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.078658s][吞吐率：12.71req/s] [内存消耗：2,470.44kb] [文件加载：74]
+[ error ] [0]method not exist:think\db\Query->getGoodsInfo[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T17:46:28+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.056179s][吞吐率：17.80req/s] [内存消耗：2,470.44kb] [文件加载：74]
+[ error ] [0]method not exist:think\db\Query->getGoodsInfo[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T17:46:31+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.055177s][吞吐率：18.12req/s] [内存消耗：2,050.09kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T17:46:34+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.071544s][吞吐率：13.98req/s] [内存消耗：2,472.40kb] [文件加载：74]
+[ error ] [0]method not exist:think\db\Query->getGoodsInfo[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T17:47:03+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.073395s][吞吐率：13.62req/s] [内存消耗：2,470.44kb] [文件加载：74]
+[ error ] [0]method not exist:think\db\Query->getGoods[D:\PHPTutorial\WWW\geek\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2018-08-02T17:52:20+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.108694s][吞吐率：9.20req/s] [内存消耗：2,835.72kb] [文件加载：82]
+[ error ] [8]未定义变量: field[D:\PHPTutorial\WWW\geek\runtime\temp\73959c55d06910a4822d154dee867fbf.php:16]
+---------------------------------------------------------------
+[ 2018-08-02T17:52:22+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.116081s][吞吐率：8.61req/s] [内存消耗：2,897.32kb] [文件加载：83]
+[ error ] [8]未定义变量: field[D:\PHPTutorial\WWW\geek\runtime\temp\73959c55d06910a4822d154dee867fbf.php:264]
+---------------------------------------------------------------
+[ 2018-08-02T17:52:23+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.098743s][吞吐率：10.13req/s] [内存消耗：2,897.32kb] [文件加载：83]
+[ error ] [8]未定义变量: field[D:\PHPTutorial\WWW\geek\runtime\temp\73959c55d06910a4822d154dee867fbf.php:264]
+---------------------------------------------------------------
+[ 2018-08-02T17:52:25+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/menu/menulist/pid/239.html
+[ info ] larsun.com/ps/menu/menulist/pid/239.html [运行时间：0.078287s][吞吐率：12.77req/s] [内存消耗：2,061.09kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T17:52:29+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/inspectionlist.html?_pjax=.content [运行时间：0.084043s][吞吐率：11.90req/s] [内存消耗：2,050.66kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T17:52:29+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/inspectionlist.html
+[ info ] larsun.com/ps/inspection/inspectionlist.html [运行时间：0.056266s][吞吐率：17.77req/s] [内存消耗：2,057.30kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T17:52:33+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html?_pjax=.content
+[ info ] larsun.com/ps/inspection/agricultrue.html?_pjax=.content [运行时间：0.099864s][吞吐率：10.01req/s] [内存消耗：2,853.09kb] [文件加载：82]
+[ error ] [8]未定义变量: field[D:\PHPTutorial\WWW\geek\runtime\temp\73959c55d06910a4822d154dee867fbf.php:16]
+---------------------------------------------------------------
+[ 2018-08-02T17:52:33+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.099639s][吞吐率：10.04req/s] [内存消耗：2,897.16kb] [文件加载：83]
+[ error ] [8]未定义变量: field[D:\PHPTutorial\WWW\geek\runtime\temp\73959c55d06910a4822d154dee867fbf.php:264]
+---------------------------------------------------------------
+[ 2018-08-02T17:52:34+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.104995s][吞吐率：9.52req/s] [内存消耗：2,897.37kb] [文件加载：83]
+[ error ] [8]未定义变量: field[D:\PHPTutorial\WWW\geek\runtime\temp\73959c55d06910a4822d154dee867fbf.php:264]
+---------------------------------------------------------------
+[ 2018-08-02T18:02:35+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.145854s][吞吐率：6.86req/s] [内存消耗：2,904.18kb] [文件加载：83]
+[ error ] [8]未定义变量: field[D:\PHPTutorial\WWW\geek\runtime\temp\73959c55d06910a4822d154dee867fbf.php:277]
+---------------------------------------------------------------
+[ 2018-08-02T18:02:36+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.107901s][吞吐率：9.27req/s] [内存消耗：2,898.23kb] [文件加载：83]
+[ error ] [8]未定义变量: field[D:\PHPTutorial\WWW\geek\runtime\temp\73959c55d06910a4822d154dee867fbf.php:277]
+---------------------------------------------------------------
+[ 2018-08-02T18:02:54+08:00 ] 127.0.0.1 127.0.0.1 GET /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.124724s][吞吐率：8.02req/s] [内存消耗：2,904.34kb] [文件加载：83]
+[ error ] [8]Use of undefined constant insepection_time - assumed 'insepection_time'[D:\PHPTutorial\WWW\geek\runtime\temp\73959c55d06910a4822d154dee867fbf.php:277]
+---------------------------------------------------------------
+[ 2018-08-02T18:24:36+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.096935s][吞吐率：10.32req/s] [内存消耗：2,062.91kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T18:25:01+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.082440s][吞吐率：12.13req/s] [内存消耗：2,063.09kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T18:36:58+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/getGoodsInfo
+[ info ] larsun.com/ps/inspection/getGoodsInfo [运行时间：0.083139s][吞吐率：12.03req/s] [内存消耗：2,050.09kb] [文件加载：54]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
+---------------------------------------------------------------
+[ 2018-08-02T19:13:32+08:00 ] 127.0.0.1 127.0.0.1 POST /ps/inspection/agricultrue.html
+[ info ] larsun.com/ps/inspection/agricultrue.html [运行时间：0.097352s][吞吐率：10.27req/s] [内存消耗：2,062.88kb] [文件加载：55]
+[ error ] [2]file_put_contents(D:\PHPTutorial\WWW\geek\runtime\cache\01\f1f824749e48843962f3f27dca3286.php): failed to open stream: Permission denied[D:\PHPTutorial\WWW\geek\thinkphp\library\think\cache\driver\File.php:152]
