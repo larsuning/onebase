@@ -1,0 +1,570 @@
+<style>
+.addG {
+    width: 100vw;
+    height: 100vh; 
+    background: rgba(0, 4, 8, 0.6); 
+    z-index: 999900; 
+    position: fixed; 
+    top: 0px !important;left: 0;
+    z-index: 10;
+    overflow: auto; 
+    display: none;
+}
+
+ .addG .addtable{
+    position: fixed;
+    width: 70vw!important;
+    top:10vh;
+    left:15vw;
+    background: whitesmoke!important;
+    padding: 20px;
+    border-radius:5px;
+}
+
+.addG table{
+    background: white!important;
+    width:100%!important;
+}
+
+.addG #myTable_wrapper{
+    
+    padding: 10px;
+}
+
+
+
+#myTable tbody .selected{
+    background-color: #acbad4;
+    border-bottom: 1px #ccc solid;
+}
+
+ #dataTables-example tbody .selected{
+    background-color: #acbad4;
+    border-bottom: 1px #ccc solid;
+}
+
+.modal-backdrop.in {
+    display: none:!important;
+}   
+</style>    <div class="box">
+        <div class="box-body">
+            <div class="row">
+              {empty name=":input('review')"}
+                <div class="col-md-6">
+                    <div class="form-group" >
+                        <label>选择采购单</label>
+                        <span></span>
+                            <input type="text" class="form-control" name="" value="" id="selectPurchase">
+                    </div>
+                </div>
+                <div class="row"></div>
+                <div class="col-md-6" style="display: none">
+                    <div class="form-group" >
+                        <label>选择商品</label>
+                        <span></span>
+                            <div class='goods'>
+                            <input type="text" class="form-control" name="" value="" id="selectGoods">
+                        </div>
+
+                    </div>
+                </div>
+                 <button id="add-goods" class="btn btn-sm" style="float:left;margin-top: 26px;display: none" ><i class="fa fa-plus"></i> 批量新增</button>
+            {else}
+                <div class="col-md-2" style='float:left' >
+                    <div class="form-group" >
+                        <label>日期： <b style="font-size: 20px;text-decoration: underline;">{$review.record_date}</b></label>
+                    </div>
+                </div>
+
+                <div class="col-md-2" style='float:right' >
+                    <div class="form-group" >
+                        <label>检测品管： <b style="font-size: 20px;text-decoration: underline;">{$review.checker}</b></button></label>
+                    </div>
+                </div>
+
+            {/empty}
+              <table class="table table-bordered" style="margin: 5px" id="fresh">
+                <thead>
+                    <tr>
+                      <!-- <th>#</th> -->
+                      <th>商品名称</th>
+                      <th>供应商</th>
+                      <th>商品批次</th>
+                      <th>检测时间</th>
+                      <th>合格证</th>
+                      <th>产品基数(kg)</th>
+                      <th>抽检数量(kg)</th>
+                      <th>不良数量(kg)</th>
+                      <th>不良比例</th>
+                      <th>异常反馈</th>
+
+                      {empty name=":input('review')"}
+                        <th>操作</th>
+                      {/empty}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {volist name='list.1' id='vo'} 
+                     <tr data-id="{$vo.id}"> 
+                        <td> {$vo.name} </td>
+                        <td> {$vo.provider}</td>
+                        <td> {$vo.goods_batch}</td>
+                        <td><input type="text" value="{$vo.inspect_time}" name="inspect_time" /></td>
+                        <td> <select name="is_qualified" id="">
+                            <option value="0">无</option>
+                            <option value="1" {eq name="$vo.is_qualified" value='1'} selected{/eq}>有</option>
+                        </select> </td>
+                        <td>{$vo.product_total}</td>
+                        <td> <input type="text" value="{$vo.product_select}" name="product_select" /> </td>
+                        <td><input type="text" value="{$vo.unqualified_num}" name="unqualified_num" /></td>
+                        <td>{$vo.unqualified_rate}%</td>
+                        <td><textarea name="" id="" class="form-control" >{$vo.remark}</textarea> </td>
+                    </tr>
+                    {/volist}
+                    {empty name="list"}
+                    <tr>
+                        <td colspan='11' style='text-align: center;height: 100px;line-height: 100px'>请选择采购单，若采购单数据为空，请先申请采购单。</td>
+                    </tr>
+                    {/empty}
+  
+                </tbody>
+             </table>
+            
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class='plus_box'>
+    </div>
+    
+    <div class="box-footer">
+
+     {empty name="review"}
+        
+        <a class="btn finish" ><i class="fa fa-history"></i> 完 成</a>
+
+        <a class="btn" onclick="javascript:history.back(-1);return false;"><i class="fa fa-history"></i> 返 回</a>
+    {else}
+        {empty name="review.reviewer"}
+            <div class="col-md-6">
+                <div class="form-group" >
+                    <label>审核意见</label>
+                    <span></span>
+                        <input type="text" class="form-control" name="review_note" value="" >
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="form-group" >
+                   
+                        <a class="btn review" ><i class="fa fa-check"></i> 确 认 审 核</a>
+                        <a class="btn" onclick="javascript:history.back(-1);return false;"><i class="fa fa-history"></i> 返 回</a>
+                </div>
+            </div>
+        {else}
+            <div class="col-md-6">
+                <div class="form-group" >
+                    <label>品质主管：<span style="font-size: 20px;text-decoration: underline;">{$review.reviewer}</span></label><br>
+                    <label>审核时间：<span style="font-size: 18px;text-decoration: underline;">{:date('Y-m-d H:i:s',$review.update_time)}</span></label><br>
+                    <label>审核意见：<span style="font-size: 18px;font-weight: normal;">{$review.review_note}</span></label><br>
+                    <br>
+                    <a class="btn" onclick="javascript:history.back(-1);return false;"><i class="fa fa-history"></i> 返 回</a>
+                        
+                </div>
+            </div>
+        {/empty}
+
+        
+    {/empty}
+    
+    <div class="addG" >
+        <div class="col-lg-12 addtable">
+
+         <div class="row">
+             <button style="display: block;float:right;margin-right: 20px" class="close"><i class="fa fa-close"></i></button>
+            <h3 class='panel-heading' style="margin-top: 0px">选择商品</h3>
+
+            <table class="table table-hover" id="myTable" cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <td>id</td>
+                        <td>商品</td>
+                        <td>供应商</td>
+                    </tr>
+                </thead>
+                
+            </table>
+
+        <div class="form-group col-lg-12">
+      
+        <button type="submit" name="submit"  class="btn btn-default add">添加</button>
+        <button type="reset" name="reset"  class="btn btn-default" id='close'>关闭</button>
+        </div>
+
+        </div>
+        </div>
+    </div>
+        
+    </div>
+
+<script type="text/javascript">
+    $('.date').datetimepicker({
+        language:"zh-CN",
+        todayHighlight:true,
+        todayBtn:true,
+        format:'yyyy-mm-dd',
+        minView:1,
+        autoclose:true,
+        minView:'3'
+
+    });
+    $('.datetime').datetimepicker({
+        language:"zh-CN",
+        todayHighlight:true,
+        todayBtn:true,
+        format:'yyyy-mm-dd hh:ii',
+        minView:1,
+        autoclose:true,
+
+    });
+
+    $('input').attr('autocomplete','off');
+    if("{:input('review')}"){
+        $('table input,select,textarea').attr('disabled','on');
+    }
+    //完成当前表单数据并提交
+    $('.finish').click(function(){
+        var confirm = '';
+        $('#fresh input,textarea').each(function(){
+            if($(this).val() == ''){
+                $(this).focus();
+                confirm = false;
+                d= {"code":0,"msg":"当前数据未填写完成"};
+                // obalert(d);
+                return false;
+            }
+            confirm = true;
+        })
+        // if(!confirm) return false;
+        _length = $('#fresh tr').length;
+        _id = $('#fresh tr').eq(_length-1).attr('data-id');
+
+        $(this).attr('disabled','on');
+
+        $.post('?action=recordEdit',{inspection_id:_id},function(d){
+            obalert(d);
+            $(this).attr('disabled','off');
+
+        })
+    })
+
+    //审核提交
+    $('.review').click(function(){
+        _id = "{:input('review')}";
+        _note = $('input[name="review_note"]').val();
+        // $(this).attr('disabled','on');
+        $.post('recordEdit.html',{id:_id,review_note:_note},function(d){
+            // $(this).attr('disabled','off');
+            
+            obalert(d);
+
+        })
+        .fail(function(){
+            $(this).attr('disabled','off');
+        })
+    })
+
+    var purchase_id = '';
+    $("#selectPurchase").selectPage({
+                showField: 'sn',
+                keyField: 'id',
+                data: '/ps/inspection/fresh?action=getPurchase&mark=2&type=3',
+                pageSize: 8,
+                formatItem : function(data){
+                    return  data.sn;
+                },
+                eAjaxSuccess: function (data) {
+                    var result;
+                    if (data) result = data;
+                    else result = undefined;
+                    return result;
+                },
+                // 选中商品自动完成后;执行事件
+                eSelect : function(data){
+                    purchase_id=data.id;
+                    $('#add-goods').fadeIn();
+                    $('#selectPurchase_text').val(data.sn);
+                    //生成当前表单信息
+                    $.post('?action=getUnmarkData&type=3',{purchase_id:data.id},function(d){
+                        if(d.code == 1){
+                            $('#fresh tbody').html('');
+                            content = '';
+                            $.each(d.data,function(index, item) {
+                                qualified = item.is_qualified == 1?'selected':'';
+                                selected   = item.is_certificate == 1?'selected':'';
+                                content += '<tr data-id="'+item.id+'" goods-id="'+item.goods_id+'">'+ 
+                                '<td> '+item.name+' </td>' +
+                                '<td> '+item.provider+'</td>' +
+                                '<td> '+item.goods_batch+'</td>' +
+                                '<td><input type="text" value="'+item.inspect_time+'" name="inspect_time" /></td>' +
+                                '<td><select name="is_certificate"><option value="0">无</option><option value="1" '+selected+'>有</option></select></td>'+
+                                '<td>'+item.product_total+'</td>' +
+                                '<td> <input type="text" value="'+item.product_select+'" name="product_select" /> </td>' +
+                                '<td><input type="text" value="'+item.unqualified_num+'" name="unqualified_num" /></td>'+                        
+                                '<td><span>'+item.unqualified_rate+'</span>%</td><td><textarea  name="remark" >'+item.remark+'</textarea></td><td><button class="btn delete">删除</button></td> </tr>';   
+                            });
+                            $('#fresh tbody').append(content);
+                            $('input').attr('autocomplete','off');
+
+                        }else{
+                            
+                             content = "<tr class='tip'><td colspan='9' style='text-align: center'>请选择商品。</td></tr>";
+                             $('#fresh tbody').html(content);
+                        }
+                    })
+
+                    //初始化商品选择
+                    $('.goods').html('');
+                    $('.goods').append('<input class="form-control" type="text" id="selectGoods">');
+
+                    //根据订单ID获取商品
+                    selectGood();
+
+                },
+            });
+
+
+    var mydate = new Date();
+    h = mydate.getHours()<10? ('0')+mydate.getHours():mydate.getHours();
+    i = mydate.getMinutes()<10?('0')+mydate.getMinutes():mydate.getMinutes();
+    _time = h+':'+i;
+
+    //自动生成当前时间
+    $('#fresh').on('click','input[name="inspect_time"]',function(){
+        $(this).val(_time);
+        _id   = $(this).parents('tr').attr('data-id');
+        $.post('?action=inspectionUpdate',{inspect_time:_time,id:_id},function(d){
+            console.log(d);
+        })
+    })
+
+    //删除数据
+    $('#fresh').on('click','.delete',function(){
+        _sure = confirm('确认删除?');
+        if(!_sure) return false;
+        _id = $(this).parents('tr').attr('data-id');
+        _index = $(this).parents('tr').index();
+        $.post('?action=inspectionDel',{id:_id},function(d){
+            if(d.code == '1'){
+                $('#fresh tr').eq(_index+1).fadeOut();
+                $('#fresh tr').eq(_index+1).html('');
+            }else{
+                obalert(d);
+            }
+        })
+    })
+
+    //更新数据
+    $('#fresh').on('change','input,textarea,select',function(){
+        _name = $(this).attr('name');
+        _val  = $(this).val();
+        _id   = $(this).parents('tr').attr('data-id');
+        data  = _name+'='+_val+'&id='+_id;
+
+        //输入判断
+        if( _name =='product_select'){
+            _total = $(this).parents('tr').children('td').eq(5).text();
+            if(parseFloat(_total) < parseFloat(_val)){
+                d= {"code":0,"msg":"抽检数不应大于产品总数"};
+                obalert(d);
+                $(this).val('');
+                $(this).focus();
+                return false;
+            }
+        }
+
+
+         //输入判断
+        if( _name =='unqualified_num'){
+            _select = $(this).parents('tr').children('td').eq(6).children('input').val();
+            if(parseFloat(_select) < parseFloat(_val)){
+                d= {"code":0,"msg":"不良数不应大于抽检数"};
+                obalert(d);
+                $(this).val('');
+                $(this).focus();
+                return false;
+            }
+        }
+
+        if(_name=='unqualified_num' || _name=='product_select'){
+            _select = $(this).parents('tr').children('td').eq(6).children('input').val();
+            _num = $(this).parents('tr').children('td').eq(7).children('input').val();
+            if(_select !=='' && _num !==''){
+
+                _rate = ((_num/_select)*100).toFixed(2);
+                $(this).parents('tr').children('td').eq(8).children('span').text(_rate);
+                data += '&unqualified_rate='+_rate;
+            }
+        }
+
+        $.post('?action=inspectionUpdate',data,function(d){
+            if(d.code == 0){
+                obalert(d);
+            }
+        })
+
+        .fail(function(){
+            $(this).val('');
+        })
+    })
+
+
+    function selectGood(){
+        $('.goods ').parents('.col-md-6').fadeIn(100);
+            $('.goods #selectGoods').selectPage({
+                showField: 'name',    
+                keyField: 'id',
+                data: '/ps/inspection/fresh?action=getGoods&purchase_id='+purchase_id,
+                pageSize: 8,
+                formatItem : function(data){
+                    return  data.name;
+                },
+                eAjaxSuccess: function (data) {
+                    var result;
+                    if (data) result = data;
+                    else result = undefined;
+                    return result;
+                },
+                // 选中商品自动完成后;执行事件
+                eSelect : function(data){
+                    $('table .tip').html('');
+
+                    // 清除搜索框内容
+                    $('#selectGoods').selectPageClear();
+                    var ids = getIdsName();
+                    if ( $.inArray(data.goods_id, ids) > -1){
+                        return false;
+                    }
+                    $.post('',data,function(d){
+                        if(d.code == '1'){
+                            tr = '<tr data-id="'+d.data.id+'" goods-id="'+d.data.goods_id+'">'+ 
+                            '<td> '+d.data.name+' </td>' +
+                            '<td> '+d.data.provider+'</td>' +
+                            '<td> '+d.data.goods_batch+'</td>' +
+                            '<td><input type="text" value="" name="inspect_time" /></td>' +
+                            '<td> <select name="is_certificate"><option value="0">无</option><option value="1" >有</option></select>    </td>'+
+                            '<td>'+d.data.product_total+'</td>' +
+                            '<td> <input type="text" value="" name="product_select" /> </td>' +
+                            '<td> <input type="text" value="" name="unqualified_num"> </td>' +
+                            '<td><span>0.00</span>% </td><td> <textarea type="text" value="" name="remark" ></textarea> </td><td><button class="btn delete">删除</button></td> </tr>';   
+                        }   
+                        $('#fresh tbody').append(tr);
+
+                    });
+                    // console.log(data);
+
+
+                },
+                eClear: function(){
+                    $('#selectGoods').selectPageClear();
+                    $('#selectGoods').selectPageData([]);
+                }
+            });
+    }
+
+    function getIdsName(){
+         var ids = [];
+                $("#fresh tr").each(function () {
+                    if ($(this).text() == '' ) {
+                        return false;
+                    }
+                    ids.push(Number($(this).attr("goods-id")));
+                })
+
+
+        return ids;
+    }
+
+    //批量添加
+    $('#add-goods').click(function(){
+        newTable();
+        $('.addG').slideDown();
+    })
+
+    $('.close,#close').click(function(event) {
+        $('.addG').slideUp();
+    });
+
+
+    function newTable(){
+        $('#myTable').DataTable({
+                "destroy":'true',
+                "ajax": '/ps/inspection/fresh?action=getGoods&purchase_id='+purchase_id,
+                'order' : ['0','aesc'],
+                'stateSave' : 'true',
+                "language": {
+                        "lengthMenu": "每页 _MENU_ 条记录",
+                        "zeroRecords": "没有找到记录",
+                        "info": "第 _PAGE_ 页 ( 总共 _PAGES_ 页 )",
+                        "infoEmpty": "无记录",
+                        "infoFiltered": "(从 _MAX_ 条记录过滤)",
+                         "search":'搜索',
+                        "paginate": {
+                            "first":    "首页",
+                            "previous": "上一页",
+                            "next":     "下一页",
+                            "last":     "尾页"
+                        }
+                    },
+                "lengthMenu": [[10, 30, 50, -1], [10, 30, 50, "All"]],
+            });
+    }
+
+     $("#myTable").on('click','tr',function(){
+                        if( $(this).hasClass('selected')){
+                            $(this).removeClass('selected');
+                        }
+                        else{
+                            $(this).addClass('selected');
+
+                        }
+                    });
+     $('.add').click(function(){
+        _len = $('#myTable .selected').length;
+        if(!_len){
+            alert('无选中行');
+            return false;
+        }
+        $('.addG').slideUp();
+        $('.tip').html('');
+        var id = '';
+
+        for (var i = _len- 1; i >= 0; i--) {
+             id = $('#myTable  .selected').eq(i).children('td').eq('0').text();
+             getGoodsById(id);
+        }
+
+    })
+
+    function getGoodsById(id){
+         $.post('',{good_id:id},function(d){
+            if(d.code == '1'){
+                tr = '<tr data-id="'+d.data.id+'" goods-id="'+d.data.goods_id+'">'+ 
+                            '<td> '+d.data.name+' </td>' +
+                            '<td> '+d.data.provider+'</td>' +
+                            '<td> '+d.data.goods_batch+'</td>' +
+                            '<td><input type="text" value="" name="inspect_time" /></td>' +
+                            '<td> <select name="is_certificate"><option value="0">无</option><option value="1" >有</option></select>    </td>'+
+                            '<td>'+d.data.product_total+'</td>' +
+                            '<td> <input type="text" value="" name="product_select" /> </td>' +
+                            '<td> <input type="text" value="" name="unqualified_num"> </td>' +
+                            '<td><span>0.00</span>% </td><td> <textarea type="text" value="" name="remark" ></textarea> </td><td><button class="btn delete">删除</button></td> </tr>';  
+            }   
+            $('#fresh tbody').append(tr);
+            $('#fresh input').attr('autocomplete','off');
+        })
+    }
+
+
+
+</script>

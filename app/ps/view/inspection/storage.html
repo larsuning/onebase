@@ -1,0 +1,228 @@
+    <div class="box">
+
+    <div class="box-header">
+
+      {empty name='review'}
+            <h4 style="float:left">日期：{:date('Y-m-d')}</h4>
+        {else}
+            <h4 style="float:left;">日期：<span style="text-decoration: underline;">{$review.record_date}</span></h4>
+            <h4 style="float:left;margin-left: 20px;">巡检品管：<span style="text-decoration: underline;font-weight: bold">{$review.checker}</span></h4>
+        {/empty}
+        {gt name=":count($list)" value='1'}
+         <select name=""   class="form-control" style="float:left;width: 150px;font-weight: bold;margin-left: 20px" id="round" >
+            {volist name='$list' id= 'vo' key = 'k'}
+            <option value="{$key}">第{$k}次巡查</option>
+            {/volist}
+        </select>
+        {/gt}
+
+        {empty name="review"}
+        <select name=""   class="form-control" style="float:right;width: 150px;font-weight: bold" id="storage_shift">
+            {volist name="shift" id= 'vo' key='k'}
+                <option value="{$key}" {notempty name="$_GET['shift']"}{eq name="$_GET['shift']" value='$key'}selected{/eq}{/notempty}>{$vo}</option>
+            {/volist}
+
+        </select>
+        {else}
+            <select name=""   class="form-control" style="float:right;width: 150px;font-weight: bold" disabled='on'>
+            <option value="1" {eq name="$review.shift" value='1'}selected{/eq}>早班</option>
+            <option value="2"  {eq name="$review.shift" value='2'}selected{/eq}>中班</option>
+            <option value="3" {eq name="$review.shift" value='3'}selected{/eq} >晚班</option>
+            </select>
+        {/empty}
+
+        
+    </div>
+        <div class="box-body">
+            <div class="row">
+              <table class="table table-bordered" style="margin: 5px" id="storage">
+                <thead>
+                    <tr>
+                      <!-- <th>#</th> -->
+                      <th>区域</th>
+                      <th>时间（时/分）</th>
+                      <th>温度（ ℃ ）</th>
+                      <th>湿度（ % ）</th>
+                      <th>产品保存状况（异常反馈）</th>
+                      <th>卫生状况（异常反馈）</th>
+
+                    </tr>
+                  </thead>
+                  {empty name="list"}
+                      <tbody>
+                          <tr><td colspan="7" style="text-align: center;height: 100px;line-height: 100px">当天的存储区巡查记录已经全部提交完毕!</td></tr>
+                      </tbody>
+                  {/empty}
+
+                    {volist name='list' id='li'}
+                    <tbody>
+                    {volist name='li' id="vo"  }
+                    <tr data-id="{$vo.id}">
+                        <td> {$vo.area} </td>
+                        <td> <input type="text" value="{$vo.inspectioned_at}" name="inspectioned_at"/> </td>
+                        <td> <input type="text" value="{$vo.temperature}" name="temperature" /> </td>
+                        <td> <input type="text" value="{$vo.humidity}" name='humidity'/> </td>
+                        <td> <input type="text" value="{$vo.saving_status}" name="saving_status" /> </td>
+                        <td> <input type="text" value="{$vo.clean_status}" name="clean_status" /> </td>
+                    </tr>
+                    {/volist}
+                    </tbody>
+                {/volist}
+             </table>
+                
+            </div>
+        </div>
+    </div>
+    
+ 
+    
+    <div class="box-footer">
+
+ 
+        
+         {empty name="review"}
+        
+        <a class="btn finish" ><i class="fa fa-history"></i> 完 成</a>
+
+        <a class="btn" onclick="javascript:history.back(-1);return false;"><i class="fa fa-history"></i> 返 回</a>
+        {else}
+        {empty name="review.reviewer"}
+            <div class="col-md-6">
+                <div class="form-group" >
+                    <label>审核意见</label>
+                    <span></span>
+                        <input type="text" class="form-control" name="review_note" value="" >
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="form-group" >
+                   
+                        <a class="btn review" ><i class="fa fa-check"></i> 确 认 审 核</a>
+                        <a class="btn" onclick="javascript:history.back(-1);return false;"><i class="fa fa-history"></i> 返 回</a>
+                </div>
+            </div>
+        {else}
+            <div class="col-md-6">
+                <div class="form-group" >
+                    <label>品质主管：<span style="font-size: 20px;text-decoration: underline;">{$review.reviewer}</span></label><br>
+                    <label>审核时间：<span style="font-size: 18px;text-decoration: underline;">{:date('Y-m-d H:i:s',$review.update_time)}</span></label><br>
+                    <label>审核意见：<span style="font-size: 18px;font-weight: normal;">{$review.review_note}</span></label><br>
+                    <br>
+                    <br>
+                    <a class="btn" onclick="javascript:history.back(-1);return false;"><i class="fa fa-history"></i> 返 回</a>
+                        
+                </div>
+            </div>
+        {/empty}
+
+        
+    {/empty}
+        
+    </div>
+
+<script type="text/javascript">
+    $('.date').datetimepicker({
+        language:"zh-CN",
+        todayHighlight:true,
+        todayBtn:true,
+        format:'yyyy-mm-dd',
+        minView:1,
+        autoclose:true,
+        minView:'3'
+
+    });
+
+    $('.datetime').datetimepicker({
+        language:"zh-CN",
+        todayHighlight:true,
+        todayBtn:true,
+        format:'yyyy-mm-dd hh:ii',
+        minView:1,
+        autoclose:true,
+
+    });
+
+    $('input').attr('autocomplete','off');
+    if("{:input('review')}"){
+        $('.table input,textarea').attr('disabled','on');
+    }
+
+    //完成当前表单数据并提交
+    $('.finish').click(function(){
+          var confirm = '';
+        $('#storage input').each(function(){
+            if($(this).val() == ''){
+                $(this).focus();
+                confirm = false;
+                d= {"code":0,"msg":"当前数据未填写完成"};
+                obalert(d);
+                return false;
+            }
+            confirm = true;
+        })
+        if(!confirm) return false;
+        _id = $('#storage tr').eq(1).attr('data-id');
+        $.post('?action=recordEdit',{storage_id:_id},function(d){
+            obalert(d);
+        })
+    })
+
+     //审核提交
+    $('.review').click(function(){
+        _id = "{:input('review')}";
+        _note = $('input[name="review_note"]').val();
+        $(this).attr('disabled','on');
+        $.post('recordEdit.html',{id:_id,review_note:_note},function(d){
+            obalert(d);
+            $(this).attr('disabled','off');
+
+        })
+    })
+
+    //轮巡次数
+    $('table tbody').eq('0').siblings('tbody').css('display','none');
+    
+    $("#round").change(function(){
+        _index = $(this).val();
+        $('table tbody').eq(_index).siblings('tbody').css('display','none');
+        $('table tbody').eq(_index).fadeIn(100);
+    })
+
+
+    var mydate = new Date();
+    h = mydate.getHours()<10? ('0')+mydate.getHours():mydate.getHours();
+    i = mydate.getMinutes()<10?('0')+mydate.getMinutes():mydate.getMinutes();
+    _time = h+':'+i;
+    $('table').on('click','input[name="inspectioned_at"]',function(){
+        $(this).val(_time);
+        _id   = $(this).parents('tr').attr('data-id');
+        $.post('',{inspectioned_at:_time,id:_id},function(d){
+            console.log(d);
+        })
+    })
+
+    $('table').on('change','input',function(){
+        _name = $(this).attr('name');
+        _val  = $(this).val();
+        _id   = $(this).parents('tr').attr('data-id');
+        data  = _name+'='+_val+'&id='+_id;
+        $.post('',data,function(e){
+            console.log(e);
+            return false;   
+        })
+    })
+
+    $('#storage_shift').on('change',function(e){
+        _val=$(this).val();
+       _val=$(this).val();
+         url = window.location.href;
+        _index =  url.indexOf('?');
+        if(_index > -1){
+            url = url.substr(0,_index);
+        }
+        window.location.href= url+'?shift='+_val;
+    })
+
+
+   
+</script>

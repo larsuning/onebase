@@ -1,0 +1,302 @@
+<script type="text/javascript" src="__STATIC__/module/common/js/ddsort.js"></script>
+<form action="{:url()}" method="post"  class="form_single">
+
+    <div class="box">
+
+
+        <div class="tab-content" id="contents">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>模型名称</label>
+                        <span>（系统后台显示菜单名称）</span>
+                        <input class="form-control" name="name" placeholder="请输入菜单名称" value="{$info['name']|default=''}" type="text">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>模块目录</label>
+                        <span>（系统模块：默认为admin）</span>
+                        <input class="form-control" name="module" placeholder="请输入模块名称" value="{$info['module']|default='admin'}" type="text">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>CURD标示</label>
+                        <span>（模型唯一标识）</span>
+                        <input class="form-control" name="url" placeholder="请输入命名名称" value="{$info['url']|default=''}" type="text">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>数据表名称</label>
+                        <span>(比如:输入land_post,生成前缀(ob_)+land_post的mysql表(ob_land_post))</span>
+                        <input class="form-control" name="tb_name" placeholder="请输入数据表名称" value="{$info['tb_name']|default=''}" type="text">
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div >
+                            <label class="zdmar-left-10">字段管理<span class="zdtishi"><br>(生成table按钮：选中该字段后提交,输入数据表名称,再点击生成)<br>(更新属性入库：更新后的字段全是string类型,若要生成addview或editview,需要自己更改属性的type再生成view)</span></label>
+                            <div class="zdguanli">
+                                <div class=" zdkuangjia" >
+                                    <div class="zdliebiao " ><span><label class="zdmar-left-10">字段列表[ <a href="{:url('attribute/attributeAdd?model_id='.$info['id'])}" target="_balnk">新增</a>
+							<a href="{:url('attribute/attributeList?model_id='.$info['id'])}" target="_balnk">管理</a> ]</label></span>
+                                        <input type="checkbox" id="attribute_list_fanxuan"/> 反选|table表:
+                                        <input type="text" name="table_name" placeholder="请输入要生成的数据表名称"><input  type="submit" class="btn ladda-button ajax-post" id="create_table" value="生成table" data-style="slide-up" target-form="form_single" />
+                                        <input  type="submit" class="btn ladda-button ajax-post" id="update_table_attributes" value="更新属性字段入库" data-style="slide-up" target-form="form_single" />
+                                    </div>
+                                    <div class="zdgundong">
+                                        <ul class="ulnone" id="attribute_list">
+                                            <li class="zili">
+                                                <input type="checkbox" class="zdmar-right-5" checked="checked" disabled="true" > 字段名：[id] | 备注： 表主键id | 字段定义：[int(10) unsigned NOT NULL AUTO_INCREMENT]
+                                            </li>
+                                            <li class="zili">
+                                                <input type="checkbox" class="zdmar-right-5" checked="checked" disabled="true" > 字段名：[name] | 备注： 名称 | 字段定义：[char(50) NOT NULL DEFAULT '']
+                                            </li>
+                                            <li class="zili">
+                                                <input type="checkbox" class="zdmar-right-5" checked="checked" disabled="true" > 字段名：[status] | 备注： 数据状态 | 字段定义：[tinyint(1) NOT NULL DEFAULT '1']
+                                            </li>
+                                            <li class="zili">
+                                                <input type="checkbox" class="zdmar-right-5" checked="checked" disabled="true" > 字段名：[create_time] | 备注： 创建时间 | 字段定义：[int(11) unsigned NOT NULL DEFAULT '0']
+                                            </li>
+                                            <li class="zili">
+                                                <input type="checkbox" class="zdmar-right-5" checked="checked" disabled="true" > 字段名：[update_time] | 备注： 更新时间 | 字段定义：[int(11) unsigned NOT NULL DEFAULT '0']
+                                            </li>
+                                            {foreach name="fields" item="field" key="k"}
+                                            <li class="zili">
+
+                                                <input type="checkbox" class="zdmar-right-5" name="attribute_list[]" value="{$field['id']}" {if condition="in_array($field['id'],$info['attribute_list'])"}checked="true"{/if} />  [{$field['id']}]字段名：[{$field['name']}] | 备注： {$field['title']} | 字段定义：[{$field['field']} DEFAULT '{$field['value']}']
+                                                {empty name="$info['view_add_set']"}
+                                                <input type="hidden" name="view_add_set[]" value="{$field['id']}">
+                                                {/empty}
+                                                {empty name="$info['view_edit_set']"}
+                                                <input type="hidden" name="view_edit_set[]" value="{$field['id']}">
+                                                {/empty}
+                                            </li>
+                                            {/foreach}
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>列表页面的显示定义</label>
+                        <span class="zdtishi">(默认列表模板的展示规则)</span>
+                        <input  type="submit" class="btn ladda-button ajax-post" id="list_tpl" value="生成list视图模板" data-style="slide-up" target-form="form_single" />
+                        <textarea class="form-control width-" name="list_grid" rows="9" placeholder="例子：
+id:编号
+name:名称
+status:状态
+create_time:创建时间
+" >{$info['list_grid']|default='id:编号
+name:名称
+status:状态
+create_time:创建时间'}</textarea>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div >
+                            <label class="zdmar-left-10">新增页面的显示定义<span class="zdtishi">（选中该字段后提交，新增页面才会显示）</span></label>
+                            <div class="zdguanli">
+                                <div class=" zdkuangjia" >
+                                    <div class="zdliebiao " ><span><label class="zdmar-left-10">字段列表</label>
+                                    <input  type="submit" class="btn ladda-button ajax-post" id="add_tpl" value="生成add视图模板" data-style="slide-up" target-form="form_single" />
+                                    </span>
+                                        <input type="checkbox" id="add_fanxuan"/> 反选
+                                    </div>
+                                    <div class="zdgundong">
+                                        <ul class="ulnone" id="view_add">
+                                            {foreach name=":str2arr($info.view_add_set)" item="vs"}
+                                            {foreach name="fields" item="field" key="k"}
+                                            {if condition="$vs eq $field['id']"}
+                                            <li class="zili">
+                                                <input type="checkbox" class="zdmar-right-5" name="view_add[]" value="{$field['id']}" {if condition="in_array($field['id'],$info['view_add'])"}checked="checked"{else/}{/if} />  [{$field['id']}]字段名：[{$field['name']}] | 备注： {$field['title']} | 字段定义：[{$field['field']} DEFAULT '{$field['value']}']
+                                                <input type="hidden" name="view_add_set[]" value="{$vs}">
+                                            </li>
+                                            {/if}
+                                            {/foreach}
+                                            {/foreach}
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="zdmar-left-10">编辑页面的显示定义<span class="zdtishi">（选中该字段后提交，编辑页面才会显示）</span></label>
+                        <div class="zdguanli">
+                            <div class=" zdkuangjia" >
+                                <div class="zdliebiao " ><span><label class="zdmar-left-10">字段列表</label><input  type="submit" class="btn ladda-button ajax-post" id="edit_tpl" value="生成edit视图模板" data-style="slide-up" target-form="form_single" />
+                                    </span>
+                                    <input type="checkbox" id="edit_fanxuan"/> 反选
+                                </div>
+                                <div class="zdgundong">
+                                    <ul class="ulnone" id="view_edit">
+                                        {foreach name=":str2arr($info.view_edit_set)" item="vs"}
+                                        {foreach name="fields" item="field" key="k"}
+                                        {if condition="$vs eq $field['id']"}
+                                        <li class="zili">
+
+                                            <input type="checkbox" class="zdmar-right-5" name="view_edit[]" value="{$field['id']}" {if condition="in_array($field['id'],$info['view_edit'])"}checked="true"{/if} />  [{$field['id']}]字段名：[{$field['name']}] | 备注： {$field['title']} | 字段定义：[{$field['field']} DEFAULT '{$field['value']}']
+                                            <input type="hidden" name="view_edit_set[]" value="{$vs}">
+                                        </li>
+                                        {/if}
+                                        {/foreach}
+                                        {/foreach}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-footer">
+
+            <input type="hidden" name="id" value="{$info['id']|default='0'}"/>
+
+            {include file="layout/edit_btn_group"/}
+
+        </div>
+</form>
+<!--<script type="text/javascript" src="__STATIC__/jquery.dragsort-0.5.1.min.js"></script>-->
+<script type="text/javascript">
+
+    $(function () {
+        $(".ladda-button").click(function () {
+            var text = $(this).attr('id');
+            if (text == "add_tpl") {
+                $("form").attr("action", "{:url('curdcreate/create_add_view')}");
+            }else if(text == "edit_tpl"){
+                $("form").attr("action", "{:url('curdcreate/create_edit_view')}");
+            } else if(text == "list_tpl") {
+                $("form").attr("action", "{:url('curdcreate/create_list_view')}");
+            }else if(text == 'create_table') {
+                $("form").attr("action", "{:url('curdcreate/create_sql_table')}");
+            }else if(text == 'update_table_attributes'){
+                $("form").attr("action", "{:url('curdcreate/update_table_attributes')}");
+            }else{
+                $("form").attr("action", "{url()}");
+            }
+        });
+
+
+        $("input[name='api_is_show']").click(function(){
+            var val = $(this).val();
+           if(val==1){
+               $('#api_form').show();
+           }else if(val == 2){
+               $('#api_form').hide();
+           }
+        });
+
+        $("#add_fanxuan").click(function(){
+
+            $("#view_add > li input:checkbox").each(function(){
+
+                $(this).prop("checked",!$(this).prop("checked"));
+            });
+
+        });
+        $("#edit_fanxuan").click(function(){
+
+            $("#view_edit > li input:checkbox").each(function(){
+
+                $(this).prop("checked",!$(this).prop("checked"));
+            });
+        });
+        $("#attribute_list_fanxuan").click(function(){
+            $("#attribute_list > li input[name='attribute_list[]']:checkbox").each(function(){
+                $(this).prop("checked",!$(this).prop("checked"));
+            });
+        });
+    })
+
+
+
+    $('#view_add').DDSort();
+    $('#view_edit').DDSort();
+    ob.setValue("is_hide", {$info.is_hide|default=0});
+    ob.setValue("pid", {$info.pid|default=0});
+
+    /*    //拖曳插件初始化
+        $(function(){
+            $("#ceshi").dragsort();
+            $(".needdragsort").dragsort({
+                dragSelector:'div',
+                // placeHolderTemplate: '<li class="draging-place">&nbsp;</li>',
+                dragBetween:true,	//允许拖动到任意地方
+                dragEnd:function(){
+                    var self = $(this);
+                    self.find('input').attr('name', 'field_sort[' + self.closest('ul').data('group') + '][]');
+                }
+            });
+        })*/
+</script>
+<style type="text/css">
+    .width-{
+        width: 300px;
+    }
+    .draging-place{
+        background-color: white !important;
+        border: dashed 1px gray !important;
+    }
+    .zdmar-left-10{
+        margin-left:10px;
+    }
+    .zdmar-right-5{
+        margin-right: 5px;
+    }
+    .zdtishi{
+        margin-left: 8px;color: #aaa;font-weight: normal;
+    }
+    .zdguanli{
+        padding: 0px 0px 10px 10px;
+    }
+    .zdkuangjia{
+        margin-bottom: 1px;    display: inline-block;
+        border:1px solid #cdcdcd;
+        background-color: #EDEDED;
+        color: #404040;
+        line-height: 35px;
+
+        height: 435px;
+        clear: both;    float: left;
+        margin-right: 20px;
+        margin-left: 0px;
+    }
+    .zdliebiao{
+        border: 1px solid #cdcdcd;color: #404040;margin:0px 0px 1px 0px;padding:1px;
+    }
+    .zdgundong{
+        height:375px;width: 640px;margin-left:0px;margin-top: 8px;padding-left: 10px;padding-bottom: 10px;overflow:auto;
+    }
+    .ulnone{
+        list-style-type: none;
+
+    }
+    .zili{
+
+        border: 1px solid #cdcdcd;margin-left: -50px;padding-left: 10px;background-color:#ffffff;margin-bottom: 5px;
+    }
+</style>
